@@ -1,0 +1,22 @@
+{
+  "invalidate": "6.99.0-ec9edad/5.0.10",
+  "manifest": {
+    "commands": [
+      {
+        "id": "status",
+        "description": "display current status of the Heroku platform",
+        "plugin": {
+          "name": "@heroku-cli/plugin-status",
+          "version": "5.0.10"
+        },
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku status \u001b[34m[flags]\u001b[39m\n\n\u001b[1mdisplay current status of the Heroku platform\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n --json  \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "status",
+          "\u001b[2mdisplay current status of the Heroku platform\u001b[22m"
+        ]
+      }
+    ],
+    "topics": []
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "invalidate": "6.99.0-ec9edad/6.3.3",
+  "manifest": {
+    "commands": [
+      {
+        "id": "commands",
+        "_version": "12.1.1",
+        "description": "list all commands",
+        "plugin": {
+          "name": "@cli-engine/engine",
+          "version": "6.3.3"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku commands \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist all commands\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n --json\n",
+        "helpLine": [
+          "commands",
+          "\u001b[2mlist all commands\u001b[22m"
+        ]
+      },
+      {
+        "id": "help",
+        "_version": "12.1.1",
+        "description": "display help",
+        "plugin": {
+          "name": "@cli-engine/engine",
+          "version": "6.3.3"
+        },
+        "aliases": [
+          "-h"
+        ],
+        "help": "\u001b[1mUsage:\u001b[22m heroku help [SUBJECT] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mdisplay help\u001b[22m\n\n\u001b[34mAliases:\u001b[39m\n  $ heroku -h\n\n\u001b[34mFlags:\u001b[39m\n --all  \u001b[2mshow all commands\u001b[22m\n",
+        "helpLine": [
+          "help [SUBJECT]",
+          "\u001b[2mdisplay help\u001b[22m"
+        ]
+      },
+      {
+        "id": "update",
+        "_version": "12.1.1",
+        "description": "update the heroku CLI",
+        "plugin": {
+          "name": "@cli-engine/engine",
+          "version": "6.3.3"
+        },
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku update [CHANNEL]\n\n\u001b[1mupdate the heroku CLI\u001b[22m\n",
+        "helpLine": [
+          "update [CHANNEL]",
+          "\u001b[2mupdate the heroku CLI\u001b[22m"
+        ]
+      },
+      {
+        "id": "version",
+        "_version": "12.1.1",
+        "description": "show CLI version",
+        "plugin": {
+          "name": "@cli-engine/engine",
+          "version": "6.3.3"
+        },
+        "aliases": [
+          "-v",
+          "--version"
+        ],
+        "help": "\u001b[1mUsage:\u001b[22m heroku version\n\n\u001b[1mshow CLI version\u001b[22m\n\n\u001b[34mAliases:\u001b[39m\n  $ heroku -v\n  $ heroku --version\n",
+        "helpLine": [
+          "version",
+          "\u001b[2mshow CLI version\u001b[22m"
+        ]
+      },
+      {
+        "id": "which",
+        "_version": "12.1.1",
+        "description": "show which plugin a command is from",
+        "plugin": {
+          "name": "@cli-engine/engine",
+          "version": "6.3.3"
+        },
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku which COMMAND\n\n\u001b[1mshow which plugin a command is from\u001b[22m\n",
+        "helpLine": [
+          "which COMMAND",
+          "\u001b[2mshow which plugin a command is from\u001b[22m"
+        ]
+      },
+      {
+        "id": "plugins",
+        "_version": "12.1.1",
+        "description": "list installed plugins",
+        "plugin": {
+          "name": "@cli-engine/engine",
+          "version": "6.3.3"
+        },
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku plugins \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist installed plugins\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n --core  \u001b[2mshow core plugins\u001b[22m\n\nExample:\n    $ heroku plugins\n    heroku-ci 1.8.0\n    heroku-cli-status 3.0.10\n    heroku-fork 4.1.22\n",
+        "helpLine": [
+          "plugins",
+          "\u001b[2mlist installed plugins\u001b[22m"
+        ]
+      },
+      {
+        "id": "plugins:install",
+        "_version": "12.1.1",
+        "description": "installs a plugin into the CLI",
+        "usage": "plugins:install PLUGIN...",
+        "plugin": {
+          "name": "@cli-engine/engine",
+          "version": "6.3.3"
+        },
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku plugins:install PLUGIN... \u001b[34m[flags]\u001b[39m\n\n\u001b[1minstalls a plugin into the CLI\u001b[22m\n\nPLUGIN  \u001b[2mplugin to install\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -f, --force\n\nExample:\n    $ heroku plugins:install heroku-production-status\n",
+        "helpLine": [
+          "plugins:install PLUGIN...",
+          "\u001b[2minstalls a plugin into the CLI\u001b[22m"
+        ]
+      },
+      {
+        "id": "plugins:link",
+        "_version": "12.1.1",
+        "description": "links a local plugin to the CLI for development",
+        "plugin": {
+          "name": "@cli-engine/engine",
+          "version": "6.3.3"
+        },
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku plugins:link [PATH] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlinks a local plugin to the CLI for development\u001b[22m\n\nPATH  \u001b[2mlocal file path to plugin root\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -f, --force\n\nExample:\n    $ heroku plugins:link .\n    Installing dependencies for /Users/dickeyxxx/src/github.com/heroku/heroku-status... done\n    Running prepare script for /Users/dickeyxxx/src/github.com/heroku/heroku-status... done\n",
+        "helpLine": [
+          "plugins:link [PATH]",
+          "\u001b[2mlinks a local plugin to the CLI for development\u001b[22m"
+        ]
+      },
+      {
+        "id": "plugins:uninstall",
+        "_version": "12.1.1",
+        "description": "uninstalls or unlinks a plugin",
+        "plugin": {
+          "name": "@cli-engine/engine",
+          "version": "6.3.3"
+        },
+        "aliases": [
+          "plugins:unlink"
+        ],
+        "help": "\u001b[1mUsage:\u001b[22m heroku plugins:uninstall PLUGIN\n\n\u001b[1muninstalls or unlinks a plugin\u001b[22m\n\n\u001b[34mAliases:\u001b[39m\n  $ heroku plugins:unlink\n\nPLUGIN  \u001b[2mplugin name to uninstall\u001b[22m\n\nExample:\n    $ heroku plugins:uninstall heroku-accounts\n",
+        "helpLine": [
+          "plugins:uninstall PLUGIN",
+          "\u001b[2muninstalls or unlinks a plugin\u001b[22m"
+        ]
+      },
+      {
+        "id": "plugins:update",
+        "_version": "12.1.1",
+        "description": "update installed plugins",
+        "plugin": {
+          "name": "@cli-engine/engine",
+          "version": "6.3.3"
+        },
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku plugins:update\n\n\u001b[1mupdate installed plugins\u001b[22m\n",
+        "helpLine": [
+          "plugins:update",
+          "\u001b[2mupdate installed plugins\u001b[22m"
+        ]
+      }
+    ],
+    "topics": []
+  }
+}

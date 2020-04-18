@@ -1,0 +1,440 @@
+{
+  "invalidate": "6.99.0-ec9edad/1.7.5",
+  "manifest": {
+    "commands": [
+      {
+        "id": "access",
+        "_version": "12.1.1",
+        "description": "list who has access to an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku access \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist who has access to an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --json               \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "access",
+          "\u001b[2mlist who has access to an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "sharing:access",
+        "_version": "12.1.1",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku sharing:access\n\nThis command is now heroku access\n",
+        "helpLine": [
+          "sharing:access",
+          null
+        ]
+      },
+      {
+        "id": "access:add",
+        "_version": "12.1.1",
+        "description": "Add new users to your app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku access:add EMAIL \u001b[34m[flags]\u001b[39m\n\n\u001b[1mAdd new users to your app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP              \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE        \u001b[2mgit remote of app to use\u001b[22m\n --permissions PERMISSIONS  \u001b[2mlist of permissions comma separated\u001b[22m\n\nExamples:\n\n    heroku access:add user@email.com --app APP # Add a collaborator to your app\n    heroku access:add user@email.com --app APP --permissions deploy,manage,operate # permissions must be comma separated\n",
+        "helpLine": [
+          "access:add EMAIL",
+          "\u001b[2mAdd new users to your app\u001b[22m"
+        ]
+      },
+      {
+        "id": "sharing:add",
+        "_version": "12.1.1",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku sharing:add\n\nthis command is now heroku access:add\n",
+        "helpLine": [
+          "sharing:add",
+          null
+        ]
+      },
+      {
+        "id": "access:remove",
+        "_version": "12.1.1",
+        "description": "Remove users from your app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku access:remove EMAIL \u001b[34m[flags]\u001b[39m\n\n\u001b[1mRemove users from your app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExample:\n\n    heroku access:remove user@email.com --app APP\n",
+        "helpLine": [
+          "access:remove EMAIL",
+          "\u001b[2mRemove users from your app\u001b[22m"
+        ]
+      },
+      {
+        "id": "sharing:remove",
+        "_version": "12.1.1",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku sharing:remove\n\nthis command is now heroku access:remove\n",
+        "helpLine": [
+          "sharing:remove",
+          null
+        ]
+      },
+      {
+        "id": "access:update",
+        "_version": "12.1.1",
+        "description": "Update existing collaborators in an org app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku access:update EMAIL \u001b[34m[flags]\u001b[39m\n\n\u001b[1mUpdate existing collaborators in an org app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP              \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE        \u001b[2mgit remote of app to use\u001b[22m\n --permissions PERMISSIONS  \u001b[2mcomma-delimited list of permissions to update (deploy,manage,operate)\u001b[22m\n\nExample:\n\n    heroku access:update user@email.com --app APP --permissions deploy,manage,operate\n",
+        "helpLine": [
+          "access:update EMAIL",
+          "\u001b[2mUpdate existing collaborators in an org app\u001b[22m"
+        ]
+      },
+      {
+        "id": "apps:join",
+        "_version": "12.1.1",
+        "description": "add yourself to an organization app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku apps:join \u001b[34m[flags]\u001b[39m\n\n\u001b[1madd yourself to an organization app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "apps:join",
+          "\u001b[2madd yourself to an organization app\u001b[22m"
+        ]
+      },
+      {
+        "id": "join",
+        "_version": "12.1.1",
+        "description": "add yourself to an organization app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku join \u001b[34m[flags]\u001b[39m\n\n\u001b[1madd yourself to an organization app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "join",
+          "\u001b[2madd yourself to an organization app\u001b[22m"
+        ]
+      },
+      {
+        "id": "apps:leave",
+        "_version": "12.1.1",
+        "description": "remove yourself from an organization app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku apps:leave \u001b[34m[flags]\u001b[39m\n\n\u001b[1mremove yourself from an organization app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "apps:leave",
+          "\u001b[2mremove yourself from an organization app\u001b[22m"
+        ]
+      },
+      {
+        "id": "leave",
+        "_version": "12.1.1",
+        "description": "remove yourself from an organization app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku leave \u001b[34m[flags]\u001b[39m\n\n\u001b[1mremove yourself from an organization app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "leave",
+          "\u001b[2mremove yourself from an organization app\u001b[22m"
+        ]
+      },
+      {
+        "id": "apps:lock",
+        "_version": "12.1.1",
+        "description": "prevent organization members from joining an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku apps:lock \u001b[34m[flags]\u001b[39m\n\n\u001b[1mprevent organization members from joining an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "apps:lock",
+          "\u001b[2mprevent organization members from joining an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "lock",
+        "_version": "12.1.1",
+        "description": "prevent organization members from joining an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku lock \u001b[34m[flags]\u001b[39m\n\n\u001b[1mprevent organization members from joining an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "lock",
+          "\u001b[2mprevent organization members from joining an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "apps:transfer",
+        "_version": "12.1.1",
+        "description": "transfer applications to another user or team",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku apps:transfer RECIPIENT \u001b[34m[flags]\u001b[39m\n\n\u001b[1mtransfer applications to another user or team\u001b[22m\n\nRECIPIENT  \u001b[2muser or team to transfer applications to\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -l, --locked         \u001b[2mlock the app upon transfer\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --bulk               \u001b[2mtransfer applications in bulk\u001b[22m\n\nExamples:\n\n    $ heroku apps:transfer collaborator@example.com\n    Transferring example to collaborator@example.com... done\n\n    $ heroku apps:transfer acme-widgets\n    Transferring example to acme-widgets... done\n\n    $ heroku apps:transfer --bulk acme-widgets\n    ...\n",
+        "helpLine": [
+          "apps:transfer RECIPIENT",
+          "\u001b[2mtransfer applications to another user or team\u001b[22m"
+        ]
+      },
+      {
+        "id": "sharing:transfer",
+        "_version": "12.1.1",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku sharing:transfer\n\nthis command is now heroku apps:transfer\n",
+        "helpLine": [
+          "sharing:transfer",
+          null
+        ]
+      },
+      {
+        "id": "apps:unlock",
+        "_version": "12.1.1",
+        "description": "unlock an app so any organization member can join",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku apps:unlock \u001b[34m[flags]\u001b[39m\n\n\u001b[1munlock an app so any organization member can join\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "apps:unlock",
+          "\u001b[2munlock an app so any organization member can join\u001b[22m"
+        ]
+      },
+      {
+        "id": "unlock",
+        "_version": "12.1.1",
+        "description": "unlock an app so any organization member can join",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku unlock \u001b[34m[flags]\u001b[39m\n\n\u001b[1munlock an app so any organization member can join\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "unlock",
+          "\u001b[2munlock an app so any organization member can join\u001b[22m"
+        ]
+      },
+      {
+        "id": "members",
+        "_version": "12.1.1",
+        "description": "list members of an organization or a team",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku members \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist members of an organization or a team\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -r, --role ROLE  \u001b[2mfilter by role\u001b[22m\n --json           \u001b[2moutput in json format\u001b[22m\n --pending        \u001b[2mfilter by pending team invitations\u001b[22m\n",
+        "helpLine": [
+          "members",
+          "\u001b[2mlist members of an organization or a team\u001b[22m"
+        ]
+      },
+      {
+        "id": "members:add",
+        "_version": "12.1.1",
+        "description": "adds a user to an organization or a team",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku members:add EMAIL \u001b[34m[flags]\u001b[39m\n\n\u001b[1madds a user to an organization or a team\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -r, --role ROLE  \u001b[2mmember role (admin, collaborator, member, owner)\u001b[22m\n",
+        "helpLine": [
+          "members:add EMAIL",
+          "\u001b[2madds a user to an organization or a team\u001b[22m"
+        ]
+      },
+      {
+        "id": "members:set",
+        "_version": "12.1.1",
+        "description": "sets a members role in an organization or a team",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku members:set EMAIL \u001b[34m[flags]\u001b[39m\n\n\u001b[1msets a members role in an organization or a team\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -r, --role ROLE  \u001b[2mmember role (admin, collaborator, member, owner)\u001b[22m\n",
+        "helpLine": [
+          "members:set EMAIL",
+          "\u001b[2msets a members role in an organization or a team\u001b[22m"
+        ]
+      },
+      {
+        "id": "members:remove",
+        "_version": "12.1.1",
+        "description": "removes a user from an organization or a team",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku members:remove EMAIL\n\n\u001b[1mremoves a user from an organization or a team\u001b[22m\n",
+        "helpLine": [
+          "members:remove EMAIL",
+          "\u001b[2mremoves a user from an organization or a team\u001b[22m"
+        ]
+      },
+      {
+        "id": "orgs",
+        "_version": "12.1.1",
+        "description": "list the organizations that you are a member of",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku orgs \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist the organizations that you are a member of\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n --enterprise  \u001b[2mfilter by enterprise orgs\u001b[22m\n --json        \u001b[2moutput in json format\u001b[22m\n --teams       \u001b[2mfilter by teams\u001b[22m\n",
+        "helpLine": [
+          "orgs",
+          "\u001b[2mlist the organizations that you are a member of\u001b[22m"
+        ]
+      },
+      {
+        "id": "orgs:default",
+        "_version": "12.1.1",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku orgs:default\n",
+        "helpLine": [
+          "orgs:default",
+          null
+        ]
+      },
+      {
+        "id": "orgs:open",
+        "_version": "12.1.1",
+        "description": "open the organization interface in a browser window",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku orgs:open\n\n\u001b[1mopen the organization interface in a browser window\u001b[22m\n",
+        "helpLine": [
+          "orgs:open",
+          "\u001b[2mopen the organization interface in a browser window\u001b[22m"
+        ]
+      },
+      {
+        "id": "teams",
+        "_version": "12.1.1",
+        "description": "list the teams that you are a member of",
+        "plugin": {
+          "name": "@heroku-cli/plugin-orgs",
+          "version": "1.7.5"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku teams \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist the teams that you are a member of\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n --json  \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "teams",
+          "\u001b[2mlist the teams that you are a member of\u001b[22m"
+        ]
+      }
+    ],
+    "topics": [
+      {
+        "name": "access",
+        "description": "manage user access to apps"
+      },
+      {
+        "name": "orgs",
+        "description": "manage organizations"
+      },
+      {
+        "name": "members",
+        "description": "manage organization members"
+      },
+      {
+        "name": "teams",
+        "description": "manage teams"
+      },
+      {
+        "name": "sharing",
+        "hidden": true
+      },
+      {
+        "name": "join",
+        "hidden": true
+      },
+      {
+        "name": "leave",
+        "hidden": true
+      },
+      {
+        "name": "lock",
+        "hidden": true
+      },
+      {
+        "name": "unlock",
+        "hidden": true
+      }
+    ]
+  }
+}

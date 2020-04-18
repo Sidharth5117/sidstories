@@ -1,0 +1,77 @@
+{
+  "invalidate": "6.99.0-ec9edad/2.3.4",
+  "manifest": {
+    "commands": [
+      {
+        "id": "ps:exec",
+        "_version": "12.1.1",
+        "description": "Create an SSH session to a dyno",
+        "plugin": {
+          "name": "@heroku-cli/plugin-ps-exec",
+          "version": "2.3.4"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku ps:exec \u001b[34m[flags]\u001b[39m\n\n\u001b[1mCreate an SSH session to a dyno\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -d, --dyno DYNO      \u001b[2mspecify the dyno to connect to\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --ssh                \u001b[2muse native ssh\u001b[22m\n --status             \u001b[2mlists the status of the SSH server in the dyno\u001b[22m\n\nExample:\n\n    $ heroku ps:exec 'node -i' --app murmuring-headland-14719\n",
+        "helpLine": [
+          "ps:exec",
+          "\u001b[2mCreate an SSH session to a dyno\u001b[22m"
+        ]
+      },
+      {
+        "id": "ps:socks",
+        "_version": "12.1.1",
+        "description": "Launch a SOCKS proxy into a dyno",
+        "plugin": {
+          "name": "@heroku-cli/plugin-ps-exec",
+          "version": "2.3.4"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku ps:socks \u001b[34m[flags]\u001b[39m\n\n\u001b[1mLaunch a SOCKS proxy into a dyno\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -d, --dyno DYNO      \u001b[2mspecify the dyno to connect to\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExample:\n\n    $ heroku ps:socks --app murmuring-headland-14719\n    Establishing credentials... done\n    SOCKSv5 proxy server started on port 1080\n    Use CTRL+C to stop the proxy\n",
+        "helpLine": [
+          "ps:socks",
+          "\u001b[2mLaunch a SOCKS proxy into a dyno\u001b[22m"
+        ]
+      },
+      {
+        "id": "ps:forward",
+        "_version": "12.1.1",
+        "description": "Forward traffic on a local port to a dyno",
+        "plugin": {
+          "name": "@heroku-cli/plugin-ps-exec",
+          "version": "2.3.4"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku ps:forward PORT \u001b[34m[flags]\u001b[39m\n\n\u001b[1mForward traffic on a local port to a dyno\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP              \u001b[2mapp to run command against\u001b[22m\n -d, --dyno DYNO            \u001b[2mspecify the dyno to connect to\u001b[22m\n -p, --localPort LOCALPORT  \u001b[2mthe local port to use\u001b[22m\n -r, --remote REMOTE        \u001b[2mgit remote of app to use\u001b[22m\n\nExample:\n\n    $ heroku ps:forward 8080 --app murmuring-headland-14719\n",
+        "helpLine": [
+          "ps:forward PORT",
+          "\u001b[2mForward traffic on a local port to a dyno\u001b[22m"
+        ]
+      },
+      {
+        "id": "ps:copy",
+        "_version": "12.1.1",
+        "description": "Copy a file from a dyno to the local filesystem",
+        "plugin": {
+          "name": "@heroku-cli/plugin-ps-exec",
+          "version": "2.3.4"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku ps:copy FILE \u001b[34m[flags]\u001b[39m\n\n\u001b[1mCopy a file from a dyno to the local filesystem\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -d, --dyno DYNO      \u001b[2mspecify the dyno to connect to\u001b[22m\n -o, --output OUTPUT  \u001b[2mthe name of the output file\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExample:\n\n    $ heroku ps:copy FILENAME --app murmuring-headland-14719\n",
+        "helpLine": [
+          "ps:copy FILE",
+          "\u001b[2mCopy a file from a dyno to the local filesystem\u001b[22m"
+        ]
+      }
+    ],
+    "topics": [
+      {
+        "name": "ps",
+        "description": "Client tools for Heroku Exec"
+      }
+    ]
+  }
+}

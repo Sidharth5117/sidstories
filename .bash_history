@@ -165,3 +165,79 @@ git add --all
 git commit -m "Initial comment"
 git remote add origin git@github.com:Sidharth5117/app.git
 git push -u origin master
+cd rails
+cd app
+rails db:migrate
+cd rails
+cd app
+rake db
+rake db:migrate
+chmod 777 Gemfile 
+rake db:migrate
+rails routes
+rails s
+rails routes
+rails s
+heroku login
+git status
+git add -A
+git commit -m "App production ready"
+heroku keys:add
+git push heroku master
+rails routes
+rails s
+git status
+git push heroku master
+rails s
+git status
+git add -A
+git commit -m "App production ready"
+git push heroku master
+git status
+git add -A
+git commit -m "App production ready"
+git push heroku master
+ls
+cd
+ls
+ssh-keygen
+rails server
+cd rails
+cd app
+rails server
+git status
+git add -A
+git -m commit "Hello"
+git commit -m "Hello"
+git push
+git remote -v
+git push -u origin master
+cd ..
+git push -u origin master
+git push
+git heroku push master
+cd rails
+cd app
+git heroku push master
+git push heroku master
+git push origin master
+git push origin --tags
+ssh -T git@github.com
+git remote rm origin
+git remote add origin git@github.com:Sidharth5117/app.git
+git push -u origin master
+sudo find /var/www/html -type d -exec chmod 777 {} \;
+sudo find /home/sid/ -type d -exec chmod 777 {} \;
+sudo find /home/sid/ -type f -exec chmod 777 {} \;
+git status
+git add -A
+git push -u origin master
+ssh-keygen -t rsa
+cd .ssh
+ls
+rm -type f
+rm --help
+rm -r -type f
+rm . -type f
+cd .ssh
+ls

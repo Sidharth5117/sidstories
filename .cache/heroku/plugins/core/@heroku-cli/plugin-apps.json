@@ -1,0 +1,1509 @@
+{
+  "invalidate": "6.99.0-ec9edad/2.4.38",
+  "manifest": {
+    "commands": [
+      {
+        "id": "dashboard",
+        "_version": "12.1.1",
+        "description": "display information about favorite apps",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku dashboard\n\n\u001b[1mdisplay information about favorite apps\u001b[22m\n",
+        "helpLine": [
+          "dashboard",
+          "\u001b[2mdisplay information about favorite apps\u001b[22m"
+        ]
+      },
+      {
+        "id": "apps:create",
+        "_version": "12.1.1",
+        "description": "creates a new app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku apps:create [APP] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mcreates a new app\u001b[22m\n\nAPP  \u001b[2mname of app to create\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -b, --buildpack BUILDPACK  \u001b[2mbuildpack url to use for this app\u001b[22m\n -n, --no-remote            \u001b[2mdo not create a git remote\u001b[22m\n -o, --org ORG              \u001b[2mteam to use\u001b[22m\n -r, --remote REMOTE        \u001b[2mthe git remote to create, default \"heroku\"\u001b[22m\n -s, --stack STACK          \u001b[2mthe stack to create the app on\u001b[22m\n -t, --team TEAM            \u001b[2mteam to use\u001b[22m\n --addons ADDONS            \u001b[2mcomma-delimited list of addons to install\u001b[22m\n --json                     \u001b[2moutput in json format\u001b[22m\n --region REGION            \u001b[2mspecify region for the app to run in\u001b[22m\n --space SPACE              \u001b[2mthe private space to create the app in\u001b[22m\n --ssh-git                  \u001b[2muse SSH git protocol for local git remote\u001b[22m\n\nExamples:\n\n    $ heroku apps:create\n    Creating app... done, stack is cedar-14\n    https://floating-dragon-42.heroku.com/ | https://git.heroku.com/floating-dragon-42.git\n\n    # or just\n    $ heroku create\n\n    # specify a buildpack\n    $ heroku apps:create --buildpack https://github.com/some/buildpack.git\n\n    # specify a name\n    $ heroku apps:create example\n\n    # create a staging app\n    $ heroku apps:create example-staging --remote staging\n\n    # create an app in the eu region\n    $ heroku apps:create --region eu\n",
+        "helpLine": [
+          "apps:create [APP]",
+          "\u001b[2mcreates a new app\u001b[22m"
+        ]
+      },
+      {
+        "id": "create",
+        "_version": "12.1.1",
+        "description": "creates a new app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku create [APP] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mcreates a new app\u001b[22m\n\nAPP  \u001b[2mname of app to create\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -b, --buildpack BUILDPACK  \u001b[2mbuildpack url to use for this app\u001b[22m\n -n, --no-remote            \u001b[2mdo not create a git remote\u001b[22m\n -o, --org ORG              \u001b[2mteam to use\u001b[22m\n -r, --remote REMOTE        \u001b[2mthe git remote to create, default \"heroku\"\u001b[22m\n -s, --stack STACK          \u001b[2mthe stack to create the app on\u001b[22m\n -t, --team TEAM            \u001b[2mteam to use\u001b[22m\n --addons ADDONS            \u001b[2mcomma-delimited list of addons to install\u001b[22m\n --json                     \u001b[2moutput in json format\u001b[22m\n --region REGION            \u001b[2mspecify region for the app to run in\u001b[22m\n --space SPACE              \u001b[2mthe private space to create the app in\u001b[22m\n --ssh-git                  \u001b[2muse SSH git protocol for local git remote\u001b[22m\n\nExamples:\n\n    $ heroku apps:create\n    Creating app... done, stack is cedar-14\n    https://floating-dragon-42.heroku.com/ | https://git.heroku.com/floating-dragon-42.git\n\n    # or just\n    $ heroku create\n\n    # specify a buildpack\n    $ heroku apps:create --buildpack https://github.com/some/buildpack.git\n\n    # specify a name\n    $ heroku apps:create example\n\n    # create a staging app\n    $ heroku apps:create example-staging --remote staging\n\n    # create an app in the eu region\n    $ heroku apps:create --region eu\n",
+        "helpLine": [
+          "create [APP]",
+          "\u001b[2mcreates a new app\u001b[22m"
+        ]
+      },
+      {
+        "id": "apps:destroy",
+        "_version": "12.1.1",
+        "description": "permanently destroy an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku apps:destroy [APP] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mpermanently destroy an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP          \u001b[2mapp to run command against\u001b[22m\n -c, --confirm CONFIRM\n -r, --remote REMOTE    \u001b[2mgit remote of app to use\u001b[22m\n\nThis will also destroy all add-ons on the app.\n",
+        "helpLine": [
+          "apps:destroy [APP]",
+          "\u001b[2mpermanently destroy an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "destroy",
+        "_version": "12.1.1",
+        "description": "permanently destroy an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku destroy [APP] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mpermanently destroy an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP          \u001b[2mapp to run command against\u001b[22m\n -c, --confirm CONFIRM\n -r, --remote REMOTE    \u001b[2mgit remote of app to use\u001b[22m\n\nThis will also destroy all add-ons on the app.\n",
+        "helpLine": [
+          "destroy [APP]",
+          "\u001b[2mpermanently destroy an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "apps:delete",
+        "_version": "12.1.1",
+        "description": "permanently destroy an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku apps:delete [APP] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mpermanently destroy an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP          \u001b[2mapp to run command against\u001b[22m\n -c, --confirm CONFIRM\n -r, --remote REMOTE    \u001b[2mgit remote of app to use\u001b[22m\n\nThis will also destroy all add-ons on the app.\n",
+        "helpLine": [
+          "apps:delete [APP]",
+          "\u001b[2mpermanently destroy an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "apps:errors",
+        "_version": "12.1.1",
+        "description": "view app errors",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku apps:errors \u001b[34m[flags]\u001b[39m\n\n\u001b[1mview app errors\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --dyno               \u001b[2mshow only dyno errors\u001b[22m\n --hours HOURS        \u001b[2mnumber of hours to look back (default 24)\u001b[22m\n --json               \u001b[2moutput in json format\u001b[22m\n --router             \u001b[2mshow only router errors\u001b[22m\n",
+        "helpLine": [
+          "apps:errors",
+          "\u001b[2mview app errors\u001b[22m"
+        ]
+      },
+      {
+        "id": "apps",
+        "_version": "12.1.1",
+        "description": "list your apps",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku apps \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist your apps\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -A, --all          \u001b[2minclude apps in all teams\u001b[22m\n -o, --org ORG      \u001b[2mteam to use\u001b[22m\n -p, --personal     \u001b[2mlist apps in personal account when a default team is set\u001b[22m\n -s, --space SPACE  \u001b[2mfilter by space\u001b[22m\n -t, --team TEAM    \u001b[2mteam to use\u001b[22m\n --json             \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "apps",
+          "\u001b[2mlist your apps\u001b[22m"
+        ]
+      },
+      {
+        "id": "list",
+        "_version": "12.1.1",
+        "description": "list your apps",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku list \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist your apps\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -A, --all          \u001b[2minclude apps in all teams\u001b[22m\n -o, --org ORG      \u001b[2mteam to use\u001b[22m\n -p, --personal     \u001b[2mlist apps in personal account when a default team is set\u001b[22m\n -s, --space SPACE  \u001b[2mfilter by space\u001b[22m\n -t, --team TEAM    \u001b[2mteam to use\u001b[22m\n --json             \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "list",
+          "\u001b[2mlist your apps\u001b[22m"
+        ]
+      },
+      {
+        "id": "apps:list",
+        "_version": "12.1.1",
+        "description": "list your apps",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku apps:list \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist your apps\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -A, --all          \u001b[2minclude apps in all teams\u001b[22m\n -o, --org ORG      \u001b[2mteam to use\u001b[22m\n -p, --personal     \u001b[2mlist apps in personal account when a default team is set\u001b[22m\n -s, --space SPACE  \u001b[2mfilter by space\u001b[22m\n -t, --team TEAM    \u001b[2mteam to use\u001b[22m\n --json             \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "apps:list",
+          "\u001b[2mlist your apps\u001b[22m"
+        ]
+      },
+      {
+        "id": "apps:info",
+        "_version": "12.1.1",
+        "description": "show detailed app information",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku apps:info [APP] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mshow detailed app information\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -j, --json\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n -s, --shell          \u001b[2moutput more shell friendly key/value pairs\u001b[22m\n\nExamples:\n\n    $ heroku apps:info\n    === example\n    Git URL:   https://git.heroku.com/example.git\n    Repo Size: 5M\n    ...\n\n    $ heroku apps:info --shell\n    git_url=https://git.heroku.com/example.git\n    repo_size=5000000\n    ...\n",
+        "helpLine": [
+          "apps:info [APP]",
+          "\u001b[2mshow detailed app information\u001b[22m"
+        ]
+      },
+      {
+        "id": "info",
+        "_version": "12.1.1",
+        "description": "show detailed app information",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku info [APP] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mshow detailed app information\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -j, --json\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n -s, --shell          \u001b[2moutput more shell friendly key/value pairs\u001b[22m\n\nExamples:\n\n    $ heroku apps:info\n    === example\n    Git URL:   https://git.heroku.com/example.git\n    Repo Size: 5M\n    ...\n\n    $ heroku apps:info --shell\n    git_url=https://git.heroku.com/example.git\n    repo_size=5000000\n    ...\n",
+        "helpLine": [
+          "info [APP]",
+          "\u001b[2mshow detailed app information\u001b[22m"
+        ]
+      },
+      {
+        "id": "apps:open",
+        "_version": "12.1.1",
+        "description": "open the app in a web browser",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku apps:open [PATH] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mopen the app in a web browser\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExamples:\n\n    $ heroku open -a myapp\n    # opens https://myapp.herokuapp.com\n\n    $ heroku open -a myapp /foo\n    # opens https://myapp.herokuapp.com/foo\n",
+        "helpLine": [
+          "apps:open [PATH]",
+          "\u001b[2mopen the app in a web browser\u001b[22m"
+        ]
+      },
+      {
+        "id": "open",
+        "_version": "12.1.1",
+        "description": "open the app in a web browser",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku open [PATH] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mopen the app in a web browser\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExamples:\n\n    $ heroku open -a myapp\n    # opens https://myapp.herokuapp.com\n\n    $ heroku open -a myapp /foo\n    # opens https://myapp.herokuapp.com/foo\n",
+        "helpLine": [
+          "open [PATH]",
+          "\u001b[2mopen the app in a web browser\u001b[22m"
+        ]
+      },
+      {
+        "id": "apps:rename",
+        "_version": "12.1.1",
+        "description": "rename an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku apps:rename NEWNAME \u001b[34m[flags]\u001b[39m\n\n\u001b[1mrename an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --ssh-git            \u001b[2muse ssh git protocol instead of https\u001b[22m\n\nThis will locally update the git remote if it is set to the old app.\n\nExample:\n\n    $ heroku apps:rename --app oldname newname\n    https://newname.herokuapp.com/ | https://git.heroku.com/newname.git\n    Git remote heroku updated\n",
+        "helpLine": [
+          "apps:rename NEWNAME",
+          "\u001b[2mrename an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "rename",
+        "_version": "12.1.1",
+        "description": "rename an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku rename NEWNAME \u001b[34m[flags]\u001b[39m\n\n\u001b[1mrename an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --ssh-git            \u001b[2muse ssh git protocol instead of https\u001b[22m\n\nThis will locally update the git remote if it is set to the old app.\n\nExample:\n\n    $ heroku apps:rename --app oldname newname\n    https://newname.herokuapp.com/ | https://git.heroku.com/newname.git\n    Git remote heroku updated\n",
+        "helpLine": [
+          "rename NEWNAME",
+          "\u001b[2mrename an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "apps:favorites:add",
+        "_version": "12.1.1",
+        "description": "favorites an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku apps:favorites:add \u001b[34m[flags]\u001b[39m\n\n\u001b[1mfavorites an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "apps:favorites:add",
+          "\u001b[2mfavorites an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "apps:favorites",
+        "_version": "12.1.1",
+        "description": "list favorited apps",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku apps:favorites \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist favorited apps\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n --json  \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "apps:favorites",
+          "\u001b[2mlist favorited apps\u001b[22m"
+        ]
+      },
+      {
+        "id": "apps:favorites:remove",
+        "_version": "12.1.1",
+        "description": "unfavorites an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku apps:favorites:remove \u001b[34m[flags]\u001b[39m\n\n\u001b[1munfavorites an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "apps:favorites:remove",
+          "\u001b[2munfavorites an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "apps:stacks",
+        "_version": "12.1.1",
+        "description": "show the list of available stacks",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku apps:stacks \u001b[34m[flags]\u001b[39m\n\n\u001b[1mshow the list of available stacks\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "apps:stacks",
+          "\u001b[2mshow the list of available stacks\u001b[22m"
+        ]
+      },
+      {
+        "id": "stack",
+        "_version": "12.1.1",
+        "description": "show the list of available stacks",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku stack \u001b[34m[flags]\u001b[39m\n\n\u001b[1mshow the list of available stacks\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "stack",
+          "\u001b[2mshow the list of available stacks\u001b[22m"
+        ]
+      },
+      {
+        "id": "apps:stacks:set",
+        "_version": "12.1.1",
+        "description": "set the stack of an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku apps:stacks:set STACK \u001b[34m[flags]\u001b[39m\n\n\u001b[1mset the stack of an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExample:\n\n    $ heroku stack:set cedar-14 -a myapp\n    Stack set. Next release on myapp will use cedar-14.\n    Run git push heroku master to create a new release on myapp.\n",
+        "helpLine": [
+          "apps:stacks:set STACK",
+          "\u001b[2mset the stack of an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "stack:set",
+        "_version": "12.1.1",
+        "description": "set the stack of an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku stack:set STACK \u001b[34m[flags]\u001b[39m\n\n\u001b[1mset the stack of an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExample:\n\n    $ heroku stack:set cedar-14 -a myapp\n    Stack set. Next release on myapp will use cedar-14.\n    Run git push heroku master to create a new release on myapp.\n",
+        "helpLine": [
+          "stack:set STACK",
+          "\u001b[2mset the stack of an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "auth:login",
+        "_version": "12.1.1",
+        "description": "login with your Heroku credentials",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [
+          "login"
+        ],
+        "help": "\u001b[1mUsage:\u001b[22m heroku auth:login \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlogin with your Heroku credentials\u001b[22m\n\n\u001b[34mAliases:\u001b[39m\n  $ heroku login\n\n\u001b[34mFlags:\u001b[39m\n -e, --expires-in EXPIRES-IN  \u001b[2mduration of token in seconds (default 1 year)\u001b[22m\n --browser                    \u001b[2mbrowser to open SSO with\u001b[22m\n --sso                        \u001b[2mlogin for enterprise users under SSO\u001b[22m\n",
+        "helpLine": [
+          "auth:login",
+          "\u001b[2mlogin with your Heroku credentials\u001b[22m"
+        ]
+      },
+      {
+        "id": "auth:logout",
+        "_version": "12.1.1",
+        "description": "clears local login credentials",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku auth:logout\n\n\u001b[1mclears local login credentials\u001b[22m\n",
+        "helpLine": [
+          "auth:logout",
+          "\u001b[2mclears local login credentials\u001b[22m"
+        ]
+      },
+      {
+        "id": "logout",
+        "_version": "12.1.1",
+        "description": "clears local login credentials",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku logout\n\n\u001b[1mclears local login credentials\u001b[22m\n",
+        "helpLine": [
+          "logout",
+          "\u001b[2mclears local login credentials\u001b[22m"
+        ]
+      },
+      {
+        "id": "auth:token",
+        "_version": "12.1.1",
+        "description": "display the current auth token",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku auth:token\n\n\u001b[1mdisplay the current auth token\u001b[22m\n",
+        "helpLine": [
+          "auth:token",
+          "\u001b[2mdisplay the current auth token\u001b[22m"
+        ]
+      },
+      {
+        "id": "auth:2fa:disable",
+        "_version": "12.1.1",
+        "description": "disable 2fa on account",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku auth:2fa:disable\n\n\u001b[1mdisable 2fa on account\u001b[22m\n",
+        "helpLine": [
+          "auth:2fa:disable",
+          "\u001b[2mdisable 2fa on account\u001b[22m"
+        ]
+      },
+      {
+        "id": "2fa:disable",
+        "_version": "12.1.1",
+        "description": "disable 2fa on account",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku 2fa:disable\n\n\u001b[1mdisable 2fa on account\u001b[22m\n",
+        "helpLine": [
+          "2fa:disable",
+          "\u001b[2mdisable 2fa on account\u001b[22m"
+        ]
+      },
+      {
+        "id": "twofactor:disable",
+        "_version": "12.1.1",
+        "description": "disable 2fa on account",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku twofactor:disable\n\n\u001b[1mdisable 2fa on account\u001b[22m\n",
+        "helpLine": [
+          "twofactor:disable",
+          "\u001b[2mdisable 2fa on account\u001b[22m"
+        ]
+      },
+      {
+        "id": "auth:2fa:generate",
+        "_version": "12.1.1",
+        "description": "generates and replaces recovery codes",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku auth:2fa:generate\n\n\u001b[1mgenerates and replaces recovery codes\u001b[22m\n",
+        "helpLine": [
+          "auth:2fa:generate",
+          "\u001b[2mgenerates and replaces recovery codes\u001b[22m"
+        ]
+      },
+      {
+        "id": "2fa:generate-recovery-codes",
+        "_version": "12.1.1",
+        "description": "generates and replaces recovery codes",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku 2fa:generate-recovery-codes\n\n\u001b[1mgenerates and replaces recovery codes\u001b[22m\n",
+        "helpLine": [
+          "2fa:generate-recovery-codes",
+          "\u001b[2mgenerates and replaces recovery codes\u001b[22m"
+        ]
+      },
+      {
+        "id": "twofactor:generate-recovery-codes",
+        "_version": "12.1.1",
+        "description": "generates and replaces recovery codes",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku twofactor:generate-recovery-codes\n\n\u001b[1mgenerates and replaces recovery codes\u001b[22m\n",
+        "helpLine": [
+          "twofactor:generate-recovery-codes",
+          "\u001b[2mgenerates and replaces recovery codes\u001b[22m"
+        ]
+      },
+      {
+        "id": "buildpacks:add",
+        "_version": "12.1.1",
+        "description": "add new app buildpack, inserting into list of buildpacks if necessary",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku buildpacks:add URL \u001b[34m[flags]\u001b[39m\n\n\u001b[1madd new app buildpack, inserting into list of buildpacks if necessary\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -i, --index INDEX    \u001b[2mthe 1-based index of the URL in the list of URLs\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExample:\n\n     $ heroku buildpacks:add -i 1 https://github.com/heroku/heroku-buildpack-ruby\n",
+        "helpLine": [
+          "buildpacks:add URL",
+          "\u001b[2madd new app buildpack, inserting into list of buildpacks if necessary\u001b[22m"
+        ]
+      },
+      {
+        "id": "buildpacks:clear",
+        "_version": "12.1.1",
+        "description": "clear all buildpacks set on the app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku buildpacks:clear \u001b[34m[flags]\u001b[39m\n\n\u001b[1mclear all buildpacks set on the app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "buildpacks:clear",
+          "\u001b[2mclear all buildpacks set on the app\u001b[22m"
+        ]
+      },
+      {
+        "id": "buildpacks",
+        "_version": "12.1.1",
+        "description": "display the buildpack_url(s) for an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku buildpacks \u001b[34m[flags]\u001b[39m\n\n\u001b[1mdisplay the buildpack_url(s) for an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExamples:\n    $ heroku buildpacks\n",
+        "helpLine": [
+          "buildpacks",
+          "\u001b[2mdisplay the buildpack_url(s) for an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "buildpacks:remove",
+        "_version": "12.1.1",
+        "description": "remove a buildpack set on the app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku buildpacks:remove [URL] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mremove a buildpack set on the app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -i, --index INDEX    \u001b[2mthe 1-based index of the URL to remove from the list of URLs\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "buildpacks:remove [URL]",
+          "\u001b[2mremove a buildpack set on the app\u001b[22m"
+        ]
+      },
+      {
+        "id": "buildpacks:set",
+        "_version": "12.1.1",
+        "description": "set new app buildpack, overwriting into list of buildpacks if necessary",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku buildpacks:set URL \u001b[34m[flags]\u001b[39m\n\n\u001b[1mset new app buildpack, overwriting into list of buildpacks if necessary\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -i, --index INDEX    \u001b[2mthe 1-based index of the URL in the list of URLs\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExample:\n\n     $ heroku buildpacks:set -i 1 heroku/ruby\n",
+        "helpLine": [
+          "buildpacks:set URL",
+          "\u001b[2mset new app buildpack, overwriting into list of buildpacks if necessary\u001b[22m"
+        ]
+      },
+      {
+        "id": "config:get",
+        "_version": "12.1.1",
+        "description": "display a config value for an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku config:get KEY \u001b[34m[flags]\u001b[39m\n\n\u001b[1mdisplay a config value for an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n -s, --shell          \u001b[2moutput config var in shell format\u001b[22m\n\nExample:\n\n    $ heroku config:get RAILS_ENV\n    production\n",
+        "helpLine": [
+          "config:get KEY",
+          "\u001b[2mdisplay a config value for an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "config",
+        "_version": "12.1.1",
+        "description": "display the config vars for an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku config \u001b[34m[flags]\u001b[39m\n\n\u001b[1mdisplay the config vars for an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n -s, --shell          \u001b[2moutput config vars in shell format\u001b[22m\n --json               \u001b[2moutput config vars in json format\u001b[22m\n",
+        "helpLine": [
+          "config",
+          "\u001b[2mdisplay the config vars for an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "config:set",
+        "_version": "12.1.1",
+        "description": "set one or more config vars",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku config:set \u001b[34m[flags]\u001b[39m\n\n\u001b[1mset one or more config vars\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExamples:\n\n    $ heroku config:set RAILS_ENV=staging\n    Setting config vars and restarting example... done, v10\n    RAILS_ENV: staging\n    \n    $ heroku config:set RAILS_ENV=staging RACK_ENV=staging\n    Setting config vars and restarting example... done, v11\n    RAILS_ENV: staging\n    RACK_ENV:  staging\n",
+        "helpLine": [
+          "config:set",
+          "\u001b[2mset one or more config vars\u001b[22m"
+        ]
+      },
+      {
+        "id": "config:add",
+        "_version": "12.1.1",
+        "description": "set one or more config vars",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku config:add \u001b[34m[flags]\u001b[39m\n\n\u001b[1mset one or more config vars\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExamples:\n\n    $ heroku config:set RAILS_ENV=staging\n    Setting config vars and restarting example... done, v10\n    RAILS_ENV: staging\n    \n    $ heroku config:set RAILS_ENV=staging RACK_ENV=staging\n    Setting config vars and restarting example... done, v11\n    RAILS_ENV: staging\n    RACK_ENV:  staging\n",
+        "helpLine": [
+          "config:add",
+          "\u001b[2mset one or more config vars\u001b[22m"
+        ]
+      },
+      {
+        "id": "config:unset",
+        "_version": "12.1.1",
+        "description": "unset one or more config vars",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku config:unset \u001b[34m[flags]\u001b[39m\n\n\u001b[1munset one or more config vars\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExamples:\n\n    $ heroku config:unset RAILS_ENV\n    Unsetting RAILS_ENV and restarting example... done, v10\n    \n    $ heroku config:unset RAILS_ENV RACK_ENV\n    Unsetting RAILS_ENV, RACK_ENV and restarting example... done, v10\n",
+        "helpLine": [
+          "config:unset",
+          "\u001b[2munset one or more config vars\u001b[22m"
+        ]
+      },
+      {
+        "id": "config:remove",
+        "_version": "12.1.1",
+        "description": "unset one or more config vars",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku config:remove \u001b[34m[flags]\u001b[39m\n\n\u001b[1munset one or more config vars\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExamples:\n\n    $ heroku config:unset RAILS_ENV\n    Unsetting RAILS_ENV and restarting example... done, v10\n    \n    $ heroku config:unset RAILS_ENV RACK_ENV\n    Unsetting RAILS_ENV, RACK_ENV and restarting example... done, v10\n",
+        "helpLine": [
+          "config:remove",
+          "\u001b[2munset one or more config vars\u001b[22m"
+        ]
+      },
+      {
+        "id": "domains:add",
+        "_version": "12.1.1",
+        "description": "add domain to an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku domains:add HOSTNAME \u001b[34m[flags]\u001b[39m\n\n\u001b[1madd domain to an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --wait\n",
+        "helpLine": [
+          "domains:add HOSTNAME",
+          "\u001b[2madd domain to an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "domains:clear",
+        "_version": "12.1.1",
+        "description": "remove all domains from an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku domains:clear \u001b[34m[flags]\u001b[39m\n\n\u001b[1mremove all domains from an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "domains:clear",
+          "\u001b[2mremove all domains from an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "domains",
+        "_version": "12.1.1",
+        "description": "list domains for an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku domains \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist domains for an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --json               \u001b[2moutput in json format\u001b[22m\n\nExample:\n\n    $ heroku domains\n    === example Heroku Domain\n    example.herokuapp.com\n    \n    === example Custom Domains\n    Domain Name      DNS Record Type  DNS Target\n    ───────────      ───────────────  ──────────\n    www.example.com  CNAME            www.example.herokudns.com\n",
+        "helpLine": [
+          "domains",
+          "\u001b[2mlist domains for an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "domains:remove",
+        "_version": "12.1.1",
+        "description": "remove domain from an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku domains:remove HOSTNAME \u001b[34m[flags]\u001b[39m\n\n\u001b[1mremove domain from an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "domains:remove HOSTNAME",
+          "\u001b[2mremove domain from an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "domains:wait",
+        "_version": "12.1.1",
+        "description": "wait for domain to be active for an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku domains:wait [HOSTNAME] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mwait for domain to be active for an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "domains:wait [HOSTNAME]",
+          "\u001b[2mwait for domain to be active for an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "drains:add",
+        "_version": "12.1.1",
+        "description": "adds a log drain to an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku drains:add URL \u001b[34m[flags]\u001b[39m\n\n\u001b[1madds a log drain to an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "drains:add URL",
+          "\u001b[2madds a log drain to an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "drains",
+        "_version": "12.1.1",
+        "description": "display the log drains of an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku drains \u001b[34m[flags]\u001b[39m\n\n\u001b[1mdisplay the log drains of an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --json               \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "drains",
+          "\u001b[2mdisplay the log drains of an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "drains:remove",
+        "_version": "12.1.1",
+        "description": "removes a log drain from an app",
+        "usage": "drains:remove [URL|TOKEN]",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku drains:remove [URL|TOKEN] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mremoves a log drain from an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "drains:remove [URL|TOKEN]",
+          "\u001b[2mremoves a log drain from an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "features:disable",
+        "_version": "12.1.1",
+        "description": "disables an app feature",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku features:disable FEATURE \u001b[34m[flags]\u001b[39m\n\n\u001b[1mdisables an app feature\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "features:disable FEATURE",
+          "\u001b[2mdisables an app feature\u001b[22m"
+        ]
+      },
+      {
+        "id": "features:enable",
+        "_version": "12.1.1",
+        "description": "enables an app feature",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku features:enable FEATURE \u001b[34m[flags]\u001b[39m\n\n\u001b[1menables an app feature\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "features:enable FEATURE",
+          "\u001b[2menables an app feature\u001b[22m"
+        ]
+      },
+      {
+        "id": "features",
+        "_version": "12.1.1",
+        "description": "list available app features",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku features \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist available app features\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --json               \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "features",
+          "\u001b[2mlist available app features\u001b[22m"
+        ]
+      },
+      {
+        "id": "features:info",
+        "_version": "12.1.1",
+        "description": "display information about a feature",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku features:info FEATURE \u001b[34m[flags]\u001b[39m\n\n\u001b[1mdisplay information about a feature\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --json               \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "features:info FEATURE",
+          "\u001b[2mdisplay information about a feature\u001b[22m"
+        ]
+      },
+      {
+        "id": "keys:add",
+        "_version": "12.1.1",
+        "description": "add an SSH key for a user",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku keys:add [KEY] \u001b[34m[flags]\u001b[39m\n\n\u001b[1madd an SSH key for a user\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -y, --yes  \u001b[2mautomatically answer yes for all prompts\u001b[22m\n\nif no KEY is specified, will try to find ~/.ssh/id_rsa.pub\n\nExamples:\n\n    $ heroku keys:add\n    Could not find an existing public key.\n    Would you like to generate one? [Yn] y\n    Generating new SSH public key.\n    Uploading SSH public key /.ssh/id_rsa.pub... done\n\n    $ heroku keys:add /my/key.pub\n    Uploading SSH public key /my/key.pub... done\n",
+        "helpLine": [
+          "keys:add [KEY]",
+          "\u001b[2madd an SSH key for a user\u001b[22m"
+        ]
+      },
+      {
+        "id": "keys:clear",
+        "_version": "12.1.1",
+        "description": "remove all SSH keys for current user",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku keys:clear\n\n\u001b[1mremove all SSH keys for current user\u001b[22m\n",
+        "helpLine": [
+          "keys:clear",
+          "\u001b[2mremove all SSH keys for current user\u001b[22m"
+        ]
+      },
+      {
+        "id": "keys",
+        "_version": "12.1.1",
+        "description": "display your SSH keys",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku keys \u001b[34m[flags]\u001b[39m\n\n\u001b[1mdisplay your SSH keys\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -l, --long  \u001b[2mdisplay full SSH keys\u001b[22m\n --json      \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "keys",
+          "\u001b[2mdisplay your SSH keys\u001b[22m"
+        ]
+      },
+      {
+        "id": "keys:remove",
+        "_version": "12.1.1",
+        "description": "remove an SSH key from the user",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku keys:remove KEY\n\n\u001b[1mremove an SSH key from the user\u001b[22m\n\nExample:\n\n    $ heroku keys:remove email@example.com\n    Removing email@example.com SSH key... done\n",
+        "helpLine": [
+          "keys:remove KEY",
+          "\u001b[2mremove an SSH key from the user\u001b[22m"
+        ]
+      },
+      {
+        "id": "labs:enable",
+        "_version": "12.1.1",
+        "description": "enables an experimental feature",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku labs:enable FEATURE \u001b[34m[flags]\u001b[39m\n\n\u001b[1menables an experimental feature\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "labs:enable FEATURE",
+          "\u001b[2menables an experimental feature\u001b[22m"
+        ]
+      },
+      {
+        "id": "labs",
+        "_version": "12.1.1",
+        "description": "list experimental features",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku labs \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist experimental features\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --json               \u001b[2mdisplay as json\u001b[22m\n",
+        "helpLine": [
+          "labs",
+          "\u001b[2mlist experimental features\u001b[22m"
+        ]
+      },
+      {
+        "id": "labs:info",
+        "_version": "12.1.1",
+        "description": "show feature info",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku labs:info FEATURE \u001b[34m[flags]\u001b[39m\n\n\u001b[1mshow feature info\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --json               \u001b[2mdisplay as json\u001b[22m\n",
+        "helpLine": [
+          "labs:info FEATURE",
+          "\u001b[2mshow feature info\u001b[22m"
+        ]
+      },
+      {
+        "id": "maintenance",
+        "_version": "12.1.1",
+        "description": "display the current maintenance status of app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku maintenance \u001b[34m[flags]\u001b[39m\n\n\u001b[1mdisplay the current maintenance status of app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "maintenance",
+          "\u001b[2mdisplay the current maintenance status of app\u001b[22m"
+        ]
+      },
+      {
+        "id": "maintenance:off",
+        "_version": "12.1.1",
+        "description": "take the app out of maintenance mode",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku maintenance:off \u001b[34m[flags]\u001b[39m\n\n\u001b[1mtake the app out of maintenance mode\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "maintenance:off",
+          "\u001b[2mtake the app out of maintenance mode\u001b[22m"
+        ]
+      },
+      {
+        "id": "maintenance:on",
+        "_version": "12.1.1",
+        "description": "put the app into maintenance mode",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku maintenance:on \u001b[34m[flags]\u001b[39m\n\n\u001b[1mput the app into maintenance mode\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "maintenance:on",
+          "\u001b[2mput the app into maintenance mode\u001b[22m"
+        ]
+      },
+      {
+        "id": "notifications",
+        "_version": "12.1.1",
+        "description": "display notifications",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku notifications \u001b[34m[flags]\u001b[39m\n\n\u001b[1mdisplay notifications\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --all                \u001b[2mview all notifications (not just the ones for the current app)\u001b[22m\n --json               \u001b[2moutput in json format\u001b[22m\n --read               \u001b[2mshow notifications already read\u001b[22m\n",
+        "helpLine": [
+          "notifications",
+          "\u001b[2mdisplay notifications\u001b[22m"
+        ]
+      },
+      {
+        "id": "ps",
+        "_version": "12.1.1",
+        "description": "list dynos for an app",
+        "usage": "ps [TYPE [TYPE ...]]",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku ps [TYPE [TYPE ...]] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist dynos for an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --json               \u001b[2mdisplay as json\u001b[22m\n\nExamples:\n\n    $ heroku ps\n    === run: one-off dyno\n    run.1: up for 5m: bash\n    \n    === web: bundle exec thin start -p $PORT\n    web.1: created for 30s\n    \n    $ heroku ps run # specifying types\n    === run: one-off dyno\n    run.1: up for 5m: bash\n",
+        "helpLine": [
+          "ps [TYPE [TYPE ...]]",
+          "\u001b[2mlist dynos for an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "ps:restart",
+        "_version": "12.1.1",
+        "description": "restart app dynos",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku ps:restart [DYNO] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mrestart app dynos\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nif DYNO is not specified, restarts all dynos on app\n\nExamples:\n\n    $ heroku ps:restart web.1\n    Restarting web.1 dyno... done\n\n    $ heroku ps:restart web\n    Restarting web dynos... done\n\n    $ heroku ps:restart\n    Restarting dynos... done\n",
+        "helpLine": [
+          "ps:restart [DYNO]",
+          "\u001b[2mrestart app dynos\u001b[22m"
+        ]
+      },
+      {
+        "id": "dyno:restart",
+        "_version": "12.1.1",
+        "description": "restart app dynos",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku dyno:restart [DYNO] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mrestart app dynos\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nif DYNO is not specified, restarts all dynos on app\n\nExamples:\n\n    $ heroku ps:restart web.1\n    Restarting web.1 dyno... done\n\n    $ heroku ps:restart web\n    Restarting web dynos... done\n\n    $ heroku ps:restart\n    Restarting dynos... done\n",
+        "helpLine": [
+          "dyno:restart [DYNO]",
+          "\u001b[2mrestart app dynos\u001b[22m"
+        ]
+      },
+      {
+        "id": "restart",
+        "_version": "12.1.1",
+        "description": "restart app dynos",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku restart [DYNO] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mrestart app dynos\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nif DYNO is not specified, restarts all dynos on app\n\nExamples:\n\n    $ heroku ps:restart web.1\n    Restarting web.1 dyno... done\n\n    $ heroku ps:restart web\n    Restarting web dynos... done\n\n    $ heroku ps:restart\n    Restarting dynos... done\n",
+        "helpLine": [
+          "restart [DYNO]",
+          "\u001b[2mrestart app dynos\u001b[22m"
+        ]
+      },
+      {
+        "id": "ps:scale",
+        "_version": "12.1.1",
+        "description": "scale dyno quantity up or down",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku ps:scale \u001b[34m[flags]\u001b[39m\n\n\u001b[1mscale dyno quantity up or down\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nAppending a size (eg. web=2:Standard-2X) allows simultaneous scaling and resizing.\n\nOmitting any arguments will display the app's current dyno formation, in a\nformat suitable for passing back into ps:scale.\n\nExamples:\n\n    $ heroku ps:scale web=3:Standard-2X worker+1\n    Scaling dynos... done, now running web at 3:Standard-2X, worker at 1:Standard-1X.\n\n    $ heroku ps:scale\n    web=3:Standard-2X worker=1:Standard-1X\n",
+        "helpLine": [
+          "ps:scale",
+          "\u001b[2mscale dyno quantity up or down\u001b[22m"
+        ]
+      },
+      {
+        "id": "dyno:scale",
+        "_version": "12.1.1",
+        "description": "scale dyno quantity up or down",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku dyno:scale \u001b[34m[flags]\u001b[39m\n\n\u001b[1mscale dyno quantity up or down\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nAppending a size (eg. web=2:Standard-2X) allows simultaneous scaling and resizing.\n\nOmitting any arguments will display the app's current dyno formation, in a\nformat suitable for passing back into ps:scale.\n\nExamples:\n\n    $ heroku ps:scale web=3:Standard-2X worker+1\n    Scaling dynos... done, now running web at 3:Standard-2X, worker at 1:Standard-1X.\n\n    $ heroku ps:scale\n    web=3:Standard-2X worker=1:Standard-1X\n",
+        "helpLine": [
+          "dyno:scale",
+          "\u001b[2mscale dyno quantity up or down\u001b[22m"
+        ]
+      },
+      {
+        "id": "scale",
+        "_version": "12.1.1",
+        "description": "scale dyno quantity up or down",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku scale \u001b[34m[flags]\u001b[39m\n\n\u001b[1mscale dyno quantity up or down\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nAppending a size (eg. web=2:Standard-2X) allows simultaneous scaling and resizing.\n\nOmitting any arguments will display the app's current dyno formation, in a\nformat suitable for passing back into ps:scale.\n\nExamples:\n\n    $ heroku ps:scale web=3:Standard-2X worker+1\n    Scaling dynos... done, now running web at 3:Standard-2X, worker at 1:Standard-1X.\n\n    $ heroku ps:scale\n    web=3:Standard-2X worker=1:Standard-1X\n",
+        "helpLine": [
+          "scale",
+          "\u001b[2mscale dyno quantity up or down\u001b[22m"
+        ]
+      },
+      {
+        "id": "ps:stop",
+        "_version": "12.1.1",
+        "description": "stop app dyno",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku ps:stop DYNO \u001b[34m[flags]\u001b[39m\n\n\u001b[1mstop app dyno\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nstop app dyno or dyno type\n\nExamples:\n\n    $ heroku ps:stop run.1828\n    Stopping run.1828 dyno... done\n\n    $ heroku ps:stop run\n    Stopping run dynos... done\n",
+        "helpLine": [
+          "ps:stop DYNO",
+          "\u001b[2mstop app dyno\u001b[22m"
+        ]
+      },
+      {
+        "id": "dyno:stop",
+        "_version": "12.1.1",
+        "description": "stop app dyno",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku dyno:stop DYNO \u001b[34m[flags]\u001b[39m\n\n\u001b[1mstop app dyno\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nstop app dyno or dyno type\n\nExamples:\n\n    $ heroku ps:stop run.1828\n    Stopping run.1828 dyno... done\n\n    $ heroku ps:stop run\n    Stopping run dynos... done\n",
+        "helpLine": [
+          "dyno:stop DYNO",
+          "\u001b[2mstop app dyno\u001b[22m"
+        ]
+      },
+      {
+        "id": "ps:kill",
+        "_version": "12.1.1",
+        "description": "stop app dyno",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku ps:kill DYNO \u001b[34m[flags]\u001b[39m\n\n\u001b[1mstop app dyno\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nstop app dyno or dyno type\n\nExamples:\n\n    $ heroku ps:stop run.1828\n    Stopping run.1828 dyno... done\n\n    $ heroku ps:stop run\n    Stopping run dynos... done\n",
+        "helpLine": [
+          "ps:kill DYNO",
+          "\u001b[2mstop app dyno\u001b[22m"
+        ]
+      },
+      {
+        "id": "dyno:kill",
+        "_version": "12.1.1",
+        "description": "stop app dyno",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku dyno:kill DYNO \u001b[34m[flags]\u001b[39m\n\n\u001b[1mstop app dyno\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nstop app dyno or dyno type\n\nExamples:\n\n    $ heroku ps:stop run.1828\n    Stopping run.1828 dyno... done\n\n    $ heroku ps:stop run\n    Stopping run dynos... done\n",
+        "helpLine": [
+          "dyno:kill DYNO",
+          "\u001b[2mstop app dyno\u001b[22m"
+        ]
+      },
+      {
+        "id": "stop",
+        "_version": "12.1.1",
+        "description": "stop app dyno",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku stop DYNO \u001b[34m[flags]\u001b[39m\n\n\u001b[1mstop app dyno\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nstop app dyno or dyno type\n\nExamples:\n\n    $ heroku ps:stop run.1828\n    Stopping run.1828 dyno... done\n\n    $ heroku ps:stop run\n    Stopping run dynos... done\n",
+        "helpLine": [
+          "stop DYNO",
+          "\u001b[2mstop app dyno\u001b[22m"
+        ]
+      },
+      {
+        "id": "kill",
+        "_version": "12.1.1",
+        "description": "stop app dyno",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku kill DYNO \u001b[34m[flags]\u001b[39m\n\n\u001b[1mstop app dyno\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nstop app dyno or dyno type\n\nExamples:\n\n    $ heroku ps:stop run.1828\n    Stopping run.1828 dyno... done\n\n    $ heroku ps:stop run\n    Stopping run dynos... done\n",
+        "helpLine": [
+          "kill DYNO",
+          "\u001b[2mstop app dyno\u001b[22m"
+        ]
+      },
+      {
+        "id": "ps:type",
+        "_version": "12.1.1",
+        "description": "manage dyno sizes",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku ps:type \u001b[34m[flags]\u001b[39m\n\n\u001b[1mmanage dyno sizes\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nCalled with no arguments shows the current dyno size.\n\nCalled with one argument sets the size.\nWhere SIZE is one of free|hobby|standard-1x|standard-2x|performance\n\nCalled with 1..n TYPE=SIZE arguments sets the quantity per type.\n",
+        "helpLine": [
+          "ps:type",
+          "\u001b[2mmanage dyno sizes\u001b[22m"
+        ]
+      },
+      {
+        "id": "ps:resize",
+        "_version": "12.1.1",
+        "description": "manage dyno sizes",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku ps:resize \u001b[34m[flags]\u001b[39m\n\n\u001b[1mmanage dyno sizes\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nCalled with no arguments shows the current dyno size.\n\nCalled with one argument sets the size.\nWhere SIZE is one of free|hobby|standard-1x|standard-2x|performance\n\nCalled with 1..n TYPE=SIZE arguments sets the quantity per type.\n",
+        "helpLine": [
+          "ps:resize",
+          "\u001b[2mmanage dyno sizes\u001b[22m"
+        ]
+      },
+      {
+        "id": "resize",
+        "_version": "12.1.1",
+        "description": "manage dyno sizes",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku resize \u001b[34m[flags]\u001b[39m\n\n\u001b[1mmanage dyno sizes\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nCalled with no arguments shows the current dyno size.\n\nCalled with one argument sets the size.\nWhere SIZE is one of free|hobby|standard-1x|standard-2x|performance\n\nCalled with 1..n TYPE=SIZE arguments sets the quantity per type.\n",
+        "helpLine": [
+          "resize",
+          "\u001b[2mmanage dyno sizes\u001b[22m"
+        ]
+      },
+      {
+        "id": "dyno:type",
+        "_version": "12.1.1",
+        "description": "manage dyno sizes",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku dyno:type \u001b[34m[flags]\u001b[39m\n\n\u001b[1mmanage dyno sizes\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nCalled with no arguments shows the current dyno size.\n\nCalled with one argument sets the size.\nWhere SIZE is one of free|hobby|standard-1x|standard-2x|performance\n\nCalled with 1..n TYPE=SIZE arguments sets the quantity per type.\n",
+        "helpLine": [
+          "dyno:type",
+          "\u001b[2mmanage dyno sizes\u001b[22m"
+        ]
+      },
+      {
+        "id": "dyno:resize",
+        "_version": "12.1.1",
+        "description": "manage dyno sizes",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku dyno:resize \u001b[34m[flags]\u001b[39m\n\n\u001b[1mmanage dyno sizes\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nCalled with no arguments shows the current dyno size.\n\nCalled with one argument sets the size.\nWhere SIZE is one of free|hobby|standard-1x|standard-2x|performance\n\nCalled with 1..n TYPE=SIZE arguments sets the quantity per type.\n",
+        "helpLine": [
+          "dyno:resize",
+          "\u001b[2mmanage dyno sizes\u001b[22m"
+        ]
+      },
+      {
+        "id": "releases",
+        "_version": "12.1.1",
+        "description": "display the releases for an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku releases \u001b[34m[flags]\u001b[39m\n\n\u001b[1mdisplay the releases for an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -n, --num NUM        \u001b[2mnumber of releases to show\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --json               \u001b[2moutput releases in json format\u001b[22m\n\nExample:\n\n    $ heroku releases\n    === example Releases\n    v1 Config add FOO_BAR email@example.com 2015/11/17 17:37:41 (~ 1h ago)\n    v2 Config add BAR_BAZ email@example.com 2015/11/17 17:37:41 (~ 1h ago)\n    v3 Config add BAZ_QUX email@example.com 2015/11/17 17:37:41 (~ 1h ago)\n",
+        "helpLine": [
+          "releases",
+          "\u001b[2mdisplay the releases for an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "releases:info",
+        "_version": "12.1.1",
+        "description": "view detailed information for a release",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku releases:info [RELEASE] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mview detailed information for a release\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n -s, --shell          \u001b[2moutput in shell format\u001b[22m\n --json               \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "releases:info [RELEASE]",
+          "\u001b[2mview detailed information for a release\u001b[22m"
+        ]
+      },
+      {
+        "id": "releases:output",
+        "_version": "12.1.1",
+        "description": "View the release command output",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku releases:output [RELEASE] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mView the release command output\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "releases:output [RELEASE]",
+          "\u001b[2mView the release command output\u001b[22m"
+        ]
+      },
+      {
+        "id": "releases:rollback",
+        "_version": "12.1.1",
+        "description": "rollback to a previous release",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku releases:rollback [RELEASE] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mrollback to a previous release\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nIf RELEASE is not specified, it will rollback one release\n",
+        "helpLine": [
+          "releases:rollback [RELEASE]",
+          "\u001b[2mrollback to a previous release\u001b[22m"
+        ]
+      },
+      {
+        "id": "rollback",
+        "_version": "12.1.1",
+        "description": "rollback to a previous release",
+        "plugin": {
+          "name": "@heroku-cli/plugin-apps",
+          "version": "2.4.38"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku rollback [RELEASE] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mrollback to a previous release\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nIf RELEASE is not specified, it will rollback one release\n",
+        "helpLine": [
+          "rollback [RELEASE]",
+          "\u001b[2mrollback to a previous release\u001b[22m"
+        ]
+      }
+    ],
+    "topics": [
+      {
+        "name": "apps",
+        "description": "manage apps"
+      },
+      {
+        "name": "auth",
+        "description": "heroku authentication"
+      },
+      {
+        "name": "buildpacks",
+        "description": "manage the buildpacks for an app"
+      },
+      {
+        "name": "config",
+        "description": "manage app config vars"
+      },
+      {
+        "name": "domains",
+        "description": "manage the domains for an app"
+      },
+      {
+        "name": "drains",
+        "description": "list all log drains"
+      },
+      {
+        "name": "dyno",
+        "hidden": true
+      },
+      {
+        "name": "features",
+        "description": "manage optional features"
+      },
+      {
+        "name": "keys",
+        "description": "manage ssh keys"
+      },
+      {
+        "name": "labs",
+        "description": "experimental features"
+      },
+      {
+        "name": "maintenance",
+        "description": "manage maintenance mode for an app"
+      },
+      {
+        "name": "notifications",
+        "description": "display notifications"
+      },
+      {
+        "name": "ps",
+        "description": "manage dynos (dynos, workers)"
+      },
+      {
+        "name": "releases",
+        "description": "manage app releases"
+      }
+    ]
+  }
+}

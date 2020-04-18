@@ -1,0 +1,157 @@
+{
+  "invalidate": "6.99.0-ec9edad/1.3.2",
+  "manifest": {
+    "commands": [
+      {
+        "id": "redis",
+        "_version": "12.1.1",
+        "description": "gets information about redis",
+        "plugin": {
+          "name": "@heroku-cli/plugin-redis",
+          "version": "1.3.2"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku redis [DATABASE] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mgets information about redis\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "redis [DATABASE]",
+          "\u001b[2mgets information about redis\u001b[22m"
+        ]
+      },
+      {
+        "id": "redis:cli",
+        "_version": "12.1.1",
+        "description": "opens a redis prompt",
+        "plugin": {
+          "name": "@heroku-cli/plugin-redis",
+          "version": "1.3.2"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku redis:cli [DATABASE] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mopens a redis prompt\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP          \u001b[2mapp to run command against\u001b[22m\n -c, --confirm CONFIRM\n -r, --remote REMOTE    \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "redis:cli [DATABASE]",
+          "\u001b[2mopens a redis prompt\u001b[22m"
+        ]
+      },
+      {
+        "id": "redis:info",
+        "_version": "12.1.1",
+        "description": "gets information about redis",
+        "plugin": {
+          "name": "@heroku-cli/plugin-redis",
+          "version": "1.3.2"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku redis:info [DATABASE] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mgets information about redis\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "redis:info [DATABASE]",
+          "\u001b[2mgets information about redis\u001b[22m"
+        ]
+      },
+      {
+        "id": "redis:wait",
+        "_version": "12.1.1",
+        "description": "wait for Redis instance to be available",
+        "plugin": {
+          "name": "@heroku-cli/plugin-redis",
+          "version": "1.3.2"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku redis:wait [DATABASE] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mwait for Redis instance to be available\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "redis:wait [DATABASE]",
+          "\u001b[2mwait for Redis instance to be available\u001b[22m"
+        ]
+      },
+      {
+        "id": "redis:credentials",
+        "_version": "12.1.1",
+        "description": "display credentials information",
+        "plugin": {
+          "name": "@heroku-cli/plugin-redis",
+          "version": "1.3.2"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku redis:credentials [DATABASE] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mdisplay credentials information\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --reset              \u001b[2mreset credentials\u001b[22m\n",
+        "helpLine": [
+          "redis:credentials [DATABASE]",
+          "\u001b[2mdisplay credentials information\u001b[22m"
+        ]
+      },
+      {
+        "id": "redis:promote",
+        "_version": "12.1.1",
+        "description": "sets DATABASE as your REDIS_URL",
+        "plugin": {
+          "name": "@heroku-cli/plugin-redis",
+          "version": "1.3.2"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku redis:promote DATABASE \u001b[34m[flags]\u001b[39m\n\n\u001b[1msets DATABASE as your REDIS_URL\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "redis:promote DATABASE",
+          "\u001b[2msets DATABASE as your REDIS_URL\u001b[22m"
+        ]
+      },
+      {
+        "id": "redis:timeout",
+        "_version": "12.1.1",
+        "description": "set the number of seconds to wait before killing idle connections",
+        "plugin": {
+          "name": "@heroku-cli/plugin-redis",
+          "version": "1.3.2"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku redis:timeout [DATABASE] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mset the number of seconds to wait before killing idle connections\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP          \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE    \u001b[2mgit remote of app to use\u001b[22m\n -s, --seconds SECONDS  \u001b[2mset timeout value\u001b[22m\n\nSets the number of seconds to wait before killing idle connections. A value of zero means that connections will not be closed.\n",
+        "helpLine": [
+          "redis:timeout [DATABASE]",
+          "\u001b[2mset the number of seconds to wait before killing idle connections\u001b[22m"
+        ]
+      },
+      {
+        "id": "redis:maxmemory",
+        "_version": "12.1.1",
+        "description": "set the key eviction policy",
+        "plugin": {
+          "name": "@heroku-cli/plugin-redis",
+          "version": "1.3.2"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku redis:maxmemory [DATABASE] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mset the key eviction policy\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -p, --policy POLICY  \u001b[2mset policy name\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nSet the key eviction policy when instance reaches its storage limit. Available policies for key eviction include:\n\n    noeviction      # returns errors when memory limit is reached\n    allkeys-lru     # removes less recently used keys first\n    volatile-lru    # removes less recently used keys first that have an expiry set\n    allkeys-random  # evicts random keys\n    volatile-random # evicts random keys but only those that have an expiry set\n    volatile-ttl    # only evicts keys with an expiry set and a short TTL\n",
+        "helpLine": [
+          "redis:maxmemory [DATABASE]",
+          "\u001b[2mset the key eviction policy\u001b[22m"
+        ]
+      },
+      {
+        "id": "redis:maintenance",
+        "_version": "12.1.1",
+        "description": "manage maintenance windows",
+        "plugin": {
+          "name": "@heroku-cli/plugin-redis",
+          "version": "1.3.2"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku redis:maintenance [DATABASE] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mmanage maintenance windows\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -f, --force          \u001b[2mstart maintenance without entering application maintenance mode\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n -w, --window WINDOW  \u001b[2mset weekly UTC maintenance window\u001b[22m\n --run                \u001b[2mstart maintenance\u001b[22m\n\nSet or change the maintenance window for your Redis instance\n",
+        "helpLine": [
+          "redis:maintenance [DATABASE]",
+          "\u001b[2mmanage maintenance windows\u001b[22m"
+        ]
+      }
+    ],
+    "topics": [
+      {
+        "name": "redis",
+        "description": "manage heroku redis instances"
+      }
+    ]
+  }
+}

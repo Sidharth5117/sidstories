@@ -1,0 +1,369 @@
+{
+  "invalidate": "6.99.0-ec9edad/1.1.49",
+  "manifest": {
+    "commands": [
+      {
+        "id": "certs",
+        "_version": "12.1.1",
+        "description": "List SSL certificates for an app.",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku certs \u001b[34m[flags]\u001b[39m\n\n\u001b[1mList SSL certificates for an app.\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "certs",
+          "\u001b[2mList SSL certificates for an app.\u001b[22m"
+        ]
+      },
+      {
+        "id": "certs:add",
+        "_version": "12.1.1",
+        "description": "add an SSL certificate to an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku certs:add CRT KEY \u001b[34m[flags]\u001b[39m\n\n\u001b[1madd an SSL certificate to an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --bypass             \u001b[2mbypass the trust chain completion step\u001b[22m\n --domains DOMAINS    \u001b[2mdomains to create after certificate upload\u001b[22m\n --type TYPE          \u001b[2mtype to create, either 'sni' or 'endpoint'\u001b[22m\n\nNote: certificates with PEM encoding are also valid\n\nExample:\n\n    $ heroku certs:add example.com.crt example.com.key\n\nExample (Certificate Intermediary):\n\n     $ heroku certs:add intermediary.crt example.com.crt example.com.key\n",
+        "helpLine": [
+          "certs:add CRT KEY",
+          "\u001b[2madd an SSL certificate to an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "certs:chain",
+        "_version": "12.1.1",
+        "description": "print an ordered & complete chain for a certificate",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku certs:chain \u001b[34m[flags]\u001b[39m\n\n\u001b[1mprint an ordered & complete chain for a certificate\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "certs:chain",
+          "\u001b[2mprint an ordered & complete chain for a certificate\u001b[22m"
+        ]
+      },
+      {
+        "id": "certs:generate",
+        "_version": "12.1.1",
+        "description": "generate a key and a CSR or self-signed certificate",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku certs:generate DOMAIN \u001b[34m[flags]\u001b[39m\n\n\u001b[1mgenerate a key and a CSR or self-signed certificate\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --area AREA          \u001b[2msub-country area (state, province, etc.) of owner\u001b[22m\n --city CITY          \u001b[2mcity of owner\u001b[22m\n --country COUNTRY    \u001b[2mcountry of owner, as a two-letter ISO country code\u001b[22m\n --keysize KEYSIZE    \u001b[2mRSA key size in bits (default: 2048)\u001b[22m\n --now                \u001b[2mdo not prompt for any owner information\u001b[22m\n --owner OWNER        \u001b[2mname of organization certificate belongs to\u001b[22m\n --selfsigned         \u001b[2mgenerate a self-signed certificate instead of a CSR\u001b[22m\n --subject SUBJECT    \u001b[2mspecify entire certificate subject\u001b[22m\n\nGenerate a key and certificate signing request (or self-signed certificate)\nfor an app. Prompts for information to put in the certificate unless --now\nis used, or at least one of the --subject, --owner, --country, --area, or\n--city options is specified.\n\nExample:\n\n    $ heroku certs:generate example.com\n",
+        "helpLine": [
+          "certs:generate DOMAIN",
+          "\u001b[2mgenerate a key and a CSR or self-signed certificate\u001b[22m"
+        ]
+      },
+      {
+        "id": "certs:info",
+        "_version": "12.1.1",
+        "description": "show certificate information for an SSL certificate",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku certs:info \u001b[34m[flags]\u001b[39m\n\n\u001b[1mshow certificate information for an SSL certificate\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --endpoint ENDPOINT  \u001b[2mendpoint to check info on\u001b[22m\n --name NAME          \u001b[2mname to check info on\u001b[22m\n",
+        "helpLine": [
+          "certs:info",
+          "\u001b[2mshow certificate information for an SSL certificate\u001b[22m"
+        ]
+      },
+      {
+        "id": "certs:key",
+        "_version": "12.1.1",
+        "description": "print the correct key for the given certificate",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku certs:key \u001b[34m[flags]\u001b[39m\n\n\u001b[1mprint the correct key for the given certificate\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nYou must pass one single certificate, and one or more keys.\nThe first key that signs the certificate will be printed back.\n\nExample:\n\n    $ heroku certs:key example.com.crt example.com.key\n",
+        "helpLine": [
+          "certs:key",
+          "\u001b[2mprint the correct key for the given certificate\u001b[22m"
+        ]
+      },
+      {
+        "id": "certs:remove",
+        "_version": "12.1.1",
+        "description": "remove an SSL certificate from an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku certs:remove \u001b[34m[flags]\u001b[39m\n\n\u001b[1mremove an SSL certificate from an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --endpoint ENDPOINT  \u001b[2mendpoint to remove\u001b[22m\n --name NAME          \u001b[2mname to remove\u001b[22m\n",
+        "helpLine": [
+          "certs:remove",
+          "\u001b[2mremove an SSL certificate from an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "certs:rollback",
+        "_version": "12.1.1",
+        "description": "rollback an SSL certificate from an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku certs:rollback \u001b[34m[flags]\u001b[39m\n\n\u001b[1mrollback an SSL certificate from an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --endpoint ENDPOINT  \u001b[2mendpoint to rollback\u001b[22m\n --name NAME          \u001b[2mname to rollback\u001b[22m\n",
+        "helpLine": [
+          "certs:rollback",
+          "\u001b[2mrollback an SSL certificate from an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "certs:update",
+        "_version": "12.1.1",
+        "description": "update an SSL certificate on an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku certs:update CRT KEY \u001b[34m[flags]\u001b[39m\n\n\u001b[1mupdate an SSL certificate on an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --bypass             \u001b[2mbypass the trust chain completion step\u001b[22m\n --endpoint ENDPOINT  \u001b[2mendpoint to update\u001b[22m\n --name NAME          \u001b[2mname to update\u001b[22m\n\nNote: certificates with PEM encoding are also valid\n\nExample:\n\n    $ heroku certs:update example.com.crt example.com.key\n\nExample (Certificate Intermediary) :\n\n    $ heroku certs:update intermediary.crt example.com.crt example.com.key\n",
+        "helpLine": [
+          "certs:update CRT KEY",
+          "\u001b[2mupdate an SSL certificate on an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "_certs",
+        "_version": "12.1.1",
+        "description": "List SSL certificates for an app.",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku _certs \u001b[34m[flags]\u001b[39m\n\n\u001b[1mList SSL certificates for an app.\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "_certs",
+          "\u001b[2mList SSL certificates for an app.\u001b[22m"
+        ]
+      },
+      {
+        "id": "_certs:add",
+        "_version": "12.1.1",
+        "description": "add an SSL certificate to an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku _certs:add CRT KEY \u001b[34m[flags]\u001b[39m\n\n\u001b[1madd an SSL certificate to an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --bypass             \u001b[2mbypass the trust chain completion step\u001b[22m\n --domains DOMAINS    \u001b[2mdomains to create after certificate upload\u001b[22m\n --type TYPE          \u001b[2mtype to create, either 'sni' or 'endpoint'\u001b[22m\n\nNote: certificates with PEM encoding are also valid\n\nExample:\n\n    $ heroku certs:add example.com.crt example.com.key\n\nExample (Certificate Intermediary):\n\n     $ heroku certs:add intermediary.crt example.com.crt example.com.key\n",
+        "helpLine": [
+          "_certs:add CRT KEY",
+          "\u001b[2madd an SSL certificate to an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "_certs:chain",
+        "_version": "12.1.1",
+        "description": "print an ordered & complete chain for a certificate",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku _certs:chain \u001b[34m[flags]\u001b[39m\n\n\u001b[1mprint an ordered & complete chain for a certificate\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "_certs:chain",
+          "\u001b[2mprint an ordered & complete chain for a certificate\u001b[22m"
+        ]
+      },
+      {
+        "id": "_certs:generate",
+        "_version": "12.1.1",
+        "description": "generate a key and a CSR or self-signed certificate",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku _certs:generate DOMAIN \u001b[34m[flags]\u001b[39m\n\n\u001b[1mgenerate a key and a CSR or self-signed certificate\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --area AREA          \u001b[2msub-country area (state, province, etc.) of owner\u001b[22m\n --city CITY          \u001b[2mcity of owner\u001b[22m\n --country COUNTRY    \u001b[2mcountry of owner, as a two-letter ISO country code\u001b[22m\n --keysize KEYSIZE    \u001b[2mRSA key size in bits (default: 2048)\u001b[22m\n --now                \u001b[2mdo not prompt for any owner information\u001b[22m\n --owner OWNER        \u001b[2mname of organization certificate belongs to\u001b[22m\n --selfsigned         \u001b[2mgenerate a self-signed certificate instead of a CSR\u001b[22m\n --subject SUBJECT    \u001b[2mspecify entire certificate subject\u001b[22m\n\nGenerate a key and certificate signing request (or self-signed certificate)\nfor an app. Prompts for information to put in the certificate unless --now\nis used, or at least one of the --subject, --owner, --country, --area, or\n--city options is specified.\n\nExample:\n\n    $ heroku certs:generate example.com\n",
+        "helpLine": [
+          "_certs:generate DOMAIN",
+          "\u001b[2mgenerate a key and a CSR or self-signed certificate\u001b[22m"
+        ]
+      },
+      {
+        "id": "_certs:info",
+        "_version": "12.1.1",
+        "description": "show certificate information for an SSL certificate",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku _certs:info \u001b[34m[flags]\u001b[39m\n\n\u001b[1mshow certificate information for an SSL certificate\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --endpoint ENDPOINT  \u001b[2mendpoint to check info on\u001b[22m\n --name NAME          \u001b[2mname to check info on\u001b[22m\n",
+        "helpLine": [
+          "_certs:info",
+          "\u001b[2mshow certificate information for an SSL certificate\u001b[22m"
+        ]
+      },
+      {
+        "id": "_certs:key",
+        "_version": "12.1.1",
+        "description": "print the correct key for the given certificate",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku _certs:key \u001b[34m[flags]\u001b[39m\n\n\u001b[1mprint the correct key for the given certificate\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nYou must pass one single certificate, and one or more keys.\nThe first key that signs the certificate will be printed back.\n\nExample:\n\n    $ heroku certs:key example.com.crt example.com.key\n",
+        "helpLine": [
+          "_certs:key",
+          "\u001b[2mprint the correct key for the given certificate\u001b[22m"
+        ]
+      },
+      {
+        "id": "_certs:remove",
+        "_version": "12.1.1",
+        "description": "remove an SSL certificate from an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku _certs:remove \u001b[34m[flags]\u001b[39m\n\n\u001b[1mremove an SSL certificate from an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --endpoint ENDPOINT  \u001b[2mendpoint to remove\u001b[22m\n --name NAME          \u001b[2mname to remove\u001b[22m\n",
+        "helpLine": [
+          "_certs:remove",
+          "\u001b[2mremove an SSL certificate from an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "_certs:rollback",
+        "_version": "12.1.1",
+        "description": "rollback an SSL certificate from an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku _certs:rollback \u001b[34m[flags]\u001b[39m\n\n\u001b[1mrollback an SSL certificate from an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --endpoint ENDPOINT  \u001b[2mendpoint to rollback\u001b[22m\n --name NAME          \u001b[2mname to rollback\u001b[22m\n",
+        "helpLine": [
+          "_certs:rollback",
+          "\u001b[2mrollback an SSL certificate from an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "_certs:update",
+        "_version": "12.1.1",
+        "description": "update an SSL certificate on an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku _certs:update CRT KEY \u001b[34m[flags]\u001b[39m\n\n\u001b[1mupdate an SSL certificate on an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --bypass             \u001b[2mbypass the trust chain completion step\u001b[22m\n --endpoint ENDPOINT  \u001b[2mendpoint to update\u001b[22m\n --name NAME          \u001b[2mname to update\u001b[22m\n\nNote: certificates with PEM encoding are also valid\n\nExample:\n\n    $ heroku certs:update example.com.crt example.com.key\n\nExample (Certificate Intermediary) :\n\n    $ heroku certs:update intermediary.crt example.com.crt example.com.key\n",
+        "helpLine": [
+          "_certs:update CRT KEY",
+          "\u001b[2mupdate an SSL certificate on an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "certs:auto",
+        "_version": "12.1.1",
+        "description": "Show ACM status for an app.",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku certs:auto \u001b[34m[flags]\u001b[39m\n\n\u001b[1mShow ACM status for an app.\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "certs:auto",
+          "\u001b[2mShow ACM status for an app.\u001b[22m"
+        ]
+      },
+      {
+        "id": "certs:auto:enable",
+        "_version": "12.1.1",
+        "description": "Enable ACM status for an app.",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku certs:auto:enable \u001b[34m[flags]\u001b[39m\n\n\u001b[1mEnable ACM status for an app.\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "certs:auto:enable",
+          "\u001b[2mEnable ACM status for an app.\u001b[22m"
+        ]
+      },
+      {
+        "id": "certs:auto:disable",
+        "_version": "12.1.1",
+        "description": "Disable Automatic Certificate Management for an app.",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku certs:auto:disable \u001b[34m[flags]\u001b[39m\n\n\u001b[1mDisable Automatic Certificate Management for an app.\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "certs:auto:disable",
+          "\u001b[2mDisable Automatic Certificate Management for an app.\u001b[22m"
+        ]
+      },
+      {
+        "id": "certs:auto:refresh",
+        "_version": "12.1.1",
+        "description": "Refresh ACM for an app.",
+        "plugin": {
+          "name": "@heroku-cli/plugin-certs",
+          "version": "1.1.49"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku certs:auto:refresh \u001b[34m[flags]\u001b[39m\n\n\u001b[1mRefresh ACM for an app.\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "certs:auto:refresh",
+          "\u001b[2mRefresh ACM for an app.\u001b[22m"
+        ]
+      }
+    ],
+    "topics": [
+      {
+        "name": "certs",
+        "description": "a topic for the ssl plugin"
+      },
+      {
+        "name": "_certs",
+        "hidden": true
+      }
+    ]
+  }
+}

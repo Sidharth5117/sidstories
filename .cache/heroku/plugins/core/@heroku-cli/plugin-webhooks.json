@@ -1,0 +1,157 @@
+{
+  "invalidate": "6.99.0-ec9edad/1.1.2",
+  "manifest": {
+    "commands": [
+      {
+        "id": "webhooks:add",
+        "_version": "12.1.1",
+        "description": "add a webhook to an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-webhooks",
+          "version": "1.1.2"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku webhooks:add \u001b[34m[flags]\u001b[39m\n\n\u001b[1madd a webhook to an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP                      \u001b[2mapp to run command against\u001b[22m\n -i, --include INCLUDE              \u001b[2mcomma delimited event types your server will receive \u001b[22m\n -l, --level LEVEL                  \u001b[2mnotify does not retry, sync will retry until successful or timeout\u001b[22m\n -r, --remote REMOTE                \u001b[2mgit remote of app to use\u001b[22m\n -s, --secret SECRET                \u001b[2mvalue to sign delivery with in Heroku-Webhook-Hmac-SHA256 header\u001b[22m\n -t, --authorization AUTHORIZATION  \u001b[2mauthoriation header to send with webhooks\u001b[22m\n -u, --url URL                      \u001b[2mURL for receiver\u001b[22m\n\nExample:\n\n $ heroku webhooks:add -i api:dyno -l notify -u https://example.com/hooks\n",
+        "helpLine": [
+          "webhooks:add",
+          "\u001b[2madd a webhook to an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "webhooks",
+        "_version": "12.1.1",
+        "description": "list webhooks on an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-webhooks",
+          "version": "1.1.2"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku webhooks \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist webhooks on an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExample:\n\n $ heroku webhooks\n",
+        "helpLine": [
+          "webhooks",
+          "\u001b[2mlist webhooks on an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "webhooks:info",
+        "_version": "12.1.1",
+        "description": "info for a webhook on an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-webhooks",
+          "version": "1.1.2"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku webhooks:info ID \u001b[34m[flags]\u001b[39m\n\n\u001b[1minfo for a webhook on an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExample:\n\n $ heroku webhooks:info 99999999-9999-9999-9999-999999999999\n",
+        "helpLine": [
+          "webhooks:info ID",
+          "\u001b[2minfo for a webhook on an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "webhooks:remove",
+        "_version": "12.1.1",
+        "description": "removes a webhook from an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-webhooks",
+          "version": "1.1.2"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku webhooks:remove ID \u001b[34m[flags]\u001b[39m\n\n\u001b[1mremoves a webhook from an app\u001b[22m\n\nID  \u001b[2mid of webhook to remove\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExample:\n\n $ heroku webhooks:remove 99999999-9999-9999-9999-999999999999\n",
+        "helpLine": [
+          "webhooks:remove ID",
+          "\u001b[2mremoves a webhook from an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "webhooks:update",
+        "_version": "12.1.1",
+        "description": "updates a webhook in an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-webhooks",
+          "version": "1.1.2"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku webhooks:update ID \u001b[34m[flags]\u001b[39m\n\n\u001b[1mupdates a webhook in an app\u001b[22m\n\nID  \u001b[2mid of webhook to remove\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP          \u001b[2mapp to run command against\u001b[22m\n -i, --include INCLUDE  \u001b[2mcomma delimited webhook types\u001b[22m\n -l, --level LEVEL      \u001b[2mwebhook notification level\u001b[22m\n -r, --remote REMOTE    \u001b[2mgit remote of app to use\u001b[22m\n -s, --secret SECRET    \u001b[2mcomma delimited hook types\u001b[22m\n -u, --url URL          \u001b[2murl to send webhook to\u001b[22m\n\nExample:\n\n $ heroku webhooks:update 99999999-9999-9999-9999-999999999999 -i dyno -l notify -s 09928c40bf1b191b645174a19f7053d16a180da37332e719ef0998f4c0a2 -u https://example.com/hooks\n",
+        "helpLine": [
+          "webhooks:update ID",
+          "\u001b[2mupdates a webhook in an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "webhooks:events",
+        "_version": "12.1.1",
+        "description": "list webhook events on an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-webhooks",
+          "version": "1.1.2"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku webhooks:events \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist webhook events on an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExample:\n\n $ heroku webhooks:events\n",
+        "helpLine": [
+          "webhooks:events",
+          "\u001b[2mlist webhook events on an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "webhooks:events:info",
+        "_version": "12.1.1",
+        "description": "info for a webhook event on an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-webhooks",
+          "version": "1.1.2"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku webhooks:events:info ID \u001b[34m[flags]\u001b[39m\n\n\u001b[1minfo for a webhook event on an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExample:\n\n $ heroku webhooks:events:info 99999999-9999-9999-9999-999999999999\n",
+        "helpLine": [
+          "webhooks:events:info ID",
+          "\u001b[2minfo for a webhook event on an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "webhooks:deliveries",
+        "_version": "12.1.1",
+        "description": "list webhook deliveries on an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-webhooks",
+          "version": "1.1.2"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku webhooks:deliveries \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist webhook deliveries on an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExample:\n\n $ heroku webhooks:deliveries\n",
+        "helpLine": [
+          "webhooks:deliveries",
+          "\u001b[2mlist webhook deliveries on an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "webhooks:deliveries:info",
+        "_version": "12.1.1",
+        "description": "info for a webhook event on an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-webhooks",
+          "version": "1.1.2"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku webhooks:deliveries:info ID \u001b[34m[flags]\u001b[39m\n\n\u001b[1minfo for a webhook event on an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExample:\n\n $ heroku webhooks:deliveries:info 99999999-9999-9999-9999-999999999999\n",
+        "helpLine": [
+          "webhooks:deliveries:info ID",
+          "\u001b[2minfo for a webhook event on an app\u001b[22m"
+        ]
+      }
+    ],
+    "topics": [
+      {
+        "name": "webhooks",
+        "description": "setup HTTP notifications of app activity"
+      }
+    ]
+  }
+}

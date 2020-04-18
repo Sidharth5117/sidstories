@@ -1,0 +1,275 @@
+{
+  "invalidate": "6.99.0-ec9edad/2.5.7",
+  "manifest": {
+    "commands": [
+      {
+        "id": "pipelines:add",
+        "_version": "12.1.1",
+        "description": "add this app to a pipeline",
+        "plugin": {
+          "name": "@heroku-cli/plugin-pipelines",
+          "version": "2.5.7"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku pipelines:add PIPELINE \u001b[34m[flags]\u001b[39m\n\n\u001b[1madd this app to a pipeline\u001b[22m\n\nPIPELINE  \u001b[2mname of pipeline\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n -s, --stage STAGE    \u001b[2mstage of first app in pipeline\u001b[22m\n\nThe app and pipeline names must be specified.\nThe stage of the app will be guessed based on its name if not specified.\n\nExample:\n\n    $ heroku pipelines:add example -a example-admin -s production\n    Adding example-admin to example pipeline as production... done\n",
+        "helpLine": [
+          "pipelines:add PIPELINE",
+          "\u001b[2madd this app to a pipeline\u001b[22m"
+        ]
+      },
+      {
+        "id": "pipelines:connect",
+        "_version": "12.1.1",
+        "description": "connect a github repo to an existing pipeline",
+        "plugin": {
+          "name": "@heroku-cli/plugin-pipelines",
+          "version": "2.5.7"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku pipelines:connect [NAME] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mconnect a github repo to an existing pipeline\u001b[22m\n\nNAME  \u001b[2mname of pipeline\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -r, --repo REPO  \u001b[2mthe GitHub repository to connect\u001b[22m\n\nExample:\n\n    $ heroku pipelines:connect example -r githuborg/reponame\n    Configuring pipeline... done\n",
+        "helpLine": [
+          "pipelines:connect [NAME]",
+          "\u001b[2mconnect a github repo to an existing pipeline\u001b[22m"
+        ]
+      },
+      {
+        "id": "pipelines:create",
+        "_version": "12.1.1",
+        "description": "create a new pipeline",
+        "plugin": {
+          "name": "@heroku-cli/plugin-pipelines",
+          "version": "2.5.7"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku pipelines:create [NAME] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mcreate a new pipeline\u001b[22m\n\nNAME  \u001b[2mname of pipeline, defaults to basename of app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -o, --org ORG        \u001b[2mthe team which will own the apps (can also use --org)\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n -s, --stage STAGE    \u001b[2mstage of first app in pipeline\u001b[22m\n -t, --team TEAM      \u001b[2mthe team which will own the apps (can also use --org)\u001b[22m\n\nAn existing app must be specified as the first app in the pipeline.\nThe pipeline name will be inferred from the app name if not specified.\nThe stage of the app will be guessed based on its name if not specified.\nThe pipeline owner will be the user creating the pipeline if not specified with -t for teams or -o for orgs.\n\nExample:\n\n    $ heroku pipelines:create -a example-staging\n    ? Pipeline name: example\n    ? Stage of example-staging: staging\n    Creating example pipeline... done\n    Adding example-staging to example pipeline as staging... done\n",
+        "helpLine": [
+          "pipelines:create [NAME]",
+          "\u001b[2mcreate a new pipeline\u001b[22m"
+        ]
+      },
+      {
+        "id": "pipelines:destroy",
+        "_version": "12.1.1",
+        "description": "destroy a pipeline",
+        "plugin": {
+          "name": "@heroku-cli/plugin-pipelines",
+          "version": "2.5.7"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku pipelines:destroy PIPELINE\n\n\u001b[1mdestroy a pipeline\u001b[22m\n\nPIPELINE  \u001b[2mname of pipeline\u001b[22m\n\nExample:\n\n    $ heroku pipelines:destroy example\n    Destroying example pipeline... done\n",
+        "helpLine": [
+          "pipelines:destroy PIPELINE",
+          "\u001b[2mdestroy a pipeline\u001b[22m"
+        ]
+      },
+      {
+        "id": "pipelines:diff",
+        "_version": "12.1.1",
+        "description": "compares the latest release of this app to its downstream app(s)",
+        "plugin": {
+          "name": "@heroku-cli/plugin-pipelines",
+          "version": "2.5.7"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku pipelines:diff \u001b[34m[flags]\u001b[39m\n\n\u001b[1mcompares the latest release of this app to its downstream app(s)\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExample:\n\n    $ heroku pipelines:diff --app murmuring-headland-14719\n",
+        "helpLine": [
+          "pipelines:diff",
+          "\u001b[2mcompares the latest release of this app to its downstream app(s)\u001b[22m"
+        ]
+      },
+      {
+        "id": "pipelines",
+        "_version": "12.1.1",
+        "description": "list pipelines you have access to",
+        "plugin": {
+          "name": "@heroku-cli/plugin-pipelines",
+          "version": "2.5.7"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku pipelines \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist pipelines you have access to\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n --json  \u001b[2moutput in json format\u001b[22m\n\nExample:\n\n    $ heroku pipelines\n    === My Pipelines\n    example\n    sushi\n",
+        "helpLine": [
+          "pipelines",
+          "\u001b[2mlist pipelines you have access to\u001b[22m"
+        ]
+      },
+      {
+        "id": "pipelines:list",
+        "_version": "12.1.1",
+        "description": "list pipelines you have access to",
+        "plugin": {
+          "name": "@heroku-cli/plugin-pipelines",
+          "version": "2.5.7"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku pipelines:list \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist pipelines you have access to\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n --json  \u001b[2moutput in json format\u001b[22m\n\nExample:\n\n    $ heroku pipelines\n    === My Pipelines\n    example\n    sushi\n",
+        "helpLine": [
+          "pipelines:list",
+          "\u001b[2mlist pipelines you have access to\u001b[22m"
+        ]
+      },
+      {
+        "id": "pipelines:info",
+        "_version": "12.1.1",
+        "description": "show list of apps in a pipeline",
+        "plugin": {
+          "name": "@heroku-cli/plugin-pipelines",
+          "version": "2.5.7"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku pipelines:info PIPELINE \u001b[34m[flags]\u001b[39m\n\n\u001b[1mshow list of apps in a pipeline\u001b[22m\n\nPIPELINE  \u001b[2mpipeline to show\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n --json  \u001b[2moutput in json format\u001b[22m\n\nExample:\n\n  $ heroku pipelines:info example\n  === example\n  owner: my-team (team)\n\n  app name                     stage\n  ───────────────────────────  ──────────\n  ⬢ example-pr-16              review\n  ⬢ example-pr-19              review\n  ⬢ example-pr-23              review\n  ⬢ example-staging            staging\n  ⬢ example-staging-2          staging\n  ⬢ example-production         production\n",
+        "helpLine": [
+          "pipelines:info PIPELINE",
+          "\u001b[2mshow list of apps in a pipeline\u001b[22m"
+        ]
+      },
+      {
+        "id": "pipelines:open",
+        "_version": "12.1.1",
+        "description": "open a pipeline in dashboard",
+        "plugin": {
+          "name": "@heroku-cli/plugin-pipelines",
+          "version": "2.5.7"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku pipelines:open PIPELINE\n\n\u001b[1mopen a pipeline in dashboard\u001b[22m\n\nPIPELINE  \u001b[2mname of pipeline\u001b[22m\n\nExample:\n\n    $ heroku pipelines:open example\n",
+        "helpLine": [
+          "pipelines:open PIPELINE",
+          "\u001b[2mopen a pipeline in dashboard\u001b[22m"
+        ]
+      },
+      {
+        "id": "pipelines:promote",
+        "_version": "12.1.1",
+        "description": "promote the latest release of this app to its downstream app(s)",
+        "plugin": {
+          "name": "@heroku-cli/plugin-pipelines",
+          "version": "2.5.7"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku pipelines:promote \u001b[34m[flags]\u001b[39m\n\n\u001b[1mpromote the latest release of this app to its downstream app(s)\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n -t, --to TO          \u001b[2mcomma separated list of apps to promote to\u001b[22m\n\nExample:\n\n    $ heroku pipelines:promote -a example-staging\n    Promoting example-staging to example (production)... done, v23\n    Promoting example-staging to example-admin (production)... done, v54\n\nExample:\n\n    $ heroku pipelines:promote -a example-staging --to my-production-app1,my-production-app2\n    Starting promotion to apps: my-production-app1,my-production-app2... done\n    Waiting for promotion to complete... done\n    Promotion successful\n    my-production-app1: succeeded\n    my-production-app2: succeeded\n",
+        "helpLine": [
+          "pipelines:promote",
+          "\u001b[2mpromote the latest release of this app to its downstream app(s)\u001b[22m"
+        ]
+      },
+      {
+        "id": "pipelines:remove",
+        "_version": "12.1.1",
+        "description": "remove this app from its pipeline",
+        "plugin": {
+          "name": "@heroku-cli/plugin-pipelines",
+          "version": "2.5.7"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku pipelines:remove \u001b[34m[flags]\u001b[39m\n\n\u001b[1mremove this app from its pipeline\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nExample:\n\n    $ heroku pipelines:remove -a example-admin\n    Removing example-admin... done\n",
+        "helpLine": [
+          "pipelines:remove",
+          "\u001b[2mremove this app from its pipeline\u001b[22m"
+        ]
+      },
+      {
+        "id": "pipelines:rename",
+        "_version": "12.1.1",
+        "description": "rename a pipeline",
+        "plugin": {
+          "name": "@heroku-cli/plugin-pipelines",
+          "version": "2.5.7"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku pipelines:rename PIPELINE NAME\n\n\u001b[1mrename a pipeline\u001b[22m\n\nPIPELINE  \u001b[2mcurrent name of pipeline\u001b[22m\nNAME      \u001b[2mnew name of pipeline\u001b[22m\n\nExample:\n\n    $ heroku pipelines:rename example www\n    Renaming example pipeline to www... done\n",
+        "helpLine": [
+          "pipelines:rename PIPELINE NAME",
+          "\u001b[2mrename a pipeline\u001b[22m"
+        ]
+      },
+      {
+        "id": "pipelines:setup",
+        "_version": "12.1.1",
+        "description": "bootstrap a new pipeline with common settings and create a production and staging app (requires a fully formed app.json in the repo)",
+        "plugin": {
+          "name": "@heroku-cli/plugin-pipelines",
+          "version": "2.5.7"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku pipelines:setup [NAME] [REPO] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mbootstrap a new pipeline with common settings and create a production and staging app (requires a fully formed app.json in the repo)\u001b[22m\n\nNAME  \u001b[2mname of pipeline\u001b[22m\nREPO  \u001b[2ma GitHub repository to connect the pipeline to\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -o, --org ORG    \u001b[2mthe team which will own the apps (can also use --org)\u001b[22m\n -t, --team TEAM  \u001b[2mthe team which will own the apps (can also use --org)\u001b[22m\n -y, --yes        \u001b[2maccept all default settings without prompting\u001b[22m\n\nExample:\n\n    $ heroku pipelines:setup example githuborg/reponame -o example-org\n    ? Automatically deploy the master branch to staging? Yes\n    ? Wait for CI to pass before deploying the master branch to staging? Yes\n    ? Enable review apps? Yes\n    ? Automatically create review apps for every PR? Yes\n    ? Automatically destroy idle review apps after 5 days? Yes\n    ? Enable automatic Heroku CI test runs? Yes\n    Creating pipeline... done\n    Linking to repo... done\n    Creating production and staging apps (⬢ example and ⬢ example-staging)\n    Configuring pipeline... done\n    View your new pipeline by running `heroku pipelines:open e5a55ffa-de3f-11e6-a245-3c15c2e6bc1e`\n",
+        "helpLine": [
+          "pipelines:setup [NAME] [REPO]",
+          "\u001b[2mbootstrap a new pipeline with common settings and create a production and staging app (requires a fully formed app.json in the repo)\u001b[22m"
+        ]
+      },
+      {
+        "id": "pipelines:transfer",
+        "_version": "12.1.1",
+        "description": "transfer ownership of a pipeline",
+        "plugin": {
+          "name": "@heroku-cli/plugin-pipelines",
+          "version": "2.5.7"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku pipelines:transfer OWNER \u001b[34m[flags]\u001b[39m\n\n\u001b[1mtransfer ownership of a pipeline\u001b[22m\n\nOWNER  \u001b[2mthe owner to transfer the pipeline to\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -c, --confirm CONFIRM\n -p, --pipeline PIPELINE  \u001b[2mname of pipeline\u001b[22m\n\nExample:\n\n    $ heroku pipelines:transfer me@example.com -p example\n    === example\n\n    app name              stage\n    ────────────────────  ───────────\n    ⬢ example-dev         development\n    ⬢ example-staging     staging\n    ⬢ example-prod        production\n\n     ▸    This will transfer example and all of the listed apps to the me@example.com account\n     ▸    to proceed, type edamame or re-run this command with --confirm example\n    > example\n    Transferring example pipeline to the me@example.com account... done\n\n    $ heroku pipelines:transfer acme-widgets -p example\n    === example\n\n    app name              stage\n    ────────────────────  ───────────\n    ⬢ example-dev         development\n    ⬢ example-staging     staging\n    ⬢ example-prod        production\n\n     ▸    This will transfer example and all of the listed apps to the acme-widgets team\n     ▸    to proceed, type edamame or re-run this command with --confirm example\n    > example\n\n    Transferring example pipeline to the acme-widgets team... done\n",
+        "helpLine": [
+          "pipelines:transfer OWNER",
+          "\u001b[2mtransfer ownership of a pipeline\u001b[22m"
+        ]
+      },
+      {
+        "id": "reviewapps:disable",
+        "_version": "12.1.1",
+        "description": "disable review apps or settings on an existing pipeline",
+        "plugin": {
+          "name": "@heroku-cli/plugin-pipelines",
+          "version": "2.5.7"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku reviewapps:disable \u001b[34m[flags]\u001b[39m\n\n\u001b[1mdisable review apps or settings on an existing pipeline\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP            \u001b[2mparent app used by review apps\u001b[22m\n -p, --pipeline PIPELINE  \u001b[2mname of pipeline\u001b[22m\n --autodeploy             \u001b[2mdisable autodeployments\u001b[22m\n --autodestroy            \u001b[2mdisable automatically destroying review apps\u001b[22m\n\nExample:\n\n    $ heroku reviewapps:disable -p mypipeline -a myapp --autodeploy\n    Disabling auto deployment ...\n    Configuring pipeline... done\n",
+        "helpLine": [
+          "reviewapps:disable",
+          "\u001b[2mdisable review apps or settings on an existing pipeline\u001b[22m"
+        ]
+      },
+      {
+        "id": "reviewapps:enable",
+        "_version": "12.1.1",
+        "description": "enable review apps and/or settings on an existing pipeline",
+        "plugin": {
+          "name": "@heroku-cli/plugin-pipelines",
+          "version": "2.5.7"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku reviewapps:enable \u001b[34m[flags]\u001b[39m\n\n\u001b[1menable review apps and/or settings on an existing pipeline\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP            \u001b[2mparent app used by review apps\u001b[22m\n -p, --pipeline PIPELINE  \u001b[2mname of pipeline\u001b[22m\n --autodeploy             \u001b[2mautodeploy the review app\u001b[22m\n --autodestroy            \u001b[2mautodestroy the review app\u001b[22m\n\nExample:\n\n    $ heroku reviewapps:enable -p mypipeline --a myapp --autodeploy --autodestroy\n    Enabling review apps ...\n    Enabling auto deployment ...\n    Enabling auto destroy ...\n    Configuring pipeline... done\n",
+        "helpLine": [
+          "reviewapps:enable",
+          "\u001b[2menable review apps and/or settings on an existing pipeline\u001b[22m"
+        ]
+      }
+    ],
+    "topics": [
+      [
+        {
+          "name": "pipelines",
+          "description": "manage collections of apps in pipelines"
+        },
+        {
+          "name": "reviewapps",
+          "description": "manage reviewapps in pipelines"
+        }
+      ]
+    ]
+  }
+}

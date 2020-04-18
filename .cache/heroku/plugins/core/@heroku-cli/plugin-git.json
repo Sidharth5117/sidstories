@@ -1,0 +1,40 @@
+{
+  "invalidate": "6.99.0-ec9edad/2.5.28",
+  "manifest": {
+    "commands": [
+      {
+        "id": "git:remote",
+        "_version": "12.1.1",
+        "description": "adds a git remote to an app repo",
+        "plugin": {
+          "name": "@heroku-cli/plugin-git",
+          "version": "2.5.28"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku git:remote \u001b[34m[flags]\u001b[39m\n\n\u001b[1madds a git remote to an app repo\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mthe Heroku app to use\u001b[22m\n -r, --remote REMOTE  \u001b[2mthe git remote to create\u001b[22m\n --ssh-git            \u001b[2muse SSH git protocol\u001b[22m\n\nextra arguments will be passed to git remote add\n\nExamples:\n\n    # set git remote heroku to https://git.heroku.com/example.git\n    $ heroku git:remote -a example\n\n    # set git remote heroku-staging to https://git.heroku.com/example-staging.git\n    $ heroku git:remote --remote heroku-staging -a example\n",
+        "helpLine": [
+          "git:remote",
+          "\u001b[2madds a git remote to an app repo\u001b[22m"
+        ]
+      },
+      {
+        "id": "git:clone",
+        "_version": "12.1.1",
+        "description": "clones a heroku app to your local machine at DIRECTORY (defaults to app name)",
+        "plugin": {
+          "name": "@heroku-cli/plugin-git",
+          "version": "2.5.28"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku git:clone [DIRECTORY] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mclones a heroku app to your local machine at DIRECTORY (defaults to app name)\u001b[22m\n\nDIRECTORY  \u001b[2mwhere to clone the app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mthe Heroku app to use\u001b[22m\n -r, --remote REMOTE  \u001b[2mthe git remote to create, default \"heroku\"\u001b[22m\n --ssh-git            \u001b[2muse SSH git protocol\u001b[22m\n\nExamples:\n\n    $ heroku git:clone -a example\n    Cloning into 'example'...\n    remote: Counting objects: 42, done.\n    ...\n",
+        "helpLine": [
+          "git:clone [DIRECTORY]",
+          "\u001b[2mclones a heroku app to your local machine at DIRECTORY (defaults to app name)\u001b[22m"
+        ]
+      }
+    ],
+    "topics": []
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "invalidate": "6.99.0-ec9edad/1.2.28",
+  "manifest": {
+    "commands": [
+      {
+        "id": "addons",
+        "_version": "12.1.1",
+        "description": "lists your add-ons and attachments",
+        "usage": "addons [--all|--app APP]",
+        "plugin": {
+          "name": "@heroku-cli/plugin-addons",
+          "version": "1.2.28"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku addons [--all|--app APP] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlists your add-ons and attachments\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -A, --all            \u001b[2mshow add-ons and attachments for all accessible apps\u001b[22m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --json               \u001b[2mreturn add-ons in json format\u001b[22m\n\nThe default filter applied depends on whether you are in a Heroku app\ndirectory. If so, the --app flag is implied. If not, the default of --all\nis implied. Explicitly providing either flag overrides the default\nbehavior.\n\nExamples:\n\n    $ heroku addons --all\n    $ heroku addons --app acme-inc-www\n",
+        "helpLine": [
+          "addons [--all|--app APP]",
+          "\u001b[2mlists your add-ons and attachments\u001b[22m"
+        ]
+      },
+      {
+        "id": "addons:attach",
+        "_version": "12.1.1",
+        "description": "attach add-on resource to a new app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-addons",
+          "version": "1.2.28"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku addons:attach ADDON_NAME \u001b[34m[flags]\u001b[39m\n\n\u001b[1mattach add-on resource to a new app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP            \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE      \u001b[2mgit remote of app to use\u001b[22m\n --as AS                  \u001b[2mname for add-on attachment\u001b[22m\n --confirm CONFIRM        \u001b[2moverwrite existing add-on attachment with same name\u001b[22m\n --credential CREDENTIAL  \u001b[2mcredential name for scoped access to Heroku Postgres\u001b[22m\n",
+        "helpLine": [
+          "addons:attach ADDON_NAME",
+          "\u001b[2mattach add-on resource to a new app\u001b[22m"
+        ]
+      },
+      {
+        "id": "addons:create",
+        "_version": "12.1.1",
+        "description": "create an add-on resource",
+        "plugin": {
+          "name": "@heroku-cli/plugin-addons",
+          "version": "1.2.28"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku addons:create SERVICE:PLAN \u001b[34m[flags]\u001b[39m\n\n\u001b[1mcreate an add-on resource\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --as AS              \u001b[2mname for the initial add-on attachment\u001b[22m\n --confirm CONFIRM    \u001b[2moverwrite existing config vars or existing add-on attachments\u001b[22m\n --name NAME          \u001b[2mname for the add-on resource\u001b[22m\n --wait               \u001b[2mwatch add-on creation status and exit when complete\u001b[22m\n",
+        "helpLine": [
+          "addons:create SERVICE:PLAN",
+          "\u001b[2mcreate an add-on resource\u001b[22m"
+        ]
+      },
+      {
+        "id": "addons:add",
+        "_version": "12.1.1",
+        "description": "create an add-on resource",
+        "plugin": {
+          "name": "@heroku-cli/plugin-addons",
+          "version": "1.2.28"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku addons:add SERVICE:PLAN \u001b[34m[flags]\u001b[39m\n\n\u001b[1mcreate an add-on resource\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --as AS              \u001b[2mname for the initial add-on attachment\u001b[22m\n --confirm CONFIRM    \u001b[2moverwrite existing config vars or existing add-on attachments\u001b[22m\n --name NAME          \u001b[2mname for the add-on resource\u001b[22m\n --wait               \u001b[2mwatch add-on creation status and exit when complete\u001b[22m\n",
+        "helpLine": [
+          "addons:add SERVICE:PLAN",
+          "\u001b[2mcreate an add-on resource\u001b[22m"
+        ]
+      },
+      {
+        "id": "addons:destroy",
+        "_version": "12.1.1",
+        "description": "destroy add-on resources",
+        "usage": "addons:destroy [ADDON]... [flags]",
+        "plugin": {
+          "name": "@heroku-cli/plugin-addons",
+          "version": "1.2.28"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku addons:destroy [ADDON]... [flags] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mdestroy add-on resources\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP          \u001b[2mapp to run command against\u001b[22m\n -c, --confirm CONFIRM\n -f, --force            \u001b[2mallow destruction even if connected to other apps\u001b[22m\n -r, --remote REMOTE    \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "addons:destroy [ADDON]... [flags]",
+          "\u001b[2mdestroy add-on resources\u001b[22m"
+        ]
+      },
+      {
+        "id": "addons:remove",
+        "_version": "12.1.1",
+        "description": "destroy add-on resources",
+        "usage": "addons:destroy [ADDON]... [flags]",
+        "plugin": {
+          "name": "@heroku-cli/plugin-addons",
+          "version": "1.2.28"
+        },
+        "hidden": true,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku addons:destroy [ADDON]... [flags] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mdestroy add-on resources\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP          \u001b[2mapp to run command against\u001b[22m\n -c, --confirm CONFIRM\n -f, --force            \u001b[2mallow destruction even if connected to other apps\u001b[22m\n -r, --remote REMOTE    \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "addons:destroy [ADDON]... [flags]",
+          "\u001b[2mdestroy add-on resources\u001b[22m"
+        ]
+      },
+      {
+        "id": "addons:detach",
+        "_version": "12.1.1",
+        "description": "detach an add-on resource from an app",
+        "plugin": {
+          "name": "@heroku-cli/plugin-addons",
+          "version": "1.2.28"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku addons:detach ATTACHMENT_NAME \u001b[34m[flags]\u001b[39m\n\n\u001b[1mdetach an add-on resource from an app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "addons:detach ATTACHMENT_NAME",
+          "\u001b[2mdetach an add-on resource from an app\u001b[22m"
+        ]
+      },
+      {
+        "id": "addons:docs",
+        "_version": "12.1.1",
+        "description": "open an add-on's Dev Center documentation in your browser",
+        "plugin": {
+          "name": "@heroku-cli/plugin-addons",
+          "version": "1.2.28"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku addons:docs ADDON \u001b[34m[flags]\u001b[39m\n\n\u001b[1mopen an add-on's Dev Center documentation in your browser\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --show-url           \u001b[2mshow URL, do not open browser\u001b[22m\n",
+        "helpLine": [
+          "addons:docs ADDON",
+          "\u001b[2mopen an add-on's Dev Center documentation in your browser\u001b[22m"
+        ]
+      },
+      {
+        "id": "addons:info",
+        "_version": "12.1.1",
+        "description": "Show info about an add-on and its attachments.",
+        "usage": "addons:info ADDON",
+        "plugin": {
+          "name": "@heroku-cli/plugin-addons",
+          "version": "1.2.28"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku addons:info ADDON \u001b[34m[flags]\u001b[39m\n\n\u001b[1mShow info about an add-on and its attachments.\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "addons:info ADDON",
+          "\u001b[2mShow info about an add-on and its attachments.\u001b[22m"
+        ]
+      },
+      {
+        "id": "addons:open",
+        "_version": "12.1.1",
+        "description": "open an add-on's dashboard in your browser",
+        "plugin": {
+          "name": "@heroku-cli/plugin-addons",
+          "version": "1.2.28"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku addons:open ADDON \u001b[34m[flags]\u001b[39m\n\n\u001b[1mopen an add-on's dashboard in your browser\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n --show-url           \u001b[2mshow URL, do not open browser\u001b[22m\n",
+        "helpLine": [
+          "addons:open ADDON",
+          "\u001b[2mopen an add-on's dashboard in your browser\u001b[22m"
+        ]
+      },
+      {
+        "id": "addons:plans",
+        "_version": "12.1.1",
+        "description": "list all available plans for an add-on services",
+        "plugin": {
+          "name": "@heroku-cli/plugin-addons",
+          "version": "1.2.28"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku addons:plans SERVICE \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist all available plans for an add-on services\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n --json  \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "addons:plans SERVICE",
+          "\u001b[2mlist all available plans for an add-on services\u001b[22m"
+        ]
+      },
+      {
+        "id": "addons:rename",
+        "_version": "12.1.1",
+        "description": "Rename an add-on.",
+        "usage": "addons:rename ADDON NEW_NAME",
+        "plugin": {
+          "name": "@heroku-cli/plugin-addons",
+          "version": "1.2.28"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku addons:rename ADDON NEW_NAME \u001b[34m[flags]\u001b[39m\n\n\u001b[1mRename an add-on.\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n",
+        "helpLine": [
+          "addons:rename ADDON NEW_NAME",
+          "\u001b[2mRename an add-on.\u001b[22m"
+        ]
+      },
+      {
+        "id": "addons:services",
+        "_version": "12.1.1",
+        "description": "list all available add-on services",
+        "plugin": {
+          "name": "@heroku-cli/plugin-addons",
+          "version": "1.2.28"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku addons:services \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist all available add-on services\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n --json  \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "addons:services",
+          "\u001b[2mlist all available add-on services\u001b[22m"
+        ]
+      },
+      {
+        "id": "addons:upgrade",
+        "_version": "12.1.1",
+        "description": "change add-on plan",
+        "plugin": {
+          "name": "@heroku-cli/plugin-addons",
+          "version": "1.2.28"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku addons:upgrade ADDON [PLAN] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mchange add-on plan\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nSee available plans with `heroku addons:plans SERVICE`.\n\nNote that `heroku addons:upgrade` and `heroku addons:downgrade` are the same.\nEither one can be used to change an add-on plan up or down.\n\n[https://devcenter.heroku.com/articles/managing-add-ons](https://devcenter.heroku.com/articles/managing-add-ons)\n\nExamples:\n\n  Upgrade an add-on by service name:\n\n    $ heroku addons:upgrade heroku-redis:premium-2\n\n  Upgrade a specific add-on:\n\n    $ heroku addons:upgrade swimming-briskly-123 heroku-redis:premium-2\n",
+        "helpLine": [
+          "addons:upgrade ADDON [PLAN]",
+          "\u001b[2mchange add-on plan\u001b[22m"
+        ]
+      },
+      {
+        "id": "addons:downgrade",
+        "_version": "12.1.1",
+        "description": "change add-on plan",
+        "plugin": {
+          "name": "@heroku-cli/plugin-addons",
+          "version": "1.2.28"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku addons:downgrade ADDON [PLAN] \u001b[34m[flags]\u001b[39m\n\n\u001b[1mchange add-on plan\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP        \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE  \u001b[2mgit remote of app to use\u001b[22m\n\nSee available plans with `heroku addons:plans SERVICE`.\n\nNote that `heroku addons:upgrade` and `heroku addons:downgrade` are the same.\nEither one can be used to change an add-on plan up or down.\n\n[https://devcenter.heroku.com/articles/managing-add-ons](https://devcenter.heroku.com/articles/managing-add-ons)\n\nExamples:\n\n  Upgrade an add-on by service name:\n\n    $ heroku addons:upgrade heroku-redis:premium-2\n\n  Upgrade a specific add-on:\n\n    $ heroku addons:upgrade swimming-briskly-123 heroku-redis:premium-2\n",
+        "helpLine": [
+          "addons:downgrade ADDON [PLAN]",
+          "\u001b[2mchange add-on plan\u001b[22m"
+        ]
+      },
+      {
+        "id": "addons:wait",
+        "_version": "12.1.1",
+        "description": "Show provisioning status of the add-ons on the app",
+        "usage": "addons:wait ADDON",
+        "plugin": {
+          "name": "@heroku-cli/plugin-addons",
+          "version": "1.2.28"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku addons:wait ADDON \u001b[34m[flags]\u001b[39m\n\n\u001b[1mShow provisioning status of the add-ons on the app\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -a, --app APP                  \u001b[2mapp to run command against\u001b[22m\n -r, --remote REMOTE            \u001b[2mgit remote of app to use\u001b[22m\n --wait-interval WAIT-INTERVAL  \u001b[2mhow frequently to poll in seconds\u001b[22m\n",
+        "helpLine": [
+          "addons:wait ADDON",
+          "\u001b[2mShow provisioning status of the add-ons on the app\u001b[22m"
+        ]
+      }
+    ],
+    "topics": [
+      {
+        "name": "addons",
+        "description": "tools and services for developing, extending, and operating your app",
+        "overview": "Overview of Add-ons:\n\n  Add-ons are created with the `addons:create` command, providing a reference\n  to an add-on service (such as `heroku-postgresql`) or a service and plan\n  (such as `heroku-postgresql:hobby-dev`).\n\n  At creation, each add-on is given a globally unique name. In addition, each\n  add-on has at least one attachment alias to each application which uses the\n  add-on. In all cases, the owning application will be attached to the add-on.\n  An attachment alias is unique to its application, and is used as a prefix to\n  any environment variables it exports to the application.\n\n  In this example, a `heroku-postgresql` add-on is created and its given name\n  is `postgresql-deep-6913` with a default attachment alias of `DATABASE`:\n\n    $ heroku addons:create heroku-postgresql --app my-app\n    Creating postgresql-deep-6913... done, (free)\n    Adding postgresql-deep-6913 to my-app... done\n    Setting DATABASE_URL and restarting my-app... done, v5\n    Database has been created and is available\n\n    $ heroku addons --app my-app\n    Add-on                                     Plan       Price\n    ─────────────────────────────────────────  ─────────  ─────\n    heroku-postgresql (postgresql-deep-6913)   hobby-dev  free\n    └─ as DATABASE\n\n  The add-on name and, in some cases, the attachment alias can be specified by\n  the user. For instance, we can add a second database to the app, specifying\n  both these identifiers:\n\n    $ heroku addons:create heroku-postgresql --app my-app --name main-db --as PRIMARY_DB\n    Creating main-db... done, (free)\n    Adding main-db to my-app... done\n    Setting PRIMARY_DB_URL and restarting my-app... done, v6\n    Database has been created and is available\n\n    $ heroku addons --app my-app\n    Add-on                                     Plan       Price\n    ─────────────────────────────────────────  ─────────  ─────\n    heroku-postgresql (main-db)                hobby-dev  free\n    └─ as PRIMARY_DB\n\n    heroku-postgresql (postgresql-deep-6913)   hobby-dev  free\n    └─ as DATABASE\n\n  Attachment aliases can also be specified when making attachments:\n\n    $ heroku addons:attach main-db --app my-app --as ANOTHER_NAME\n    Attaching main-db as ANOTHER_NAME to my-app... done\n    Setting ANOTHER_NAME vars and restarting my-app... done, v7\n\n    $ heroku addons --app my-app\n    Add-on                                     Plan       Price\n    ─────────────────────────────────────────  ─────────  ─────\n    heroku-postgresql (main-db)                hobby-dev  free\n    ├─ as PRIMARY_DB\n    └─ as ANOTHER_NAME\n\n    heroku-postgresql (postgresql-deep-6913)   hobby-dev  free\n    └─ as DATABASE\n\n  For more information, read [https://devcenter.heroku.com/articles/add-ons](https://devcenter.heroku.com/articles/add-ons)."
+      }
+    ]
+  }
+}

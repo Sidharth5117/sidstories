@@ -1,0 +1,245 @@
+{
+  "invalidate": "6.99.0-ec9edad/2.3.1",
+  "manifest": {
+    "commands": [
+      {
+        "id": "authorizations",
+        "_version": "12.1.1",
+        "description": "list OAuth authorizations",
+        "plugin": {
+          "name": "@heroku-cli/plugin-oauth",
+          "version": "2.3.1"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku authorizations \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist OAuth authorizations\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n --json  \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "authorizations",
+          "\u001b[2mlist OAuth authorizations\u001b[22m"
+        ]
+      },
+      {
+        "id": "authorizations:create",
+        "_version": "12.1.1",
+        "description": "create a new OAuth authorization",
+        "plugin": {
+          "name": "@heroku-cli/plugin-oauth",
+          "version": "2.3.1"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku authorizations:create \u001b[34m[flags]\u001b[39m\n\n\u001b[1mcreate a new OAuth authorization\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -d, --description DESCRIPTION  \u001b[2mset a custom authorization description\u001b[22m\n -e, --expires-in EXPIRES-IN    \u001b[2mset expiration in seconds (default no expiration)\u001b[22m\n -s, --scope SCOPE              \u001b[2mset custom OAuth scopes\u001b[22m\n --json                         \u001b[2moutput in json format\u001b[22m\n --short                        \u001b[2monly output token\u001b[22m\n\nThis creates an authorization with access to your Heroku account.\n",
+        "helpLine": [
+          "authorizations:create",
+          "\u001b[2mcreate a new OAuth authorization\u001b[22m"
+        ]
+      },
+      {
+        "id": "authorizations:info",
+        "_version": "12.1.1",
+        "description": "show an existing OAuth authorization",
+        "plugin": {
+          "name": "@heroku-cli/plugin-oauth",
+          "version": "2.3.1"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku authorizations:info ID \u001b[34m[flags]\u001b[39m\n\n\u001b[1mshow an existing OAuth authorization\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n --json  \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "authorizations:info ID",
+          "\u001b[2mshow an existing OAuth authorization\u001b[22m"
+        ]
+      },
+      {
+        "id": "authorizations:revoke",
+        "_version": "12.1.1",
+        "description": "revoke OAuth authorization",
+        "plugin": {
+          "name": "@heroku-cli/plugin-oauth",
+          "version": "2.3.1"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku authorizations:revoke ID\n\n\u001b[1mrevoke OAuth authorization\u001b[22m\n",
+        "helpLine": [
+          "authorizations:revoke ID",
+          "\u001b[2mrevoke OAuth authorization\u001b[22m"
+        ]
+      },
+      {
+        "id": "authorizations:update",
+        "_version": "12.1.1",
+        "description": "updates an OAuth authorization",
+        "plugin": {
+          "name": "@heroku-cli/plugin-oauth",
+          "version": "2.3.1"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku authorizations:update ID \u001b[34m[flags]\u001b[39m\n\n\u001b[1mupdates an OAuth authorization\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -d, --description DESCRIPTION  \u001b[2mset a custom authorization description\u001b[22m\n --client-id CLIENT-ID          \u001b[2midentifier of OAuth client to set\u001b[22m\n --client-secret CLIENT-SECRET  \u001b[2msecret of OAuth client to set\u001b[22m\n",
+        "helpLine": [
+          "authorizations:update ID",
+          "\u001b[2mupdates an OAuth authorization\u001b[22m"
+        ]
+      },
+      {
+        "id": "authorizations:rotate",
+        "_version": "12.1.1",
+        "description": "updates an OAuth authorization token",
+        "plugin": {
+          "name": "@heroku-cli/plugin-oauth",
+          "version": "2.3.1"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku authorizations:rotate ID\n\n\u001b[1mupdates an OAuth authorization token\u001b[22m\n",
+        "helpLine": [
+          "authorizations:rotate ID",
+          "\u001b[2mupdates an OAuth authorization token\u001b[22m"
+        ]
+      },
+      {
+        "id": "clients",
+        "_version": "12.1.1",
+        "description": "list your OAuth clients",
+        "plugin": {
+          "name": "@heroku-cli/plugin-oauth",
+          "version": "2.3.1"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku clients \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist your OAuth clients\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n --json  \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "clients",
+          "\u001b[2mlist your OAuth clients\u001b[22m"
+        ]
+      },
+      {
+        "id": "clients:create",
+        "_version": "12.1.1",
+        "description": "create a new OAuth client",
+        "plugin": {
+          "name": "@heroku-cli/plugin-oauth",
+          "version": "2.3.1"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku clients:create NAME REDIRECT_URI \u001b[34m[flags]\u001b[39m\n\n\u001b[1mcreate a new OAuth client\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -s, --shell  \u001b[2moutput in shell format\u001b[22m\n --json       \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "clients:create NAME REDIRECT_URI",
+          "\u001b[2mcreate a new OAuth client\u001b[22m"
+        ]
+      },
+      {
+        "id": "clients:destroy",
+        "_version": "12.1.1",
+        "description": "delete client by ID",
+        "plugin": {
+          "name": "@heroku-cli/plugin-oauth",
+          "version": "2.3.1"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku clients:destroy ID\n\n\u001b[1mdelete client by ID\u001b[22m\n",
+        "helpLine": [
+          "clients:destroy ID",
+          "\u001b[2mdelete client by ID\u001b[22m"
+        ]
+      },
+      {
+        "id": "clients:info",
+        "_version": "12.1.1",
+        "description": "show details of an oauth client",
+        "plugin": {
+          "name": "@heroku-cli/plugin-oauth",
+          "version": "2.3.1"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku clients:info ID \u001b[34m[flags]\u001b[39m\n\n\u001b[1mshow details of an oauth client\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -s, --shell  \u001b[2moutput in shell format\u001b[22m\n --json       \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "clients:info ID",
+          "\u001b[2mshow details of an oauth client\u001b[22m"
+        ]
+      },
+      {
+        "id": "clients:update",
+        "_version": "12.1.1",
+        "description": "update OAuth client",
+        "plugin": {
+          "name": "@heroku-cli/plugin-oauth",
+          "version": "2.3.1"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku clients:update ID \u001b[34m[flags]\u001b[39m\n\n\u001b[1mupdate OAuth client\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -n, --name NAME  \u001b[2mchange the client name\u001b[22m\n --url URL        \u001b[2mchange the client redirect URL\u001b[22m\n",
+        "helpLine": [
+          "clients:update ID",
+          "\u001b[2mupdate OAuth client\u001b[22m"
+        ]
+      },
+      {
+        "id": "clients:rotate",
+        "_version": "12.1.1",
+        "description": "rotate OAuth client secret",
+        "plugin": {
+          "name": "@heroku-cli/plugin-oauth",
+          "version": "2.3.1"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku clients:rotate ID \u001b[34m[flags]\u001b[39m\n\n\u001b[1mrotate OAuth client secret\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n -s, --shell  \u001b[2moutput in shell format\u001b[22m\n --json       \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "clients:rotate ID",
+          "\u001b[2mrotate OAuth client secret\u001b[22m"
+        ]
+      },
+      {
+        "id": "sessions",
+        "_version": "12.1.1",
+        "description": "list your OAuth sessions",
+        "plugin": {
+          "name": "@heroku-cli/plugin-oauth",
+          "version": "2.3.1"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku sessions \u001b[34m[flags]\u001b[39m\n\n\u001b[1mlist your OAuth sessions\u001b[22m\n\n\u001b[34mFlags:\u001b[39m\n --json  \u001b[2moutput in json format\u001b[22m\n",
+        "helpLine": [
+          "sessions",
+          "\u001b[2mlist your OAuth sessions\u001b[22m"
+        ]
+      },
+      {
+        "id": "sessions:destroy",
+        "_version": "12.1.1",
+        "description": "delete (logout) OAuth session by ID",
+        "plugin": {
+          "name": "@heroku-cli/plugin-oauth",
+          "version": "2.3.1"
+        },
+        "hidden": false,
+        "aliases": [],
+        "help": "\u001b[1mUsage:\u001b[22m heroku sessions:destroy ID\n\n\u001b[1mdelete (logout) OAuth session by ID\u001b[22m\n",
+        "helpLine": [
+          "sessions:destroy ID",
+          "\u001b[2mdelete (logout) OAuth session by ID\u001b[22m"
+        ]
+      }
+    ],
+    "topics": [
+      {
+        "name": "authorizations",
+        "description": "OAuth authorizations"
+      },
+      {
+        "name": "clients",
+        "description": "OAuth clients on the platform"
+      },
+      {
+        "name": "sessions",
+        "description": "OAuth sessions"
+      }
+    ]
+  }
+}
