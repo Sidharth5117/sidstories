@@ -135,3 +135,33 @@ git status
 git add
 git add -A
 .
+git
+git config --list
+git add -A
+git status
+git add -A
+git status
+git commit -m "Create Rails App"
+git add -A
+git add --help
+git add -A .
+git config --global user.name "Sidharth5117"
+git config --lost
+git config --list
+cat ~/.ssh/id_rsa.pub
+sudo apt install ssh
+ssh-keygen -t rsa
+~/.ssh
+ls
+git remote add origin git@github.com:Sidharth5117/app.git
+git remove -v
+git remote -v
+git push -u 
+git push -u origin master
+git commit -m "initial commit"
+git push origin master
+git add -all
+git add --all
+git commit -m "Initial comment"
+git remote add origin git@github.com:Sidharth5117/app.git
+git push -u origin master
