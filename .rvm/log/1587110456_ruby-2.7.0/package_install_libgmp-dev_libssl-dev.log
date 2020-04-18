@@ -1,0 +1,61 @@
+[2020-04-17 13:31:09] requirements_debian_libs_install
+requirements_debian_libs_install () 
+{ 
+    __rvm_try_sudo apt-get --no-install-recommends --yes install "$@" || return $?
+}
+current path: /home/sid
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.UbuntuonWindows_1804.2020.5.0_x64__79rhkp1fndgsc:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/d/Softwares/bin/:/mnt/c/Users/Sidharth/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Sidharth/AppData/Local/atom/bin:/mnt/c/Users/Sidharth/AppData/Local/Yarn/bin:/snap/bin:/usr/share/rvm/bin
+command(3): requirements_debian_libs_install libgmp-dev libssl-dev
+++ __rvm_try_sudo apt-get --no-install-recommends --yes install libgmp-dev libssl-dev
+++ typeset -a command_to_run
+++ typeset sudo_path sbin_path missing_paths
+++ command_to_run=("$@")
+++ ((  UID == 0  ))
+++ case "$rvm_autolibs_flag_number" in
+++ is_a_function __rvm_sudo
+++ typeset -f __rvm_sudo
+++ missing_paths=
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /sbin ]]
+++ [[ :/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.UbuntuonWindows_1804.2020.5.0_x64__79rhkp1fndgsc:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/d/Softwares/bin/:/mnt/c/Users/Sidharth/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Sidharth/AppData/Local/atom/bin:/mnt/c/Users/Sidharth/AppData/Local/Yarn/bin:/snap/bin:/usr/share/rvm/bin: != *\:\/\s\b\i\n\:* ]]
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /usr/sbin ]]
+++ [[ :/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.UbuntuonWindows_1804.2020.5.0_x64__79rhkp1fndgsc:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/d/Softwares/bin/:/mnt/c/Users/Sidharth/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Sidharth/AppData/Local/atom/bin:/mnt/c/Users/Sidharth/AppData/Local/Yarn/bin:/snap/bin:/usr/share/rvm/bin: != *\:\/\u\s\r\/\s\b\i\n\:* ]]
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /usr/local/sbin ]]
+++ [[ :/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.UbuntuonWindows_1804.2020.5.0_x64__79rhkp1fndgsc:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/d/Softwares/bin/:/mnt/c/Users/Sidharth/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Sidharth/AppData/Local/atom/bin:/mnt/c/Users/Sidharth/AppData/Local/Yarn/bin:/snap/bin:/usr/share/rvm/bin: != *\:\/\u\s\r\/\l\o\c\a\l\/\s\b\i\n\:* ]]
+++ [[ -n '' ]]
+++ command_to_run=(__rvm_sudo -p "%p password required for '$*': " "${command_to_run[@]}")
+++ __rvm_sudo -p '%p password required for '\''apt-get --no-install-recommends --yes install libgmp-dev libssl-dev'\'': ' apt-get --no-install-recommends --yes install libgmp-dev libssl-dev
+++ command sudo -p '%p password required for '\''apt-get --no-install-recommends --yes install libgmp-dev libssl-dev'\'': ' apt-get --no-install-recommends --yes install libgmp-dev libssl-dev
+++ sudo -p '%p password required for '\''apt-get --no-install-recommends --yes install libgmp-dev libssl-dev'\'': ' apt-get --no-install-recommends --yes install libgmp-dev libssl-dev
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  libgmpxx4ldbl
+Suggested packages:
+  gmp-doc libgmp10-doc libmpfr-dev libssl-doc
+The following NEW packages will be installed:
+  libgmp-dev libgmpxx4ldbl libssl-dev
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1891 kB of archives.
+After this operation, 9513 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu bionic/main amd64 libgmpxx4ldbl amd64 2:6.1.2+dfsg-2 [8964 B]
+Get:2 http://archive.ubuntu.com/ubuntu bionic/main amd64 libgmp-dev amd64 2:6.1.2+dfsg-2 [316 kB]
+Get:3 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libssl-dev amd64 1.1.1-1ubuntu2.1~18.04.5 [1566 kB]
+Fetched 1891 kB in 8s (251 kB/s)
+Selecting previously unselected package libgmpxx4ldbl:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36361 files and directories currently installed.)
+Preparing to unpack .../libgmpxx4ldbl_2%3a6.1.2+dfsg-2_amd64.deb ...
+Unpacking libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-2) ...
+Selecting previously unselected package libgmp-dev:amd64.
+Preparing to unpack .../libgmp-dev_2%3a6.1.2+dfsg-2_amd64.deb ...
+Unpacking libgmp-dev:amd64 (2:6.1.2+dfsg-2) ...
+Selecting previously unselected package libssl-dev:amd64.
+Preparing to unpack .../libssl-dev_1.1.1-1ubuntu2.1~18.04.5_amd64.deb ...
+Unpacking libssl-dev:amd64 (1.1.1-1ubuntu2.1~18.04.5) ...
+Setting up libssl-dev:amd64 (1.1.1-1ubuntu2.1~18.04.5) ...
+Setting up libgmpxx4ldbl:amd64 (2:6.1.2+dfsg-2) ...
+Setting up libgmp-dev:amd64 (2:6.1.2+dfsg-2) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...

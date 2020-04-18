@@ -1,0 +1,50 @@
+[2020-04-17 13:32:18] alias_create_execute
+alias_create_execute () 
+{ 
+    for _path in "$rvm_rubies_path" "$rvm_gems_path" "$rvm_environments_path" "$rvm_wrappers_path";
+    do
+        if [[ -L "$_path/$alias_name" ]]; then
+            \command \rm -fv "$_path/$alias_name" || return $?;
+        fi;
+        \command \ln -fs "$_path/$rvm_ruby_string" "$_path/$alias_name" || return $?;
+    done;
+    __rvm_db_ "$rvm_path/config/alias" "$alias_name" "$rvm_ruby_string"
+}
+current path: /home/sid
+GEM_HOME=/home/sid/.rvm/gems/ruby-2.7.0
+GEM_PATH=/home/sid/.rvm/gems/ruby-2.7.0:/home/sid/.rvm/gems/ruby-2.7.0@global
+PATH=/home/sid/.rvm/gems/ruby-2.7.0/bin:/home/sid/.rvm/gems/ruby-2.7.0@global/bin:/usr/share/rvm/rubies/ruby-2.7.0/bin:/usr/share/rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.UbuntuonWindows_1804.2020.5.0_x64__79rhkp1fndgsc:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0:/mnt/c/windows/System32/OpenSSH:/mnt/d/Softwares/bin:/mnt/c/Users/Sidharth/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Sidharth/AppData/Local/atom/bin:/mnt/c/Users/Sidharth/AppData/Local/Yarn/bin:/snap/bin
+command(1): alias_create_execute
++ for _path in "$rvm_rubies_path" "$rvm_gems_path" "$rvm_environments_path" "$rvm_wrappers_path"
++ [[ -L /usr/share/rvm/rubies/default ]]
++ command ln -fs /usr/share/rvm/rubies/ruby-2.7.0 /usr/share/rvm/rubies/default
++ ln -fs /usr/share/rvm/rubies/ruby-2.7.0 /usr/share/rvm/rubies/default
++ for _path in "$rvm_rubies_path" "$rvm_gems_path" "$rvm_environments_path" "$rvm_wrappers_path"
++ [[ -L /home/sid/.rvm/gems/default ]]
++ command ln -fs /home/sid/.rvm/gems/ruby-2.7.0 /home/sid/.rvm/gems/default
++ ln -fs /home/sid/.rvm/gems/ruby-2.7.0 /home/sid/.rvm/gems/default
++ for _path in "$rvm_rubies_path" "$rvm_gems_path" "$rvm_environments_path" "$rvm_wrappers_path"
++ [[ -L /home/sid/.rvm/environments/default ]]
++ command ln -fs /home/sid/.rvm/environments/ruby-2.7.0 /home/sid/.rvm/environments/default
++ ln -fs /home/sid/.rvm/environments/ruby-2.7.0 /home/sid/.rvm/environments/default
++ for _path in "$rvm_rubies_path" "$rvm_gems_path" "$rvm_environments_path" "$rvm_wrappers_path"
++ [[ -L /home/sid/.rvm/wrappers/default ]]
++ command ln -fs /home/sid/.rvm/wrappers/ruby-2.7.0 /home/sid/.rvm/wrappers/default
++ ln -fs /home/sid/.rvm/wrappers/ruby-2.7.0 /home/sid/.rvm/wrappers/default
++ __rvm_db_ /usr/share/rvm/config/alias default ruby-2.7.0
++ typeset __db __key __value
++ __db=/usr/share/rvm/config/alias
++ __key=default
++ shift 2
++ __value=ruby-2.7.0
++ case "${__value}" in
++ __rvm_db_add /usr/share/rvm/config/alias default ruby-2.7.0
++ typeset __dir=/usr/share/rvm/config
++ [[ -f /usr/share/rvm/config/alias ]]
++ __rvm_db_remove /usr/share/rvm/config/alias default
++ [[ -f /usr/share/rvm/config/alias ]]
++ __rvm_sed -e '\#^default=# d' -e '/^$/d' /usr/share/rvm/config/alias
++ sed -e '\#^default=# d' -e '/^$/d' /usr/share/rvm/config/alias
++ command mv -f /usr/share/rvm/config/alias.new /usr/share/rvm/config/alias
++ mv -f /usr/share/rvm/config/alias.new /usr/share/rvm/config/alias
++ printf '%b=%b\n' default ruby-2.7.0
