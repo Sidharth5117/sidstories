@@ -2,11 +2,11 @@
 
 <h1 align="center"> Story Name: <%= @storie.name %></h1>
 
-<div class="center jumbotron">
+<div class="card text-white bg-secondary mb-3">
 <h4 class="center"><strong>Content:</strong></h4>
 <hr>
  <%=  simple_format(@storie.content) %>
-</div>
+
 
 <div class="storie-actions">
 
@@ -16,5 +16,5 @@
 <%= link_to "Delete this Story", story_path(@storie), method: :delete, 
 data: { confirm: "Are you sure you want to delete the story?"}, 
 class: "btn btn-xs btn-danger" %>
-
+</div>
 </div>

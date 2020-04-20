@@ -1,26 +1,32 @@
 <h1> Listing All Stories </h1>
+<br>
 
 
-<p>
-<%= link_to "Create new Story", new_story_path %>
-</p>
-
-<table>
-<tr>
-<th>Story Name</th>
-<th>Content</th>
-</tr>
 
 
 <% @storie.each do |storie| %>
-<tr>
-<td><%= storie.name %></td>
-<td><%= storie.content %></td>
-<td><%= link_to 'Edit', edit_story_path(storie) %></td>
-<td><%= link_to 'View', story_path(storie) %></td>
-<td><%= link_to 'Delete', story_path(storie), method: :delete, data: {confirm: "Are you sure?"} %></td>
+<div class="row">
+<div class="col-sm-12 col-xs-offset-2">
+<div class="card bg-light mb-3 border-dark mb-3">
+<div class="card-header">
+<h5><%= link_to storie.name,story_path(storie) %></h5>
+</div>
+<div class="storie.body">
+<h6><%= truncate(storie.content, length: 50) %></h6>
+</div>
 
 
-</tr>
+<div class="storie-actions">
+
+<%= link_to "Edit this story", edit_story_path(storie), class: "btn btn-xs btn-primary" %>
+<%= link_to "Delete this Story", story_path(storie), method: :delete, 
+data: { confirm: "Are you sure you want to delete the story?"}, 
+class: "btn btn-xs btn-danger" %>
+</div>
+
+</div>
+</div>
+</div>
+<br><br>
 <% end %>
-</table>
+

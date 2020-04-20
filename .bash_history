@@ -977,3 +977,134 @@ nano show.html.erb
 rails server
 nano show.html.erb
 rails server
+cd rails
+cd app
+rails server
+cd app
+cd views
+cd stories
+ls
+nano show.html.erb
+cd ..
+cd assets
+cd stylesheets
+nano custom.css.scss
+cd ..
+cd views
+cd stories
+ls
+nano show.html.erb
+rails server
+nano show.html.erb
+rails server
+nano show.html.erb
+rails server
+nano show.html.erb
+rails server
+nano show.html.erb
+rails server
+nano show.html.erb
+cd ..
+cd assets
+cd stylesheets
+nano custom.css.scss
+git add -A
+git commit -m "New Changes"
+git push heroku master
+cd ..
+git add -A
+git commit -m "New Changes"
+git push 
+cd rails
+cd app
+cd views
+cd stories
+nano
+ls
+nano index.html.erb
+rails server
+nano index.html.erb
+rails server
+nano index.html.erb
+rails server
+nano index.html.erb
+rails server
+nano index.html.erb
+rails server
+cd rails
+cd app
+rails server
+nano index.html.erb
+cd app
+cd views
+cd stories
+nano index.html.erb
+rails server
+nano index.html.erb
+rails server
+nano index.html.erb
+rails server
+cd ..
+cd stories
+nano show.html.erb
+rails server
+nano show.html.erb
+rails server
+cd railss
+cd rails
+cd app
+rails server
+cd app
+cd views
+cd stories
+ls
+nano show.html.erb
+nano index.html.erb
+rails server
+nano index.html.erb
+rails server
+nano index.html.erb
+rails server
+nano index.html.erb
+rails server
+cd rails
+cd app
+rails server
+cd app
+cd views
+cd stories
+nano index.html.erb
+cd stories
+rails server
+cd rails
+cd app
+rails 
+rails s
+cd app
+cd views
+cd stories
+nano index.html.erb
+cd ..
+cd assets
+cd stylesheets
+nano custom.css.scss
+rails s
+cd rails
+cd app
+rails s
+cd app
+cd views
+cd stories
+nano index.html.erb
+rails s
+nano index.html.erb
+rails s
+cd rails
+cd app
+rails 
+rails s
+cd app
+cd assets
+cd stylesheets
+nano custom.css.scss
+rails s
