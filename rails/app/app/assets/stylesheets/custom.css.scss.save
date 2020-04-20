@@ -23,6 +23,7 @@ text-align: center;
 
 
 
+
 .jumbotron
 {
 background-image: asset-url('background1.jpg');

@@ -701,3 +701,225 @@ cd assets
 cd stylesheets
 ls
 nano custom.css.scss
+cd rails
+cd app
+yarn add bootstrap@4.3.1 jquery popper.js
+cd config
+cd webpack
+nano environment.js
+cd ..
+ls
+cd app
+ls
+cd javascript
+cd packs
+nano application.js
+cd..
+cd ..
+cd assets
+cd stylesheets
+nano application.css
+touch custom.css.scss
+nano custom.css.scss
+rails server
+cd ..
+cd views
+cd layouts
+nano application.html.erb
+touch _navigation.html.erb
+nano _navigation.html.erb
+rails server
+cd ..
+ls
+cd assets
+ls
+cd stylesheets
+ls
+cd custom.css.scss
+touch custom.css.scss
+ls
+nano custom.css.scss
+rails server
+nano custom.css.scss
+rails server
+nano custom.css.scss
+rails server
+nano custom.css.scss
+rails server
+nano custom.css.scss
+cd ..
+cd views
+cd layouts
+ls
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+ls
+nano application.html.erb
+rails server
+nano application.html.erb
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+nano _navigation.html.erb
+rails server
+cd ..
+git add -A
+git commit -m "Commit"
+git push
+ssh-keygen
+cat /home/sid/.ssh/id_rsa.pub
+git add -A
+git commit -m "Commit"
+git add -A
+git push
+cd rails
+cd app
+git push heroku master
+git add -A
+git commit -m "Commit"
+git push heroku master
+cd app
+cd views
+ls
+cd home
+ls
+nano index.html.erb
+rails server
+nano index.html.erb
+rails server
+nano index.html.erb
+rails server
+git add -A
+git commit -m "Commit"
+git push heroku master
+nano index.html.erb
+git add -A
+git commit -m "Commit"
+git push heroku master
+cd ..
+cd assets
+cd stylesheets
+nano custom.css.scss
+rails server
+nano custom.css.scss
+rails server
+nano custom.css.scss
+rails server
+cd ..
+ls
+cd images
+ls
+touch background1.jpg
+cd rails
+cd app
+rails server
+cd app
+cd assets
+cd images
+ls
+ls -l
+chmod 777 background1.jpg
+ls -l
+git add -A
+git commit -m "X"
+git push heroku master
+cd ..
+cd stylesheets
+nano custom.css.scss
+git add -A
+git commit -m "X"
+git push heroku master
+rails server
+nano custom.css.scss
+rails server
+cd ..
+cd views
+cd layouts
+ls
+nano application.html.erb
+touch _footer.html.erb
+nano _footer.html.erb
+cd ..
+cd assets
+cd stylesheets
+nano custom.css.scss
+git add -A
+git commit -m "X"
+git push heroku master
+nano custom.css.scss
+rails server
+nano custom.css.scss
+rails server
+nano custom.css.scss
+rails server
+nano custom.css.scss
+rails server
+nano custom.css.scss
+rails server
+nano custom.css.scss
+rails server
+nano custom.css.scss
+cd ..
+cd views
+cd home
+nano index.html.erb
+git add -A
+git commit -m "Hello"
+git push heroku master
+nano index.html.erb
+cd ..
+cd assets
+cd stylesheets
+nano custom.css.scss
+rails server
+cd ..
+cd views
+cd home
+nano index.html.erb
+cd ..
+cd assets
+cd stylesheets
+nano custom.css.scss
+rails server
