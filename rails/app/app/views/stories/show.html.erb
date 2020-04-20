@@ -1,0 +1,12 @@
+<h1> Your Story </h1>
+
+<p> 
+ Story Name: <%= @storie.name %>
+</p>
+<p>
+ Content: <%= @storie.content %>
+<p>
+<p>
+<%= link_to "Back to all stories", stories_path %> | 
+<%= link_to "Edit this story", edit_story_path(@storie) %>
+</p>

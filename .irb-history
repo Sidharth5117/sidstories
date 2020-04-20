@@ -1,0 +1,67 @@
+Storie.all
+storie.name = "Pink Panther"
+Storie.name = "Pink Panther"
+storie = Storie.new(name: "Pink Panther", content: "XYZ", moral: "ABC", author: "DCF")
+Storie.all
+my_story = Storie.new(name: "ABC",  content: "XYZ", moral: "TYU", author: "OPA")
+Storie.all
+cat storie.rb
+myx = Storie.new(name: "HAHA")
+Storie.all
+Storie.all
+storie1 = Storie.new(name: "ABC", content: "HJK", moral: "OAP", author: "POA")
+Storie.all
+storie1.save
+Storie.all
+story = Storie.find(1)
+story = Storie.find(1)
+story
+story.name = "Edited ABC"
+story.save
+story
+storie2 = Storie.new(name: "ABCfds", content: "sdfsHJK", moral: "OAgdfgP", author: "PsdfOA")
+storie2.save
+Storie.all
+story = Storie.find(2)
+story
+story.destroy
+Storie.all
+story = Storie.new
+story.save
+Storie.all
+story = Storie.find(3)
+story.destroy
+Storie.all
+Storie.all
+reload
+reload!
+Storie.all
+story = Storie.new(author: "ABC")
+story.save
+ story.errors.any?
+exit
+Storie.all
+story = Storie.new(author: "ABC")
+story.save
+ story.errors.any?
+story.errors.full_messages
+exit
+Storie.all
+story = Storie.new(name: "ABC")
+story.save
+ story.errors.any?
+story.errors.full_messages
+quit
+story = Storie.new(name: "abc", content: "ADF")
+story.save
+story.errors.full_messages
+exit
+Storie.all
+quit
+quit
+Storie.all
+quit
+Storie.all
+quit
+Storie.all
+quit

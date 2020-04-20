@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   resources :articles
+  resources :stories
   root "home#index"
   get "/about", to: "home#about"
 

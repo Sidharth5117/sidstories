@@ -1,0 +1,35 @@
+<%= form_with(model: @storie, local: true) do |form| %>
+
+
+  <% if @storie.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@storie.errors.count, "error") %> prohibited
+        this storie from being saved:
+      </h2>
+      <ul>
+        <% @storie.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+<p>
+
+
+<%= label_tag(:name, "Story Name") %>
+<br>                                                                                                                                                                                                               <p>                                                                                                                                                                                                                    <%= form.label :name %><br>                                                                                                                                                                                        <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.label :content %><br>
+    <%= form.text_area :content %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+

@@ -110,6 +110,28 @@
       "shell": "bash",
       "valid": true,
       "language": "node"
+    },
+    {
+      "command": "run",
+      "completion": 0,
+      "version": "6.99.0-ec9edad",
+      "plugin": "@heroku-cli/plugin-run",
+      "plugin_version": "3.6.0",
+      "os": "linux",
+      "shell": "bash",
+      "valid": true,
+      "language": "node"
+    },
+    {
+      "command": "update",
+      "completion": 0,
+      "version": "6.99.0-ec9edad",
+      "plugin": "@cli-engine/engine",
+      "plugin_version": "6.3.3",
+      "os": "linux",
+      "shell": "bash",
+      "valid": true,
+      "language": "node"
     }
   ]
 }

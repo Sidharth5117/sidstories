@@ -241,3 +241,391 @@ rm -r -type f
 rm . -type f
 cd .ssh
 ls
+git push -u origin master
+git push
+git status
+git add -A
+git commit -m "Commit"
+git push
+cd rails
+cd app
+rails generate migration create_stories
+rake db.migrate
+rake db:migrate
+rake db:rollback
+rake db:migrate
+rake db:rollback
+rake db:migrate
+rake db:rollback
+rails generate migration add_author_to_articles
+rake db:migrate
+rake db:rollback
+rake db:migrate
+irb
+cd rails
+cd app
+rails console
+cd rails
+cd app
+irb
+cd rails
+cd app
+rails console
+rails s
+cd rails
+cd app
+cd models
+ls
+cd rails
+cd app
+cd models
+ls
+ls -l
+ls
+git status
+git add -A
+git commit 
+cd rails
+cd app
+cd models
+ls
+cd rails
+cd app
+rails server
+cd app
+cd models
+ls
+sudo
+bash
+cd rails
+cd app
+cd models
+ls
+irb
+cd app
+cd rails
+cd app
+cd models
+cat storie.rb
+chmod 777 storie.rb
+ls -l
+irb
+cd rails
+cd app
+rails console
+cd rails
+cd app
+rails console
+git status
+git add -A
+git commit -m "Create Stories table,models and table"
+git push
+cd ..
+git push
+cd rails
+cd app
+git push -u master origin
+git push -u origin master
+git push origin master
+git add -ALL
+git add --ALL
+git add --all
+cd app
+cd models
+chmod 777 article.rb
+cd ..
+git add --all
+sudo find /home/sid -type f -exec chmod 777 {} f
+sudo find /home/sid -type f -exec chmod 777 {} \;
+git status
+git add --all
+ls
+cd config
+ls
+chmod 777 routes.rb 
+cd ..
+git status
+git add -A
+git status
+git commit -m "Create Stories table,models and table"
+git push
+cd ..
+git push
+ssh-keygen
+ls
+cd .ssh
+ls
+cat id_rsa.pub
+cd ..
+git push
+cd .ssh
+ls -l
+cd .ssh
+cd rails
+cd app
+cd ..
+cd .ssh
+cd ..
+cd .ssh
+ls -l
+rm id_rsa
+ls
+;s
+ls
+rails routes
+cd ..
+cd rails
+cd app
+rails routes
+rails server
+cd rails
+cd app
+rails server
+sudo find /home/sid -type f -exec chmod 777 {} \;
+sudo find /home/sid -type d -exec chmod 777 {} \;
+rails server
+ls
+cd app
+cd views
+ls
+cd stories
+ls
+nano new.html.reb
+nano new.html.erb
+cat new.html.erb
+rails server
+cd ..
+ls
+cd controllers
+ls
+nano stories_controller.rb
+cat stories_controller.rb
+rails server
+cd ..
+cd views
+nano new.html.erb
+ls
+cd stories
+nano new.html.erb
+rails server
+nano new.html.erb
+rails server
+nano new.html.erb
+rails server
+nano new.html.erb
+rails server
+nano new.html.erb
+rails server
+nano new.html.erb
+rails server
+cd ..
+cd controller
+cd controllers
+ls
+nano stories_controller.rb
+rails server
+nano stories_controller.rb
+cd ..
+cd views
+cd stories
+nano new.html.erb
+rails server
+nano new.html.erb
+rails server
+nano new.html.erb
+rails server
+nano new.html.erb
+cd ..
+cd controllers
+cd stories_controller.rb
+nano stories_controller.rb
+rails server
+cd ..
+cd views
+cd stories
+nano new.html.erb
+rails server
+nano new.html.erb
+rails server
+nano new.html.erb
+rails server
+nano new.html.erb
+rails server
+nano new.html.erb
+rails server
+nano new.html.erb
+rails server
+cd ..
+cd controllers
+nano stories_controller.rb
+rails server
+nano stories_controller.rb
+rails server
+cd rails
+cd app
+rails server
+cd app
+cd controllers
+nano stories_controllers.rb
+nano storie_controller.rb
+ls
+nano stories_controller.rb
+rails server
+rails console
+nano stories_controller.rb
+rails console
+rails server
+nano stories_controller.rb
+cd ..
+cd views
+cd stories
+nano new.html.erb
+rails server
+nano new.html.erb
+rails server
+rails console
+cd ..
+cd controllers
+cd stories
+nano stories_controller.rb
+rails server
+nano stories_controller.rb
+rails server
+rake routes
+nano stories_controller.rb
+rails server
+cd rails
+cd app
+rails server
+rails console
+cd app
+cd controllers
+nano stories_controller.rb
+rails server
+cd ..
+ls
+cd app
+cd config
+ls
+cd .config
+ls .
+cd ..
+cd config
+nano routes.db
+nano routes.rb
+cd ..
+cd app
+cd views
+cd stories
+nano new.html.erb
+rails server
+rails routes
+nano new.html.erb
+rails server
+nano new.html.erb
+rails server
+nano new.html.erb
+rails server
+nano new.html.erb
+rails server
+cd rails
+cd app
+rails server
+cd rails
+cd app
+cd views
+cd stories
+nano stories_controller.rb
+ls
+nano new.html.erb
+rails server
+nano new.html.erb
+rails server
+rails console
+cd ..
+git status
+git add -A
+git commit -m "New Commit"
+git push
+git remote add origin git@github.com:Sidharth5117/app.git
+git push
+git push -u origin master
+cd .ssh
+cd ..
+cd .ssh
+chmod -wx id_rsa
+ls -l
+cd ..
+cd rails
+cd app
+git push -u origin master
+cd ..
+cd .ssh
+ls
+rm id_rsa
+ls
+rm id_rsa.pub
+ls
+ssh-keygen
+ls -l
+cat id_rsa.pub
+cd ..
+cd rails
+cd app
+git remote add origin git@github.com:Sidharth5117/app.git
+git push -u origin master
+git remote -v
+git remote rm origin
+git remote -v
+git remote add origin git@github.com:Sidharth5117/app.git
+git push -u origin master
+git pull
+cd app
+cd views
+cd stories
+cd ..
+cd controllers
+nano stories_controller
+nano stories_controller.rb
+cd ..
+cd views
+cd stories
+touch show.html.erb
+ls
+ls -
+ls -l
+nano show.html.erb
+rails server
+cd rails
+cd app
+rails s
+cd rails
+cd app
+rails server
+rake routes
+cd app
+cd controllers
+cd stories_controller.rb
+nano stories_controller.rb
+cd ..
+cd views
+cd stories
+ls
+touch index.html.erb
+nano index.html.erb
+rake routes
+nano index.html.erb
+rails server
+nano index.html.erb
+rails server
+nano index.html.erb
+rails server
+cd rails 
+cd app
+rake routes
+cd rails
+cd app
+rake routes
+cd rails
+cd app
+rake routes
