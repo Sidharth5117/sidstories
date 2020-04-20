@@ -12,7 +12,7 @@ class StoriesController < ApplicationController
  def destroy 
   @storie = Storie.find(params[:id])
   @storie.destroy
-  flash[:notice] = "Story was successfully deleted"
+  flash[:danger] = "Story was successfully deleted"
   redirect_to stories_path
  end
 
@@ -23,7 +23,7 @@ class StoriesController < ApplicationController
  def update
   @storie = Storie.find(params[:id])
   if @storie.update(storie_params)
-   flash[:notice] = "Story was successfully updated"
+   flash[:success] = "Story was successfully updated"
    redirect_to @storie
   else
    render 'edit'
@@ -34,7 +34,7 @@ class StoriesController < ApplicationController
   @storie = Storie.new(storie_params)
   
   if @storie.save
-    flash[:notice] = "Story was successfully created"
+    flash[:success] = "Story was successfully created"
     redirect_to @storie
   else
     render 'new'

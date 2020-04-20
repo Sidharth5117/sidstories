@@ -15,7 +15,14 @@ color: #fff;
 text-decoration: none;
 
 }
+.storie-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 5px;
+}
 
+.content {
+  margin-top: 0;
+}
 .center
 {
 text-align: center;
@@ -37,7 +44,7 @@ letter-spacing: -1px;
 font-weight: bold;
 }
 footer {
-width: 50%;
+width: 70%;
 
 position: absolute;
 bottom: 0;

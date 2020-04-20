@@ -923,3 +923,57 @@ cd assets
 cd stylesheets
 nano custom.css.scss
 rails server
+cd rails
+cd app
+rails server
+cd app
+cd assets
+cd stylesheets
+nano custom.css.scss
+git add -A
+git commit -m "Add
+"
+git push heroku master
+cd ..
+git add -A
+git commit -m "Updated"
+git push
+cd rails
+cd app
+rails server
+cd app
+cd views
+cd layouts
+ls
+touch _messages.html.erb
+nano _messages.html.erb
+nano application.html.erb
+rails server
+nano application.html.erb
+ls
+nano application.html.erb
+rails server
+ls
+nano application.html.erb
+rails server
+cd rails
+cd app
+rails server
+cd app
+cd controllers
+nano stories_controller.rb
+rails server
+cd ..
+cd views
+cd layouts
+nano _messages.html.erb
+rails server
+cd ..
+cd stories
+ls
+nano show.html.erb
+rails server
+nano show.html.erb
+rails server
+nano show.html.erb
+rails server
