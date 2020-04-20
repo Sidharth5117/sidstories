@@ -629,3 +629,75 @@ rake routes
 cd rails
 cd app
 rake routes
+cd rails
+cd app
+cd views
+cd stories
+ls
+nano show.html.erb
+rails server
+nano show.html.erb
+rails server
+nano show.html.erb
+rails server
+nano show.html.erb
+rails server
+touch _form.html.erb
+nano new.html.erb
+nano _form.html.erb
+nano new.html.erb
+rails server
+nano edit.html.erb
+rails server
+cd ..
+cd controllers.
+cd controllers
+nano stories_controller.rb
+cd ..
+cd views
+cd stories
+nano index.html.erb
+rails server
+cd..
+cd ..
+config
+cd config
+ls
+cat routes.rb
+cd ..
+cd views
+ls
+cd app
+cd views
+ls
+cd home
+ls
+nano index.html.er 
+nano index.html.erb 
+rails server
+heroku run rails db:migrate
+git push heroku master
+git add -A
+git commit -m "Commit"
+git push
+git push --set-upstream origin master
+git pull
+git pull origin master
+cd ..
+git status
+git pull
+git add -A
+git pull --all
+git commit -m "Commit"
+git push
+git push heroku master
+cd rails
+cd app
+git push heroku master
+heroku run rake db:migrate
+cd rails
+cd app
+cd assets
+cd stylesheets
+ls
+nano custom.css.scss
