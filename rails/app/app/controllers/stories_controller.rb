@@ -5,7 +5,7 @@ class StoriesController < ApplicationController
  end
 
  def index
-  @storie = Storie.all
+  @storie = Storie.paginate(page: params[:page], per_page: 2)
  end
  
 
@@ -31,8 +31,9 @@ class StoriesController < ApplicationController
  end
 
  def create
+  
   @storie = Storie.new(storie_params)
-  @storie.user = User.first  
+  @storie.user = User.last  
   if @storie.save
     flash[:success] = "Story was successfully created"
     redirect_to @storie

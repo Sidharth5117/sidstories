@@ -1700,3 +1700,158 @@ cd views
 cd stories
 nano index.html.erb
 rails s
+cd rails
+cd app
+git push heroku master
+cd .git
+chmod 777 git
+chmod 777 .git
+git push heroku master
+sudo find /home/sid/rails/app/.git -type d -exec chmod 777 {} \;
+sudo find /home/sid/rails/app/.git -type f -exec chmod 777 {} \;
+git push heroku master
+git add -A
+git commit -m "Changes"
+git push heroku master
+heroku run rails db:migrate
+cd app
+cd views
+cd home
+nano index.html.erb
+git add -A
+git commit -m "working ok"
+git push -u origin master
+git push
+git push heroku master
+cd ..
+cd 
+git add -A
+git commit -m "working ok"
+git push
+cd rails
+cd app
+cd ap
+cd app
+cd ..
+nano Gemfile
+bundle install --without production
+cd app
+cd controllers
+nano stories_controller.rb
+cd ..
+cd views
+cd stories
+nano index.html.erb
+rails s
+cd ..
+cd controllers
+nano stories_controller.rb
+rails s
+nano stories_controller.rb
+cd ..
+cd app
+cd views
+cd storiez
+cd stories
+nano stories_controller.rn
+nano stories_controller.rb
+ls
+nano index.html.erb
+rails s
+cd rails
+cd app
+rails s
+nano Gemfile
+bundle install --without productiob
+bundle install --without production
+rails s
+cd rails
+cd app
+rails s
+cd app
+cd controllers
+nano stories_controller.rb
+cd ..
+cd views
+cd app
+cd views
+cd stories
+nano index.html.erb
+rails s
+nano index.html.erb
+rails s
+nano index.html.erb
+rails s
+cd rails
+cd app
+nano Gemfile
+rails s
+nano Gemfile
+bundle install --without production
+gem uninstall
+nano Gemfile
+cd app
+cd views
+cd stories
+nano index.html.erb
+rails s
+cd rails
+cd app
+rails s
+cd app
+cd ..
+nano Gemfile
+bundle install --without production
+nano Gemfile
+bundle install --without production
+cd app
+cd views
+cd stories
+nano stories_controller.rb
+nano index.html.erb
+rails s
+cd rails
+cd app
+rails s
+cd app
+cd views
+cd app
+cd stories
+nano index.html.erb
+rails s
+cd ..
+cd controllers.rb
+cd controllers
+nano stories_controller.rb
+rails s
+cd app
+cd ..
+cd views
+cd stories
+nano index.html.erb
+rails s
+nano index.html.erb
+rails s
+cd rails
+cd app
+rails s
+cd app
+cd views
+cd stories
+nano index.html.erb
+rails s
+nano index.html.erb
+rails s
+cd rails
+cd app
+rails s
+cd app
+cd views
+cd stories
+ls
+nano index.html.erb
+nano _storie.html.erb
+rails s
+cd rails 
+cd app
+rails s
