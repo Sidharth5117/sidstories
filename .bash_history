@@ -1426,3 +1426,72 @@ bundle install --without production
 rails server
 yarn install --check-files
 rails server
+git add -A
+git commit -m "Updated without users module"
+git push
+rails console
+cd rails
+cd app
+rails console
+cd app
+cd models
+ls
+cd ..
+cd db
+cd ..
+cd db
+cd migrate
+ls
+cd..
+cd ..
+rails generate migration create_users
+cd db
+cd migrate
+ls
+nano 20200422070336_create_users.rb
+rake db:migate
+rake db:migrate
+cd ..
+cd app
+cd models
+nano user.rb
+rails console
+cd ..
+git add -A
+git commit -m "Created migration and model file for user"
+git push
+cd rails
+cd app
+cd models
+nano user.rb
+cd ..
+rails generate migration add_userid_to_stories
+cd db
+cd migrate
+ls
+nano 20200422071028_add_userid_to_stories.rb
+rake db:migrate
+rails console
+cd ..
+cd app
+cd models
+nano user.rb
+nano stories.rb
+nano storie.rb
+nano user.rb
+rails console
+rails s
+cd ..
+cd stories_controller.rb
+nano stories_controller.rb
+ls
+cd controllers
+nano stories_controller.rb
+rails console
+ls
+cd ..
+cd models
+ls
+nano storie.rb
+nano user.rb
+rails console

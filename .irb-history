@@ -1,50 +1,3 @@
-Storie.all
-quit
-User.all
-Storie.all
-quit
-g
-User.all
-Client.all
-client = Client.new(username: "sidharth", email: "sid@gmail.com")
-client.save
-Client.all
-Storie.all
-quit
-Storie.all
-Client.all
-client = Client.find(first)
-client = Client.first
-client.password = "sid123"
-client.save
-client.authenticate("abv")
-client.authenticate("sid123")
-quit
-storie = Storie.find(last)
-storie = Storie.last
-storie.sow
-storie
-storie.client = Client.last
-storie.save
-quit
-client = Client.last
-client
-client.stories
-client.story
-client.storie
-client.stories
-Storie.all
-client.stories
-client.story
-story = story.find(18)
-story = Storie.find(18)
-story
-story.client
-client
-client.stories
-client.Storie
-client.Stories
-client.storie
 client.storie.name
 client
 client.username
@@ -100,4 +53,53 @@ User.all
 user = User.create(username: "sid123", email: "sid123@gmail.com")
 user = User.find(1)
 user
+quit
+Storie.all
+quit
+storie = storie.new(name: "Hello", content: "YOYOYO")
+storie = Storie.new(name: "Hello", content: "YOYOYO")
+storie.save
+storie = Storie.new(name: "Hello", content: "YOYOYO", user: User.last)
+storie.save
+storie
+storie = Storie.first
+storie.destroy
+quit
+user = user.first
+user = User.first
+user
+Storie.all
+user
+user.articles
+user.stories
+quit
+user = user.find(1)
+user = User.find(1)
+user
+user.storie
+user.storiez
+user.stories
+user.storie
+User.all
+quit
+USer.all
+User.all
+user = user.last
+user = User.last
+user
+user.password = "sid123\
+"
+user.save
+user
+user.authenticate("sd")
+user.authenticate("sid123")
+user.authenticate("sid")
+user.authenticate("sid123")
+user.password = "sid123"
+user.save
+user
+user.authenticate(\
+  "sd")
+user.authenticate("sid")
+user.authenticate("sid123")
 quit
