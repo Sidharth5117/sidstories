@@ -1,12 +1,5 @@
 Storie.all
 quit
-quit
-Storie.all
-quit
-Storie.all
-quit
-Storie.all
-quit
 User.all
 Storie.all
 quit
@@ -100,4 +93,11 @@ ClientStorie.all
 client.stories
 client
 rails db:rollback
+quit
+User.all
+quit
+User.all
+user = User.create(username: "sid123", email: "sid123@gmail.com")
+user = User.find(1)
+user
 quit
