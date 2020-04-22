@@ -1,8 +1,3 @@
-client.storie.name
-client
-client.username
-quit
-Storie.all
 story = Storie.last
 story.client_id = 3
 story.save
@@ -102,4 +97,9 @@ user.authenticate(\
   "sd")
 user.authenticate("sid")
 user.authenticate("sid123")
+quit
+Storie.all
+storie = Storie.first
+storie.user_id=3
+storie.save
 quit

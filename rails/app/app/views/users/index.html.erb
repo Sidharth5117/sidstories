@@ -1,0 +1,19 @@
+<h1>All SidStories Writers</h1>
+<% @user.each do |user| %>
+
+<div class="row">
+<div class="col-sm-12 col-xs-offset-2">
+<div class="card bg-light mb-3 border-dark mb-3">
+<div class="card-header">
+<h5>
+<%= gravatar_for(user) %>
+<%= link_to user.username,user_path(user) %></h5>
+</div>
+<div class="storie.body">
+<h6><%= pluralize(user.storie.count, "story") if user.storie %></h6>
+</div>
+</div>
+</div>
+</div>
+<br><br>
+<% end %>

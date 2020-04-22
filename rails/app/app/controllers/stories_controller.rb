@@ -32,7 +32,7 @@ class StoriesController < ApplicationController
 
  def create
   @storie = Storie.new(storie_params)
-  
+  @storie.user = User.first  
   if @storie.save
     flash[:success] = "Story was successfully created"
     redirect_to @storie
