@@ -26,3 +26,27 @@
 2020-04-21T14:51:02.124Z     at async Config.runHook (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/config/lib/config.js:139:9)
 2020-04-21T14:51:02.124Z     at async Config.runCommand (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/config/lib/config.js:146:13)
 2020-04-21T14:51:02.124Z     at async Main.run (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/command/lib/main.js:21:9)
+2020-04-22T12:02:13.579Z Error: Missing required flag:
+2020-04-22T12:02:13.579Z  -a, --app APP  app to run command against
+2020-04-22T12:02:13.579Z See more help with --help
+2020-04-22T12:02:13.579Z     at validateFlags (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/parser/lib/validate.js:53:27)
+2020-04-22T12:02:13.579Z     at Object.validate (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/parser/lib/validate.js:58:5)
+2020-04-22T12:02:13.579Z     at Object.parse (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/parser/lib/index.js:26:7)
+2020-04-22T12:02:13.579Z     at V5.parse (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/plugin-legacy/node_modules/@oclif/command/lib/command.js:74:41)
+2020-04-22T12:02:13.579Z     at V5.run (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/plugin-legacy/lib/index.js:90:52)
+2020-04-22T12:02:13.579Z     at V5._run (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/plugin-legacy/node_modules/@oclif/command/lib/command.js:34:31)
+2020-04-22T12:07:06.448Z Error: Specify an app with --app
+2020-04-22T12:07:06.448Z     at Object.error (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/errors/lib/index.js:22:17)
+2020-04-22T12:07:06.448Z     at GitRemote.error (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/command/lib/command.js:57:23)
+2020-04-22T12:07:06.448Z     at GitRemote.run (~/.local/share/heroku/client/7.39.3/node_modules/@heroku-cli/plugin-git/lib/commands/git/remote.js:12:18)
+2020-04-22T12:07:06.448Z     at GitRemote._run (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/command/lib/command.js:44:31)
+2020-04-22T12:07:19.334Z Error: Flag --app expects a value
+2020-04-22T12:07:19.334Z     at parseFlag (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/parser/lib/parse.js:74:27)
+2020-04-22T12:07:19.334Z     at Parser.parse (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/parser/lib/parse.js:96:21)
+2020-04-22T12:07:19.334Z     at Object.parse (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/parser/lib/index.js:25:27)
+2020-04-22T12:07:19.334Z     at GitRemote.parse (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/command/lib/command.js:83:41)
+2020-04-22T12:07:19.334Z     at GitRemote.run (~/.local/share/heroku/client/7.39.3/node_modules/@heroku-cli/plugin-git/lib/commands/git/remote.js:8:38)
+2020-04-22T12:07:19.334Z     at GitRemote._run (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/command/lib/command.js:44:31)
+2020-04-22T12:07:36.605Z Error: You do not have access to the app app.
+2020-04-22T12:07:36.605Z Error ID: forbidden
+2020-04-22T12:07:36.605Z     at Function.request (~/.local/share/heroku/client/7.39.3/node_modules/@heroku-cli/command/lib/api-client.js:93:27)
