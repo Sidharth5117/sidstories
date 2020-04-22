@@ -194,3 +194,4 @@
 4.0.14 hocon:~> 1.3,thor:< 2.0&>= 1.0.1|checksum:953fc94a8fa82b16e6845e98308263ba09cb631ace7b9ebcbf84e86f4417b125,ruby:~> 2.3
 4.0.15 hocon:~> 1.3,thor:< 2.0&>= 1.0.1|checksum:0ea734e2119b853005e5d942af4bc67c5bb87723228706dedda699a4be6f751b,ruby:~> 2.3
 4.0.16 hocon:~> 1.3,thor:< 2.0&>= 1.0.1|checksum:867c08af06b1bcd4a254649a4c3281b9c26bdb9f1b2f06e2e04399a041a9e3ff,ruby:~> 2.3
+4.0.17 hocon:~> 1.3,thor:< 2.0&>= 1.0.1|checksum:6f608e1904bf236a9f6946452d8288580c4f9da6143ea831b936135dcab442bc,ruby:~> 2.3

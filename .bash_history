@@ -1108,3 +1108,321 @@ cd assets
 cd stylesheets
 nano custom.css.scss
 rails s
+cd rails
+cd app
+rails s
+cd app
+cd views
+cd stories
+nano index.html.erb
+rails s
+nano index.html.erb
+rails s
+nano index.html.erb
+cd ..
+cd assets
+cd stylesheets
+nano custom.css.scss
+rails s
+nano custom.css.scss
+rails s
+nano custom.css.scss
+rails s
+cd ..
+cd views
+cd stories
+nano index.html.erb
+git -add A
+git add -A
+git commit -m "New changes"
+git push heroku master
+cd ..
+git add -A
+git commit -m "New changes"
+git push
+cd rails
+cd app
+rails generate scaffold User username:String email:string
+rake db:migrate
+rake console
+rails console
+rails db:migrate
+rails generate migration create_users
+rails generate migration create_clients
+cd db
+ls
+cd migrate
+ls
+nano 20200420170103_create_clients.rb
+rails db:migrate
+cd ..
+bundle exec rake db:migrate
+db:migrate
+rails db:migrate
+cd db
+ls
+cd migrate
+ls
+rm 20200420165612_create_users.rb
+ls
+nano 20200418192617_create_stories.rb
+nano 20200420170103_create_clients.rb
+rails db:migrate
+cd ..
+ls
+cd app
+ls
+cd models
+ls
+rm user.rb
+touch client.rb
+nano client.rb
+rails console
+cd rails
+cd app
+ls
+cd models
+ls
+nano client.rb
+cd ..
+rails generate migration add_id_to_stories
+cd app
+cd db
+cd ..
+cd db
+ls
+cd migrate
+ls
+nano 20200421062140_add_id_to_stories.rb
+rails db:migrate
+rails console
+cd ..
+cd app
+ls
+cd models
+ls
+nano client.rb
+nano storie.rb
+nano client.rb
+nano storie.rb
+nano client.rb
+rails console
+cd ..
+cd controllers
+ls
+nano stories_controller.rb
+rails s
+rails console
+cd ..
+cd app
+cd views
+cd stories
+nano index.html.erb
+rails s
+cd rails
+cd app
+rails s
+cd app
+cd views
+cd stories
+nano index.html.erb
+rails s
+nano index.html.erb
+rails s
+cd ..
+cd models
+nano client.user
+nano client.rb
+cd ..
+nano Gemfile
+bundle install --without production
+rails generate migration add_pass_to_clients
+cd app
+ls
+cd migrate
+ls
+cd ..
+cd db
+cd migrate
+ls
+nano  20200421064941_add_pass_to_clients.rb
+rails db:migrate
+rails console
+cd ..
+cd config
+nano routes.db
+ls
+nano routes.rb
+cd ..
+cd app
+cd controllers
+touch clients_controller.rb
+nano clients_controller.rb
+cd ..
+cd views
+mkdir users
+mkdir clients
+ls
+cd clients
+touch new.html.erb
+nano new.html.erb
+cd ..
+cd controllers
+nano clients_controller.rb
+cd ..
+cd config
+ls
+nano routes.rb
+rails s
+cd ..
+cd app
+cd views
+cd clients
+nano new.index.html
+nano new.html.erb
+rails s
+cd rails
+cd app
+rails s
+cd app
+cd views
+cd stories
+touch _story.html.erb
+nano _story.html.erb
+nano index.html.erb
+nano _story.html.erb
+nano index.html.erb
+cd ..
+cd clients
+nano show.html.erb
+rails s
+nano show.html.erb
+rails console
+rails s
+cd ..
+cd stories
+ls
+nano show.html.erb
+nano index.html.erb
+rails s
+nano index.html.erb
+rails s
+cd rails 
+cd app
+rails s
+cd app
+cd views
+cd stories
+ls
+nano new.html.erb
+touch _storie.html.erb
+cd rails
+cd app
+cd views
+cd stories
+ls
+nano index.html.erb
+ls
+nano _storie.html.erb
+cat _story.html.erb
+nano _storie.html.erb
+nano index.html.erb
+rails server
+nano index.html.erb
+rails server
+nano index.html.erb
+nano _storie.html.erb
+rails s
+nano index.html.erb
+nano _storie.html.erb
+rails s
+rails console
+cd ..
+cd models
+nano client.rb
+nano storie.rb
+rails s
+cd ..
+cd app
+cd views
+cd storie
+cd stories
+nano _storie.html.erb
+nano index.html.erb
+cd ..
+cd client
+cd clients
+nano show.html.erb
+rails s
+rails console
+cd ..
+cd controllers
+cd clients.rb
+nano clients.rb
+ls
+nano clients_controller.rb
+nano stories_controller.rb
+cd ..
+cd 
+cd
+cd rails
+cd app
+cd views
+cd clients
+nano show.html.erb
+rails s
+cd rails
+cd app
+rails s
+cd app
+cd views
+cd clients
+nano show.html.erb
+rails s
+cd rails
+cd app
+rails console
+cd rails
+cd app
+rails s
+rails console
+rails g resource ClientStorie client:references storie:references
+cd app
+cd models
+ls
+nano client_storie.rb
+nano storie.rb
+nano client.rb
+nano storie.rb
+rails db:migrate
+rails console
+rails db:rollback
+rails db:migrate
+cd rails
+rails new sidstories
+ls
+rm sidstories
+rm -d sidstories
+rm -f -d sidstories
+rm -d sidstories
+cd sidstories
+rm .
+rm . ~ -f
+cd rails
+ls
+cd app
+ls -l
+chmod 777 app
+cd app
+ls
+sudo find /home/sid/rails/app -type d -exec chmod 777 {} \;
+sudo find /home/sid/rails/app -type f -exec chmod 777 {} \;
+cd rails
+cd app
+ls -l
+rails server
+bundle install
+bundle install --without production
+rails server
+yarn install --check-files
+rails server

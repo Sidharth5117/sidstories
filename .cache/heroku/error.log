@@ -5,4 +5,24 @@
     at <anonymous>
     at process._tickCallback (internal/process/next_tick.js:182:7)
 [2020-04-20T14:21:46+05:30] heroku-cli: Updating CLI...
-[2020-04-20T14:21:46+05:30] heroku-cli: Updating CLI from 6.99.0-ec9edad to 7.39.3...
+[2020-04-20T14:21:46+05:30] heroku-cli: Updating CLI from 6.99.0-ec9edad to 7.39.3...2020-04-21T14:50:57.618Z Warning: db:migrate is not a heroku command.
+2020-04-21T14:50:57.618Z     at Object.warn (/home/sid/.local/share/heroku/client/7.39.3/node_modules/@oclif/errors/lib/index.js:33:15)
+2020-04-21T14:50:57.618Z     at Object.warn (/home/sid/.local/share/heroku/client/7.39.3/node_modules/@oclif/config/lib/config.js:115:42)
+2020-04-21T14:50:57.618Z     at Object.hook (/home/sid/.local/share/heroku/client/7.39.3/node_modules/@oclif/plugin-not-found/lib/index.js:25:10)
+2020-04-21T14:50:57.618Z     at async /home/sid/.local/share/heroku/client/7.39.3/node_modules/@oclif/config/lib/config.js:129:21
+2020-04-21T14:50:57.618Z     at async Promise.all (index 0)
+2020-04-21T14:50:57.618Z     at async Promise.all (index 33)
+2020-04-21T14:50:57.618Z     at async Config.runHook (/home/sid/.local/share/heroku/client/7.39.3/node_modules/@oclif/config/lib/config.js:139:9)
+2020-04-21T14:50:57.618Z     at async Config.runCommand (/home/sid/.local/share/heroku/client/7.39.3/node_modules/@oclif/config/lib/config.js:146:13)
+2020-04-21T14:50:57.618Z     at async Main.run (/home/sid/.local/share/heroku/client/7.39.3/node_modules/@oclif/command/lib/main.js:21:9)
+2020-04-21T14:50:57.618Z     at async Main._run (/home/sid/.local/share/heroku/client/7.39.3/node_modules/@oclif/command/lib/command.js:44:20)
+2020-04-21T14:51:02.124Z Error: Run heroku help for a list of available commands.
+2020-04-21T14:51:02.124Z     at Object.error (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/errors/lib/index.js:22:17)
+2020-04-21T14:51:02.124Z     at Object.error (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/config/lib/config.js:113:30)
+2020-04-21T14:51:02.124Z     at Object.hook (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/plugin-not-found/lib/index.js:39:10)
+2020-04-21T14:51:02.124Z     at async ~/.local/share/heroku/client/7.39.3/node_modules/@oclif/config/lib/config.js:129:21
+2020-04-21T14:51:02.124Z     at async Promise.all (index 0)
+2020-04-21T14:51:02.124Z     at async Promise.all (index 33)
+2020-04-21T14:51:02.124Z     at async Config.runHook (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/config/lib/config.js:139:9)
+2020-04-21T14:51:02.124Z     at async Config.runCommand (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/config/lib/config.js:146:13)
+2020-04-21T14:51:02.124Z     at async Main.run (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/command/lib/main.js:21:9)

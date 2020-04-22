@@ -131,3 +131,4 @@
 6.0.0.beta1 |checksum:4966161a2eaf4795af3b36fb8df768930a6a8d61aa3b0d8e1f6bc88deba588f7,ruby:>= 2.3,rubygems:> 1.3.1
 6.0.0.beta2 |checksum:65649596b2871c02553451ff63cd100dd7bb7202c334e4fb439865919572e2c9,ruby:>= 2.3,rubygems:> 1.3.1
 6.0.0.rc1 |checksum:65872acb1a2fdd055b2fc87fd2ea33f751e101ac5848343646f9d15ad4356143,ruby:>= 2.3,rubygems:> 1.3.1
+6.0.0 |checksum:6290ddcb232380cae79b772af924e12f57fe1dcd0f71254411dd21c04f7b13d0,ruby:>= 2.3

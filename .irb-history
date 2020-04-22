@@ -1,67 +1,103 @@
 Storie.all
-storie.name = "Pink Panther"
-Storie.name = "Pink Panther"
-storie = Storie.new(name: "Pink Panther", content: "XYZ", moral: "ABC", author: "DCF")
+quit
+quit
 Storie.all
-my_story = Storie.new(name: "ABC",  content: "XYZ", moral: "TYU", author: "OPA")
+quit
 Storie.all
-cat storie.rb
-myx = Storie.new(name: "HAHA")
+quit
 Storie.all
+quit
+User.all
 Storie.all
-storie1 = Storie.new(name: "ABC", content: "HJK", moral: "OAP", author: "POA")
+quit
+g
+User.all
+Client.all
+client = Client.new(username: "sidharth", email: "sid@gmail.com")
+client.save
+Client.all
 Storie.all
-storie1.save
+quit
 Storie.all
-story = Storie.find(1)
-story = Storie.find(1)
+Client.all
+client = Client.find(first)
+client = Client.first
+client.password = "sid123"
+client.save
+client.authenticate("abv")
+client.authenticate("sid123")
+quit
+storie = Storie.find(last)
+storie = Storie.last
+storie.sow
+storie
+storie.client = Client.last
+storie.save
+quit
+client = Client.last
+client
+client.stories
+client.story
+client.storie
+client.stories
+Storie.all
+client.stories
+client.story
+story = story.find(18)
+story = Storie.find(18)
 story
-story.name = "Edited ABC"
+story.client
+client
+client.stories
+client.Storie
+client.Stories
+client.storie
+client.storie.name
+client
+client.username
+quit
+Storie.all
+story = Storie.last
+story.client_id = 3
 story.save
 story
-storie2 = Storie.new(name: "ABCfds", content: "sdfsHJK", moral: "OAgdfgP", author: "PsdfOA")
-storie2.save
-Storie.all
-story = Storie.find(2)
-story
-story.destroy
-Storie.all
-story = Storie.new
-story.save
-Storie.all
-story = Storie.find(3)
-story.destroy
-Storie.all
-Storie.all
-reload
-reload!
-Storie.all
-story = Storie.new(author: "ABC")
-story.save
- story.errors.any?
-exit
-Storie.all
-story = Storie.new(author: "ABC")
-story.save
- story.errors.any?
-story.errors.full_messages
-exit
-Storie.all
-story = Storie.new(name: "ABC")
-story.save
- story.errors.any?
-story.errors.full_messages
+client
+client = Client.find(3)
+client
+client.stories
+client.stories
+client.storie
+client.stories=\
+client.story
+client.stories=\
+client.story_ids
+client.stories=\
+client.story
 quit
-story = Storie.new(name: "abc", content: "ADF")
-story.save
-story.errors.full_messages
-exit
-Storie.all
-quit
+client = client.last
+client = Client.last
+client_stories
+client
+client = Client.find(4)
+client = Client.find(3)
+client
+client.stories
+client.articles
+client.Story
+client.Storie
+client.Stories
+client.stories
+client.storie
+client.story
 quit
 Storie.all
-quit
+Client.all
 Storie.all
-quit
-Storie.all
+client = Client.find(3)
+client.stories
+ClientStories.all
+ClientStorie.all
+client.stories
+client
+rails db:rollback
 quit

@@ -29,3 +29,5 @@
 11.1.0 protobuf-cucumber:>= 3.10.8&~> 3.10|checksum:70ffd0654b2c269bbc8e89048eafdf6bed70e5d4aa448b9d63a8f13620a98272,ruby:>= 2.3
 11.1.1 protobuf-cucumber:>= 3.10.8&~> 3.10|checksum:f4fa5bbb3eba7a9c7b03de140e3b5b13eed23f86328708bed9fa4bddc9bc320e,ruby:>= 2.3
 12.0.0 protobuf-cucumber:>= 3.10.8&~> 3.10|checksum:946b9ec226ec7bb495461b6147c4fd17e7a2deac058b8072d10951cffe0cade6,ruby:>= 2.3
+12.1.0 protobuf-cucumber:>= 3.10.8&~> 3.10|checksum:1d24f1735d775591ab7926b93fae9c1c075aac06c151a18c107f8a2c9296241c,ruby:>= 2.3
+12.1.1 protobuf-cucumber:>= 3.10.8&~> 3.10|checksum:689f12f4569d03cb4203a1719748e33c907de8480f7f790890a3d699473d5fab,ruby:>= 2.3

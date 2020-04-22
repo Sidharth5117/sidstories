@@ -49,3 +49,5 @@
 4.2.2 activesupport:>= 4.2,rack-proxy:>= 0.6.1,railties:>= 4.2|checksum:52b14bce1882b7024c8dbb6820b2813e3ed01652b5fa0f88b7ed52be4cf3a940,ruby:>= 2.2.0
 5.0.0 activesupport:>= 5.2,rack-proxy:>= 0.6.1,railties:>= 5.2,semantic_range:>= 2.3.0|checksum:86ca5387ecfb2be7eb9b19e665f90fe2686acd82bd6bddc24d3054c3cdb019b7,ruby:>= 2.4.0
 5.0.1 activesupport:>= 5.2,rack-proxy:>= 0.6.1,railties:>= 5.2,semantic_range:>= 2.3.0|checksum:446f7e712bd580c132efefdbcdbac1b1e4246d7db5bb6319de352b9a48f0b258,ruby:>= 2.4.0
+5.1.0 activesupport:>= 5.2,rack-proxy:>= 0.6.1,railties:>= 5.2,semantic_range:>= 2.3.0|checksum:f201ecb513e0169474cea3b562f050283106b5c117d5043baa8cf24bc702c1a9,ruby:>= 2.4.0
+5.1.1 activesupport:>= 5.2,rack-proxy:>= 0.6.1,railties:>= 5.2,semantic_range:>= 2.3.0|checksum:92bb1299f8fadc79b649b08d807811e77a36bee49f9b6fd3189ec89a18bc9589,ruby:>= 2.4.0
