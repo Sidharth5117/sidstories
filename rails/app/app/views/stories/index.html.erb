@@ -1,6 +1,7 @@
 <h3> Listing All Stories </h3>
 <br>
-<%= link_to "Create a story", new_story_path, class: "btn btn-xs btn-success" %>
+<%= link_to "Create a story", new_story_path, class: "btn btn-xs btn-success" %> | 
+<%= link_to "View All Writers", users_path, class: "btn btn-xs btn-primary" %>
 <br>
 <br>
 <%= render 'storie', obj: @storie %>

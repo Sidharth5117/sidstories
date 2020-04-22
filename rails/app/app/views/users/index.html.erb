@@ -1,4 +1,4 @@
-<h1>All SidStories Writers</h1>
+<h3>All SidStories Writers</h3>
 <% @user.each do |user| %>
 
 <div class="row">
@@ -15,5 +15,8 @@
 </div>
 </div>
 </div>
-<br><br>
+<br>
 <% end %>
+<div class="d-flex justify-content-center">
+<%= will_paginate(@user, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer) %>
+</div>
