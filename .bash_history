@@ -1855,3 +1855,117 @@ rails s
 cd rails 
 cd app
 rails s
+cd rails
+cd
+git add -A
+git commit -m "Added Pagination to stories"
+git push
+cd rails
+cd app
+git add -A
+git commit -m "Added Pagination to stories"
+git push heroku master
+cd app
+cd controllers
+nano users_controller.rb
+cd ..
+cd views
+cd users
+nano index.html.erb
+rails s
+cd ..
+cd controllers
+nano users_controller.rb
+cd ..
+cd views
+cd stories
+nano index.html.erb
+git add -A
+git commit -m "Added pagination to users and added view all users feature"
+git push heroku master
+cd
+git add -A
+git commit -m "Added pagination to users and added view all users feature"
+git push
+cd rails
+cd app
+cd ..
+cd config
+ls
+nano routes.eb
+nano routes.rb
+cd ..
+cd app
+cd controllers
+touch sessions_controller.rb
+nano sessions_controller.rb
+cd ..
+cd config
+nano routes.rb
+rake routes
+cd ..
+cd app
+cd views
+mkdir sessions
+ls -l
+cd sessions
+touch new.html.erb
+nano new.html.erb
+rails s
+cd ..
+cd users
+nano _form.html.erb
+cd ..
+cd sessions
+nano new.html.erb
+rails s
+nano new.html.erb
+rails s
+nano new.html.erb
+rails s
+cd rails
+cd app
+rails s
+cd app
+cd views
+cd sessions
+nano new.html.erb
+rails s
+cd rails
+cd app
+rails s
+cd app
+cd views
+cd sessions
+nano new.html.erb
+rails s
+nano new.html.erb
+rails s
+cd rails
+cd app
+cd views
+cd sessions
+rails s
+cd rails
+cd app
+cd controllers
+nano sessions_controller.rb
+rails s
+cd rails
+cd app
+cd views
+cd layouts
+ls
+nano _navigation.html.erb
+rails s
+nano _navigation.html.erb
+rails s
+cd rails
+cd app
+rails s
+cd app
+cd layouts
+cd views
+cd layouts
+nano _navigation.html.erb
+rails s

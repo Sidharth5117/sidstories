@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   resources :articles
   resources :stories
   root "home#index"
+  get "/login", to: "sessions#new"
+  post "/login", to: "sessions#create"
+  delete "/logout", to: "sessions#destory"
   get "/about", to: "home#about"
   get  "/signup", to: "users#new"
   resources :users, except: [:new]
