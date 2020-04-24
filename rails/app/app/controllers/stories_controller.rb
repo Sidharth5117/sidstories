@@ -1,5 +1,11 @@
 class StoriesController < ApplicationController
 
+
+before_action :set_story, only: [:edit, :update, :show, :destroy]
+before_action :require_user, except: [:index, :show]
+before_action :require_same_user, only: [:edit, :update, :destroy]
+
+
  def new
   @storie = Storie.new
  end
@@ -33,7 +39,7 @@ class StoriesController < ApplicationController
  def create
   
   @storie = Storie.new(storie_params)
-  @storie.user = User.last  
+  @storie.user = current_user  
   if @storie.save
     flash[:success] = "Story was successfully created"
     redirect_to @storie
@@ -52,5 +58,16 @@ class StoriesController < ApplicationController
   def storie_params
    params.require(:storie).permit(:name, :content)
   end 
+
+  def set_story
+  @storie = Storie.find(params[:id])
+  end
+
+  def require_same_user
+   if current_user != @storie.user
+   flash[:danger] = "You can only edit your own articles"
+   redirect_to root_path
+   end
+  end
 
 end

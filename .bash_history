@@ -1,34 +1,3 @@
-rails routes
-cd rails
-cd app
-rails server
-rails routes
-rails s -b 0.0.0.0
-cd rails
-rm -rf app
-ls
-cd rails
-ls
-rails new first
-cd first
-ruby bin/rails server
-bin/rails generate controller welcome home
-rails server
-gem install rails -v 5.2.0 
-rails
-cd ..
-rails new x
-rails -v
-rails list | grep rails
-gem list | grep rails
-gem uninstall rails -v 5.2.0
-gem list | grep rails
-cd rails
-rails new app1
-ls
-cd app1
-generate controller welcome index
-rails generate controller welcome index
 rails server
 cd rails
 cd app1
@@ -1998,3 +1967,34 @@ cd stories
 nano _storie.html.erb
 rails s
 nano _storie.html.erb
+cd rails
+cd app
+cd views
+cd layouts
+nano _navigation.html.erb
+cd ..
+cd views
+cd stories
+nano _storie.html.erb
+rails s
+nano show.html.erb
+rails s
+git add -A
+git commit -m "Restricted Actions from UI"
+git push heroku master
+cd
+git add -A
+git commit -m "Restricted Actions from UI"
+git push
+cd rails
+cd app
+cd views
+cd layouts
+nano _navigatioj.html.erb
+nano _navigation.html.erb
+cd rails
+cd app
+cd controllers
+nano stories_controller.rb
+rails s
+nano stories_controller.rb

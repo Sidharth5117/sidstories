@@ -50,3 +50,17 @@
 2020-04-22T12:07:36.605Z Error: You do not have access to the app app.
 2020-04-22T12:07:36.605Z Error ID: forbidden
 2020-04-22T12:07:36.605Z     at Function.request (~/.local/share/heroku/client/7.39.3/node_modules/@heroku-cli/command/lib/api-client.js:93:27)
+2020-04-24T11:48:46.285Z Error: Unexpected argument: --sidharth2136
+2020-04-24T11:48:46.285Z See more help with --help
+2020-04-24T11:48:46.285Z     at validateArgs (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/parser/lib/validate.js:10:19)
+2020-04-24T11:48:46.285Z     at Object.validate (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/parser/lib/validate.js:57:5)
+2020-04-24T11:48:46.285Z     at Object.parse (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/parser/lib/index.js:26:7)
+2020-04-24T11:48:46.285Z     at V5.parse (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/plugin-legacy/node_modules/@oclif/command/lib/command.js:74:41)
+2020-04-24T11:48:46.285Z     at V5.run (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/plugin-legacy/lib/index.js:90:52)
+2020-04-24T11:48:46.285Z     at V5._run (~/.local/share/heroku/client/7.39.3/node_modules/@oclif/plugin-legacy/node_modules/@oclif/command/lib/command.js:34:31)
+2020/04/24 11:54:18 Error: Expected response to be successful, got 404
+    at Request.handleFailure [as _handleFailure] (/home/sid/.local/share/heroku/client/7.39.3/node_modules/heroku-client/lib/request.js:255:11)
+    at Request.<anonymous> (/home/sid/.local/share/heroku/client/7.39.3/node_modules/heroku-cli-util/lib/command.js:56:12)
+    at /home/sid/.local/share/heroku/client/7.39.3/node_modules/heroku-client/lib/request.js:148:16
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+2020/04/24 11:54:18 {"resource":"app","id":"not_found","message":"Couldn't find that app."}
