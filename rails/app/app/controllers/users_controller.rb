@@ -8,6 +8,7 @@ class UsersController < ApplicationController
   end
 
  def show
+
   end
 
 
@@ -24,13 +25,12 @@ class UsersController < ApplicationController
 
 
       if @user.save
-      redirect_to @user
       flash[:success]= "Welcome to SidStories #{@user.username}" 
       redirect_to user_path(@user) 
       else
        render "new" 
       end
-    end
+    
   end
 
   
@@ -43,15 +43,13 @@ class UsersController < ApplicationController
        render "edit"
       
       end
-    end
+    
   end
 
   def destroy
     @user.destroy
-    respond_to do |format|
  flash[:danger] =  "User and all stories created by user have been successfully destroyed." 
       redirect_to users_path
-    end
   end
 
   private
