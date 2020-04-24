@@ -17,7 +17,7 @@
 
 
 </div>
-
+<% if logged_in? && current_user == storie.user %>
 <div class="card-footer bg-transparent border-success">
 <div class="storie-actions">
 
@@ -27,6 +27,9 @@ data: { confirm: "Are you sure you want to delete the story?"},
 class: "btn btn-xs btn-danger" %>
 </div>
 </div>
+
+<% end %>
+
 </div>
 </div>
 </div>

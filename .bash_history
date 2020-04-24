@@ -1,71 +1,3 @@
-sudo apt-get update
-sudo apt-get upgrade
-rvm install ruby
-gem install rails
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-sudo apt-get install -y nodejs
-sudo npm install npm --global
-sudo apt-get update
-sudo apt-get upgrade
-sudo npm
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-sudo apt-get install -y nodejs
-ls
-mkdir rails
-mkdir ruby
-ls
-cd rails
-rails new firstapp
-ls
-cd firstapp
-rails server
-cd rails
-cd firstapp
-rails routes
-rake routes
-rails server
-cd ..
-rails new first
-ls
-cd rails
-ls
-cd first
-rails s
-ls
-cd rails
-ls
-cd first
-rails server
-cd rails
-cd first
-rails server
-cd first
-cd rails
-cd first
-rails s
-cd rails
-cd first
-rails routes
-cd rails
-ls
-cd first
-rails server
-cd rails
-cd first
-rails s
-cd rails
-ls
-rails new app
-ls
-cd app
-rails server
-rails routes
-generate controller articles index
-bin/rails generate controller articles index
-rails server
-cd rails
-cd app
-rails server
 rails routes
 cd rails
 cd app
@@ -1969,3 +1901,100 @@ cd views
 cd layouts
 nano _navigation.html.erb
 rails s
+cd rails
+cd app
+rails s
+cd app
+cd views
+cd layouts
+nano _navigation.html.erb
+rails s
+cd rails
+cd app
+rails s
+cd rails
+cd app
+cd views
+cd layoits
+cd layouts
+nano _navigation.html.erb
+rails s
+nano _navigation.html.erb
+rails s
+cd rails
+cd app
+rails s
+nano _navigation.html.erb
+cd app
+cd views
+cd layouts
+nano _navigation.html.erb
+rails s
+cd rails
+cd app
+rails s
+cd app
+cd views
+cd layouts
+nano _navigation.html.erb
+rails s
+nano _navigation.html.erb
+rails s
+cd rai
+cd rails
+cd app
+rails s
+cd app
+cd views
+cd layoits
+cd layouts
+nano _navigation.html.erb
+rails s
+cd rails
+cd app
+rails s
+cd app
+cd controllers
+nano users_controller.rb
+nano stories_controller.rb
+cd ..
+cd viewws
+cd views
+cd layouts
+nano _navigation.html.erb
+rails s
+nano _navigation.html.erb
+rails s
+cd rails
+cd app
+rails s
+cd app
+cd views
+cd layouts
+nano _navigation.html.erb
+rails s
+cd rails
+cd app
+rails s
+cd app
+cd views
+cd layouts
+nano _navigation.html.erb
+cd rails
+cd app
+rails s
+cd rails
+cd app
+cd views
+cd layouts
+nano _navigation.html.erb
+rails s
+cd ..
+cd controller.rb
+cd controllers
+ls
+cd views
+cd stories
+nano _storie.html.erb
+rails s
+nano _storie.html.erb
