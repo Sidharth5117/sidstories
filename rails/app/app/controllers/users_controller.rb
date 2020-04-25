@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update]
-  before_action :require_same_user, only: [:edit, :update]
-
+  before_action :require_same_user, only: [:edit, :update, :destroy]
+  before_action :require_admin, only: [:destory]
 
   def index
     @user = User.paginate(page: params[:page], per_page: 3)
@@ -48,9 +48,10 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user.destroy
+@user = User.find(params[:id])
+@user.destroy
  flash[:danger] =  "User and all stories created by user have been successfully destroyed." 
-      redirect_to users_path
+ redirect_to users_path
   end
 
   private
@@ -64,8 +65,15 @@ class UsersController < ApplicationController
       params.require(:user).permit(:username, :email, :password)
     end
 
+   def require_admin
+   if logged_in? && !current_user.admin?
+   flash[:danger] = "Only admin users can perform that action"
+   redirect_to root_path
+   end
+
+
    def require_same_user
-   if  current_user!= @user
+   if  current_user!= @user and !current_user.admin?
    flash[:danger] = "You can only edit your own account"
    redirect_to root_path
    end

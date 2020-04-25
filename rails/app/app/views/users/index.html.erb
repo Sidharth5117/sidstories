@@ -11,6 +11,12 @@
 </div>
 <div class="storie.body">
 <h6><%= pluralize(user.storie.count, "story") if user.storie %></h6>
+<br>
+<% if logged_in? and current_user.admin? %>
+<%= link_to "Delete this User", user_path(@user), method: :delete, 
+data: { confirm: "Are you sure you want to delete this user & all their stories?"}, 
+class: "btn btn-xs btn-danger" %>
+<% end %>
 </div>
 </div>
 </div>

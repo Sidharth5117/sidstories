@@ -1,37 +1,3 @@
-rails s
-rails routes
-rails s
-heroku login
-git status
-git add -A
-git commit -m "App production ready"
-heroku keys:add
-git push heroku master
-rails routes
-rails s
-git status
-git push heroku master
-rails s
-git status
-git add -A
-git commit -m "App production ready"
-git push heroku master
-git status
-git add -A
-git commit -m "App production ready"
-git push heroku master
-ls
-cd
-ls
-ssh-keygen
-rails server
-cd rails
-cd app
-rails server
-git status
-git add -A
-git -m commit "Hello"
-git commit -m "Hello"
 git push
 git remote -v
 git push -u origin master
@@ -1998,3 +1964,37 @@ cd
 git add -A
 git commit -m "Working till now"
 git push 
+cd rails
+cd app
+cd controllers
+nano users_controller.rb
+rails s
+cd ..
+cd views
+cd stories
+ls
+nano index.html.erb
+cd ..
+cd users
+ls
+nano index.html.erb
+nano show.html.erb
+rails s
+nano show.html.erb
+rails s
+nano show.html.erb
+rails s
+nano show.html.erb
+rails s
+cd ..
+cd stories
+ls
+nano index.html.erb
+rails s
+git add -A
+git commit -m "Sign in upon signup"
+git push heroku master
+cd
+git add -A
+git commit -m "Sign in upon signup"
+git push

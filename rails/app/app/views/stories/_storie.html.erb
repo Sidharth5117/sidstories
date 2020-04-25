@@ -17,7 +17,7 @@
 
 
 </div>
-<% if logged_in? && current_user == storie.user %>
+<% if logged_in? && (current_user == storie.user || current_user.admin?) %>
 <div class="card-footer bg-transparent border-success">
 <div class="storie-actions">
 

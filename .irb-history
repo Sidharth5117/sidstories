@@ -1,12 +1,3 @@
-story = Storie.last
-story.client_id = 3
-story.save
-story
-client
-client = Client.find(3)
-client
-client.stories
-client.stories
 client.storie
 client.stories=\
 client.story
@@ -102,4 +93,13 @@ Storie.all
 storie = Storie.first
 storie.user_id=3
 storie.save
+quit
+User.all
+user = User.last
+user
+user.admin?
+user.admin?
+user.toggle!(:admin)
+user
+user.admin?
 quit
