@@ -1,0 +1,18 @@
+<h3>Listing all Categories</h3>
+<hr>
+<% @category.each do |category| %>
+
+<div class="row">
+<div class="col-sm-12 col-xs-offset-2">
+<div class="card bg-light mb-3 border-dark mb-3">
+
+<h3><%= link_to category.name,category_path(category) %></h3>
+
+</div>
+</div>
+</div>
+<br>
+<% end %>
+<div class="d-flex justify-content-center">
+<%= will_paginate(@category, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer) %>
+</div>

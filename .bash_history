@@ -1,85 +1,3 @@
-git push
-git remote -v
-git push -u origin master
-cd ..
-git push -u origin master
-git push
-git heroku push master
-cd rails
-cd app
-git heroku push master
-git push heroku master
-git push origin master
-git push origin --tags
-ssh -T git@github.com
-git remote rm origin
-git remote add origin git@github.com:Sidharth5117/app.git
-git push -u origin master
-sudo find /var/www/html -type d -exec chmod 777 {} \;
-sudo find /home/sid/ -type d -exec chmod 777 {} \;
-sudo find /home/sid/ -type f -exec chmod 777 {} \;
-git status
-git add -A
-git push -u origin master
-ssh-keygen -t rsa
-cd .ssh
-ls
-rm -type f
-rm --help
-rm -r -type f
-rm . -type f
-cd .ssh
-ls
-git push -u origin master
-git push
-git status
-git add -A
-git commit -m "Commit"
-git push
-cd rails
-cd app
-rails generate migration create_stories
-rake db.migrate
-rake db:migrate
-rake db:rollback
-rake db:migrate
-rake db:rollback
-rake db:migrate
-rake db:rollback
-rails generate migration add_author_to_articles
-rake db:migrate
-rake db:rollback
-rake db:migrate
-irb
-cd rails
-cd app
-rails console
-cd rails
-cd app
-irb
-cd rails
-cd app
-rails console
-rails s
-cd rails
-cd app
-cd models
-ls
-cd rails
-cd app
-cd models
-ls
-ls -l
-ls
-git status
-git add -A
-git commit 
-cd rails
-cd app
-cd models
-ls
-cd rails
-cd app
 rails server
 cd app
 cd models
@@ -1997,4 +1915,86 @@ git push heroku master
 cd
 git add -A
 git commit -m "Sign in upon signup"
+git push
+cd rails
+cd app
+rails generate migration add_admin_to_users
+cd db/migrate
+ls
+nano 20200425110221_add_admin_to_users.rb
+rails db:migrate
+rails console
+cd ..
+cd app
+cd controllers
+nano stories_controller.rn
+nano stories_controller.rb
+cd ..
+cd views
+cd stories
+nano storie.html.erb
+nano _storie.html.erb
+nano show.html.erb
+cd ..
+layouts
+cd layotus
+cd layouts
+nano _navigation.html
+nano _navigation.html.erb
+rails s
+cd ..
+cd controllers
+nano users_controller.rb
+cd ..
+cd models
+nano user.rb
+cd ..
+cd controllers
+nano users_controller.rb
+cd ..
+cd views
+cd users
+nano index.html.erb
+git add -A
+git commit -m "Admin facility provided"
+git push heroku master
+cd
+git add -A
+git commit -m "Admin facility provided"
+git push 
+cd rails
+cd app
+rails s
+heroku run db:migrate
+heroku run rails db:migrate
+heroku logs --tail
+git add -A
+git commit -m "Admin Facility"
+git push heroku master
+cd app
+cd controllers
+nano users_controller.rb
+git add -A
+git commit -m "Admin Facility"
+git push heroku master
+cd
+git add -A
+git commit -m "Admin Facility"
+git push
+cd rails
+cd app
+heroku run rails console
+rails s
+cd app
+cd controllers
+cd ..
+cd views
+cd users
+nano index.html.erb
+git add -A
+git commit -m "Admin Facility Given"
+git push heroku master
+cd
+git add -A
+git commit -m "Admin Facility Given"
 git push
