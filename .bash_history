@@ -1,81 +1,3 @@
-rails server
-cd rails
-cd app1
-rails s 0.0.0.0
-rails s
-ls
-cd rails
-ls
-rails new app
-cd app
-rails generate controller home index
-rails routes
-rails server
-rails generate controller home about
-rails server
-rails routes
-rails server
-cd app
-cd rails
-cd app
-rails s
-cd rails
-cd app
-rails s
-rails routes
-cd rails
-cd app;
-cd app
-rails s
-rails routes
-rails s
-git add -A
-git init
-git add -A
-git status
-git add
-git add -A
-.
-git
-git config --list
-git add -A
-git status
-git add -A
-git status
-git commit -m "Create Rails App"
-git add -A
-git add --help
-git add -A .
-git config --global user.name "Sidharth5117"
-git config --lost
-git config --list
-cat ~/.ssh/id_rsa.pub
-sudo apt install ssh
-ssh-keygen -t rsa
-~/.ssh
-ls
-git remote add origin git@github.com:Sidharth5117/app.git
-git remove -v
-git remote -v
-git push -u 
-git push -u origin master
-git commit -m "initial commit"
-git push origin master
-git add -all
-git add --all
-git commit -m "Initial comment"
-git remote add origin git@github.com:Sidharth5117/app.git
-git push -u origin master
-cd rails
-cd app
-rails db:migrate
-cd rails
-cd app
-rake db
-rake db:migrate
-chmod 777 Gemfile 
-rake db:migrate
-rails routes
 rails s
 rails routes
 rails s
@@ -1998,3 +1920,81 @@ cd controllers
 nano stories_controller.rb
 rails s
 nano stories_controller.rb
+cd rails
+cd app
+rails s
+cd app
+cd controllers
+nano stories_controller.rb
+rails s
+nano stories_controller.rb
+rails s
+nano users_controller.rb
+rails s
+nano users_controller.rb
+rails s
+nano users_controller.rb
+nano stories_controller.rb
+rails s
+heroku run rake db:setup 
+heroku pg:reset DATABASE_URL --sidharth2136
+git add -A
+git commit -m "Restricted actions using controller"
+git push heroku master
+heroku rename sidharth2137
+heroku create
+heroku rename sidharth2136
+git push heroku master
+heroku run rails db:migrate
+cd
+git add -A
+git commit -m "Restricted actions using controller"
+git push
+rails s
+cd rails
+cd app
+rails s
+cd app
+cd controllers
+nano users_controller.rb
+git add -A
+git commit -m "Restricted actions using controller"
+git push heroku master
+cd ..
+cd views
+cd home
+ls
+nano index.html.erb
+git add -A
+git commit -m "Restricted actions using controller"
+git push heroku master
+cd
+git add -A
+git commit -m "Restricted actions using controller"
+git push
+rails s
+cd rails
+cd app
+rails s
+cd app
+cd views
+cd home
+nano index.html.erb
+rails s
+nano index.html.erb
+rails s
+cd ..
+cd controllers
+nano users_controller.rb
+rails s
+nano users_controller.rb
+rails s
+nano users_controller.rb
+rails s
+git add -A
+git commit -m "Working till now"
+git push heroku master
+cd
+git add -A
+git commit -m "Working till now"
+git push 

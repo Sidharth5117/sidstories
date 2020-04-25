@@ -1,7 +1,10 @@
 <h3> Listing All Stories </h3>
 <br>
 <%= link_to "Create a story", new_story_path, class: "btn btn-xs btn-success" %> | 
-<%= link_to "View All Writers", users_path, class: "btn btn-xs btn-primary" %>
+<%= link_to "View All Writers", users_path, class: "btn btn-xs btn-primary" %> | 
+<% if logged_in? %>
+<%= link_to "Go to your Profile", user_path(current_user), class: "btn btn-xs btn-primary" %>
+<% end %>
 <br>
 <br>
 <%= render 'storie', obj: @storie %>

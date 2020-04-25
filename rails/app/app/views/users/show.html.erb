@@ -4,6 +4,11 @@
 <%= gravatar_for @user, size: 150 %>
 </div>
 </div>
+<br>
+ <%= link_to "Stories Listing", stories_path, class: "btn btn-xs btn-primary" %> | 
+<% if logged_in? && current_user == @user %>
+ <%= link_to "Logout", logout_path, class: "btn btn-xs btn-danger",  method: :delete %> 
+<% end %>
 <h4><%= @user.username %>'s stories</h4>
 <%= render 'stories/storie', obj: @user.storie %>
 
