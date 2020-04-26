@@ -1,5 +1,3 @@
-rails server
-nano new.html.erb
 cd ..
 cd controllers
 cd stories_controller.rb
@@ -1998,3 +1996,5 @@ cd
 git add -A
 git commit -m "Creation and viewing of categories"
 git push
+cd rails/app
+rails console

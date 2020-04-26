@@ -1,35 +1,3 @@
-client.storie
-client.stories=\
-client.story
-client.stories=\
-client.story_ids
-client.stories=\
-client.story
-quit
-client = client.last
-client = Client.last
-client_stories
-client
-client = Client.find(4)
-client = Client.find(3)
-client
-client.stories
-client.articles
-client.Story
-client.Storie
-client.Stories
-client.stories
-client.storie
-client.story
-quit
-Storie.all
-Client.all
-Storie.all
-client = Client.find(3)
-client.stories
-ClientStories.all
-ClientStorie.all
-client.stories
 client
 rails db:rollback
 quit
@@ -102,4 +70,33 @@ user.admin?
 user.toggle!(:admin)
 user
 user.admin?
+quit
+Storie.all
+Storie.all
+story = Storie.last
+story
+story.categories
+Category.all
+category = Category.first
+category
+category.stories
+category.storie
+quit
+story = Storie.last
+story
+story.categories
+cat = Category.first
+cat
+cat.storie
+story
+cat
+cat.storie << story
+StorieCategory.all
+cat.storie
+story.categories
+Category.all
+cat = Category.last
+story.categories << category
+story.categories << cat
+story.categories
 quit
