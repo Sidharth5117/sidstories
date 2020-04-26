@@ -11,7 +11,7 @@ before_action :require_same_user, only: [:edit, :update, :destroy]
  end
 
  def index
-  @storie = Storie.paginate(page: params[:page], per_page: 2)
+  @storie = Storie.paginate(page: params[:page], per_page: 3)
  end
  
 
@@ -56,7 +56,7 @@ before_action :require_same_user, only: [:edit, :update, :destroy]
 
  private
   def storie_params
-   params.require(:storie).permit(:name, :content)
+   params.require(:storie).permit(:name, :content, category_ids: [])
   end 
 
   def set_story

@@ -12,8 +12,10 @@
 <h6><%= truncate(storie.content, length: 50) %></h6>
 <small>Created by: <%= storie.user.username if storie.user%>,
 <%= time_ago_in_words(storie.created_at) %> ago</small>
-
-
+<br><br>
+<% if storie.categories.any? %>
+<p>Categories: <%= render storie.categories %></p>
+<% end %>
 
 
 </div>

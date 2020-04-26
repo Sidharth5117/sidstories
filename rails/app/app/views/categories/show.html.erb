@@ -1,0 +1,21 @@
+<h3><%= "Category: " + @category.name %> </h3>
+
+<% if logged_in? and current_user.admin? %>
+
+<span class="badge"><%= link_to "Edit Category Name", edit_category_path(@category) %></span>
+<br>
+<% end %>
+
+<br>
+<%= link_to "View all categories", categories_path, class: "btn btn-xs btn-success" %> |
+<%= link_to "Create a story", new_story_path, class: "btn btn-xs btn-success" %> | 
+<%= link_to "View All Writers", users_path, class: "btn btn-xs btn-primary" %> | 
+<% if logged_in? %>
+<%= link_to "Go to your Profile", user_path(current_user), class: "btn btn-xs btn-primary" %>
+<% end %>
+<br>
+<br>
+<%= render 'stories/storie', obj: @category_storie %>
+<div class="d-flex justify-content-center">
+<%= will_paginate(@category_storie, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer) %>
+</div>

@@ -13,8 +13,8 @@
     </div>
   <% end %>
 
-<div class="row">
-<div class="col-sm-12">
+<div class='row'>
+<div class='col-sm-12'>
 
 <div class = "form-group">
 <div class = "control-label col-sm-2">
@@ -27,7 +27,8 @@
   
 <div class = "form-group">
 <div class = "control-label col-sm-2">
-<%= form.label :content %>
+
+    <%= form.label :content %>
 </div>
 <div class="col-sm-8">  
     <%= form.text_area :content, rows: 10, class: "form-control", placeholder: "Content of the story" %>
@@ -36,24 +37,20 @@
 
 
 
- <div class = "form-group">
-<div class="col-sm-offset-2 col-sm-10">                                                                             
-
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-<div class="d-flex justify-content-between">
-<%= form.collection_check_boxes :category_ids, Category.all, :id, :name do|cb| %>
-<% cb.label(class: "checkbox-inline input_checkbox") {cb.check_box(class: "checkbox") + cb.text} %> 
-<% end %>
-</div>
-</div>
-</div>
-
-
 
  <div class = "form-group">
-<div class="col-sm-offset-2 col-sm-10">  
-  <%= form.submit class: 'btn-primary btn-lg' %>
+<div class="col-sm-offset-2 col-sm-10">                                                                                   <%= form.submit class: 'btn-primary btn-lg' %>
   </div>
+</div>
+
+
+
+ <div class = "form-group">
+<div class="row">
+<div class="col-sm-offset-2 col-sm-10">  
+  <%=  %>
+  </div>
+</div>
 </div>
 
 <% end %>

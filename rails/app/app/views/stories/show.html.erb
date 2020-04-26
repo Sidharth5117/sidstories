@@ -8,6 +8,12 @@
 <br>
  <%=  simple_format(@storie.content) %>
 <br>
+
+<% if @storie.categories.any? %>
+<p>Categories: <%= render @storie.categories %></p>
+<% end %>
+
+<br>
  <div class="card-footer bg-transparent border-success">
 <div class="storie-actions">
 <%= link_to "Back to all stories", stories_path, class: "btn btn-xs btn-success" %>

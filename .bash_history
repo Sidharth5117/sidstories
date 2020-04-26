@@ -1,71 +1,4 @@
 cd ..
-cd controllers
-cd stories_controller.rb
-nano stories_controller.rb
-rails server
-cd ..
-cd views
-cd stories
-nano new.html.erb
-rails server
-nano new.html.erb
-rails server
-nano new.html.erb
-rails server
-nano new.html.erb
-rails server
-nano new.html.erb
-rails server
-nano new.html.erb
-rails server
-cd ..
-cd controllers
-nano stories_controller.rb
-rails server
-nano stories_controller.rb
-rails server
-cd rails
-cd app
-rails server
-cd app
-cd controllers
-nano stories_controllers.rb
-nano storie_controller.rb
-ls
-nano stories_controller.rb
-rails server
-rails console
-nano stories_controller.rb
-rails console
-rails server
-nano stories_controller.rb
-cd ..
-cd views
-cd stories
-nano new.html.erb
-rails server
-nano new.html.erb
-rails server
-rails console
-cd ..
-cd controllers
-cd stories
-nano stories_controller.rb
-rails server
-nano stories_controller.rb
-rails server
-rake routes
-nano stories_controller.rb
-rails server
-cd rails
-cd app
-rails server
-rails console
-cd app
-cd controllers
-nano stories_controller.rb
-rails server
-cd ..
 ls
 cd app
 cd config
@@ -1998,3 +1931,70 @@ git commit -m "Creation and viewing of categories"
 git push
 cd rails/app
 rails console
+cd rails/app
+cd app
+cd controllers
+nano categories_controller.rb
+rails s
+cd ..
+cd view
+cd views
+cd layouts
+nano _navigation.html.erb
+rails s
+nano _navigation.html.erb
+rails s
+cd ..
+cd controllers
+nano categories_controller.rb
+rails s
+git add -A
+cd
+git add -A
+git commit -m "Put categories in navbar and feature to add one by admin"
+git push
+rails generate migration create_storie_categories
+cd rails/app
+rails generate migration create_storie_categories
+cd db/migrate
+ls
+nano 20200426120035_create_storie_categories.rb
+rails db:migrate
+cd ..
+cd app
+cd models
+nano storie_category.rb
+nano storie.rb
+nano category.rb
+rails console
+nano storie.rb
+nano category.rb
+rails console
+git add -A
+cd
+git add -A
+git commit -m "Added Stories and Categories association"
+git push
+cd rails
+cd app
+cd views
+cd stories
+nano _form.html.erb
+rails s
+nano _form.html.erb
+rails s
+nano _form.html.erb
+rails s
+nano _form.html.erb
+rails s
+nano _form.html.erb
+rails s
+nano _form.html.erb
+rails s
+nano _form.html.erb
+nano new.html.erb
+rails s
+nano new.html.erb
+rails s
+nano new.html.erb
+nano _form.html.erb
