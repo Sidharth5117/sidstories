@@ -1,146 +1,4 @@
 rails server
-cd app
-cd models
-ls
-sudo
-bash
-cd rails
-cd app
-cd models
-ls
-irb
-cd app
-cd rails
-cd app
-cd models
-cat storie.rb
-chmod 777 storie.rb
-ls -l
-irb
-cd rails
-cd app
-rails console
-cd rails
-cd app
-rails console
-git status
-git add -A
-git commit -m "Create Stories table,models and table"
-git push
-cd ..
-git push
-cd rails
-cd app
-git push -u master origin
-git push -u origin master
-git push origin master
-git add -ALL
-git add --ALL
-git add --all
-cd app
-cd models
-chmod 777 article.rb
-cd ..
-git add --all
-sudo find /home/sid -type f -exec chmod 777 {} f
-sudo find /home/sid -type f -exec chmod 777 {} \;
-git status
-git add --all
-ls
-cd config
-ls
-chmod 777 routes.rb 
-cd ..
-git status
-git add -A
-git status
-git commit -m "Create Stories table,models and table"
-git push
-cd ..
-git push
-ssh-keygen
-ls
-cd .ssh
-ls
-cat id_rsa.pub
-cd ..
-git push
-cd .ssh
-ls -l
-cd .ssh
-cd rails
-cd app
-cd ..
-cd .ssh
-cd ..
-cd .ssh
-ls -l
-rm id_rsa
-ls
-;s
-ls
-rails routes
-cd ..
-cd rails
-cd app
-rails routes
-rails server
-cd rails
-cd app
-rails server
-sudo find /home/sid -type f -exec chmod 777 {} \;
-sudo find /home/sid -type d -exec chmod 777 {} \;
-rails server
-ls
-cd app
-cd views
-ls
-cd stories
-ls
-nano new.html.reb
-nano new.html.erb
-cat new.html.erb
-rails server
-cd ..
-ls
-cd controllers
-ls
-nano stories_controller.rb
-cat stories_controller.rb
-rails server
-cd ..
-cd views
-nano new.html.erb
-ls
-cd stories
-nano new.html.erb
-rails server
-nano new.html.erb
-rails server
-nano new.html.erb
-rails server
-nano new.html.erb
-rails server
-nano new.html.erb
-rails server
-nano new.html.erb
-rails server
-cd ..
-cd controller
-cd controllers
-ls
-nano stories_controller.rb
-rails server
-nano stories_controller.rb
-cd ..
-cd views
-cd stories
-nano new.html.erb
-rails server
-nano new.html.erb
-rails server
-nano new.html.erb
-rails server
 nano new.html.erb
 cd ..
 cd controllers
@@ -1997,4 +1855,146 @@ git push heroku master
 cd
 git add -A
 git commit -m "Admin Facility Given"
+git push
+cd rails
+cd app
+cd test
+ls
+cd models
+ls
+nano category_test.rb
+touch category_test.rb
+nano category_test.rb
+rails test
+cd ..
+cd models
+cd app
+cd models
+touch category.rb
+nano category.rb
+rails test
+rails generate migration create_categories
+cd ..
+cd db
+cd migrate
+ls
+nano 20200425135540_create_categories.rb
+rails db:migrate
+rails test
+cd ..
+cd app
+ls
+cd helpers
+ls
+cd ..
+cd test
+cd models
+nano category_test.rb
+rails test
+cd ..
+cd app
+cd models
+nano category.rb
+cd ..
+cd test
+cd helpers
+nano category_test.rb
+ls
+cd ..
+cd models
+nano category_test.rb
+cd ..
+cd app
+cd models
+nano category.db
+nano category.rb
+cd ..
+cd test
+cd models
+nano category_test.rb
+cd ..
+cd app
+cd models
+nano category.rb
+cd ..
+cd test
+cd controllers
+nano categories_controller.rb
+ls
+touch categories_controller.rb
+nano categories_controller.rb
+cd ..
+cd app
+cd controllers
+nano categories_controller.rb
+ls
+nano categories_controller.rb
+cd ..
+cd config
+nano routes.rb
+cd ..
+cd app
+cd controllers
+nano categories_controller.rb
+cd ..
+cd views
+mkdir categories
+cd categories
+nano new.html.erb
+ls
+nano index.html.erb
+nano show.html.erb
+ls
+cd ..
+cd test
+cd models
+nano categories_test.rb
+ls
+nano category_test.rb
+cd ..
+cd controllers
+nano categories_test.rb
+ls
+nano categories_controller.rb
+rails s
+cd ..
+cd app
+cd views
+cd categories
+nano new.html.erb
+cd ..
+cd controllers
+nano categories_controller.rb
+rails s
+cd ..
+cd models
+nano category.rb
+rails s
+cd ..
+cd controllers
+nano categories_controller.rb
+cd ..
+cd views
+cd categories
+nano index.html.erb
+cd ..
+cd controllers
+nano categories_controller.rb
+rails s
+cd ..
+cd views
+cd categories
+nano index.html.erb
+rails s
+nano index.html.erb
+rails s
+nano index.html.erb
+rails s
+nano index.html.erb
+rails s
+git add -A
+git commit -m "Creation and viewing of categories"
+cd
+git add -A
+git commit -m "Creation and viewing of categories"
 git push
